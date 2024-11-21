@@ -1,0 +1,51 @@
+.pagination {
+	margin: 40px 0;
+	text-align: center;
+	line-height: 1.5;
+	font-size: 12px;
+	color: #3b3a39;
+}
+
+.pagination__btn.disabled {
+	color: #dcdddd;
+}
+
+.pagination__control {
+	&,
+	ul,
+	li,
+	a,
+	span {
+		display: inline-table;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	ul {
+		margin: 0 20px;
+	}
+
+	li {
+		margin: 0 10px;
+		&.active {
+			color: #006fff;
+		}
+	}
+}
+
+.pagination__btn--prev:after {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 20px;
+	background: no-repeat url(https://static.tpx.tw/sff/urliving/static/img/arrow-left.svg);
+	vertical-align: middle;
+}
+.pagination__btn--next:before {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 20px;
+	background: no-repeat url(https://static.tpx.tw/sff/urliving/static/img/arrow-right.svg);
+	vertical-align: middle;
+}

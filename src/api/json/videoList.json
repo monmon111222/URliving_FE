@@ -1,0 +1,33 @@
+{
+	"Code":200,
+	"Message":null,
+	"Description":null,
+	"Response":{
+		"TotalCount":24,
+		"Page":1,
+		"PageCount":3,
+		"PageSize":10,
+		"Data":[
+			{
+				"ID":131,
+				"Url":"/livestream/131",
+				"Title":"此次粗嗚嗚嗚嗚嗚嗚嗚嗚嗚額額額額",
+				"BroadcastText":"刺刺刺醋五誤咦喔噢嗚物詞刺刺此事尕腌也好",
+				"Cover":"https://cdn.tpx.tw/tpxpic/LiveshowCover/fcf2b720-f8f9-4b5c-8010-810e789ef68c.jpg",
+				"ViewCount":18,
+				"Date":"2018-01-11",
+				"Status":1,
+				"BrandID":"live",
+				"VideoID":"1515663519",
+				"Markets":[
+					{
+						"MarketID":1292,
+						"Cover":"https://cdn.tpx.tw/tpxpic/ProductBasic/b2eb4a1a-fb16-4bbd-886f-9c134f6ac274.jpg",
+						"Url":"/market/n/1292?c=2644",
+						"IsLive":true
+					}
+				]
+			}
+		]
+	}
+}

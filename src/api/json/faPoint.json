@@ -1,0 +1,10 @@
+{
+  "Code": 200,
+  "Message": "",
+  "Description": "",
+  "Response": {
+    "Point": 1000,
+    "BindingTime": "2022/1/1 10:10:10",
+    "FasneyDetailUrl": "https://www.fasney.com/"
+  }
+}

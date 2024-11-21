@@ -1,0 +1,28 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-login';
+
+block content
+  .main
+    .content-block
+      include ../../template/member/loginMenu.pug 
+      .form-block.is-login
+        a.btn.btn-line-login.btn-block LINE 登入
+        p.or-text 或
+        form#form-login
+          .form-input
+            input#email-login.form-control(placeholder="請輸入E-mail / Account 會員帳號" type='email' value='' name='account', required)
+          .form-input
+            input#password-login.form-control(placeholder="請輸入密碼" type='password' name='password' autocomplete="off", required)
+          input.btn.btn-primary.btn-block.btn-submit-form(type='submit' value='登入會員')
+          .text-center.lh-1
+            a.btn-forget-pws(href="") 忘記密碼
+        form#form-user-forgot
+          p 找回密碼
+          .form-input
+            input#email-forgot.form-control(placeholder="請輸入E-mail" type='email' value='' name='account', required)
+          input.btn.btn-primary.btn-block.btn-submit-form(type='submit' value='下一步')
+      .success-block#success-msg 
+        .title 密碼已發送至信箱
+        a.btn.btn-primary.btn-block 確認

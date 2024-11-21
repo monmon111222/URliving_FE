@@ -1,0 +1,38 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-qaAsk';
+
+block content
+  .container
+    .member-container
+      .menu-block
+        include ../../template/member/memberMenu.pug
+      .info-block
+        .qa-block
+          .title-block
+            .title-text 客服
+            a.btn-more-info(href="")
+              i.icon-question
+          //- .tab-block
+          //-   .tab-item.active
+          //-     span 詢問
+          //-   .tab-item
+          //-     span 紀錄
+          ul.chat-list
+            li.ask        
+              p.type 提問
+              p.text 太慢太慢!!!!!!!!太慢太慢!!!!!!!!太慢太慢!!!!!!!!太慢太慢!!!!!!!!太慢太慢!!!!!!!!
+              .time (2019-12-12 17:22:22)
+            li.reply
+              p.type 回覆
+              p.text 嗨嗨嗨嗨嗨你好
+              .time (2019-12-12 17:22:22)
+          form(action='' method='')
+            .form-input     
+              textarea(name='content' rows='5' placeholder='請輸入問題')
+            input.btn.btn-block.btn-primary(type='submit' value='發送')
+          .reminder-block
+            .subtitle 訂單問答回覆時間：
+            p 週一至週五09:00-18:00(中午休息時間12:00-13:00)
+            p 當日六點後提問，將統一於上班時間六點前依序回覆完畢，還請稍待，謝謝。

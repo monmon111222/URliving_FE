@@ -1,0 +1,174 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-member';
+
+block content
+  #member-app.container(v-cloak)
+    .member-container
+      .menu-block
+        include ../../template/member/memberMenu.pug
+
+      .info-block
+
+        .member-block 
+          .member-info
+            a.member-edit(href="#") 
+              img.img-fluid(src="https://static.tpx.tw/sff/urliving/static/img/member-edit.png?v=010" alt="edit")
+            p.user-name Jennie 
+            p.user-id 會員編號 URcmdsmc3
+
+            // 已驗證
+            .member-active
+              p.user-five-verification 5%分享得利（已驗證）
+              p.user-level 一般會員
+            //- // 未驗證
+            //- .member-not-active
+            //-   p.user-level 一般會員
+            a.btn.user-logout(href="#") 登出
+
+          ul.member-list
+
+            // 已驗證
+            //- li.member-list-item
+            //-   .list-title
+            //-     p 回饋獎金
+            //-     small.list-bonus-total 累積總計 $128,000
+            //-   .list-count
+            //-     span $3,600
+            //-     a.more-link(href="#") 
+            //-       img.img-fluid.more-image(src="https://static.tpx.tw/sff/urliving/static/img/member-more.png?v=0307" alt="more")
+
+            // 未驗證
+            li.member-list-item
+              .list-title
+                p Give Me 5% <br> 分享得利
+              button.btn.verify-btn(@click="showVerifyPopup") 點此完成驗證
+
+            li.member-list-item
+              .list-title
+                p FA POINTS
+              .list-count
+                span 280P
+                a.more-link(href="#") 
+                  img.img-fluid.more-image(src="https://static.tpx.tw/sff/urliving/static/img/member-more.png?v=0307" alt="more")
+
+            li.member-list-item
+              .list-title
+                p 折價券
+              .list-count
+                span 10張
+                a.more-link(href="#") 
+                  img.img-fluid.more-image(src="https://static.tpx.tw/sff/urliving/static/img/member-more.png?v=0307" alt="more")
+
+            li.member-list-item
+              .list-title
+                p 購物金
+              .list-count
+                span $1,280
+                a.more-link(href="#") 
+                  img.img-fluid.more-image(src="https://static.tpx.tw/sff/urliving/static/img/member-more.png?v=0307" alt="more")
+
+        .member-image-block
+          a(href="#") 
+            img.img-fluid(src="https://static.tpx.tw/sff/urliving/static/img/member-give-me-five.jpg?v=010" alt="Give Me 5%")
+          a(href="#") 
+            img.img-fluid(src="https://static.tpx.tw/sff/urliving/static/img/member-give-me-five-2.jpg?v=010" alt="member-image")
+
+        .member-order-block
+          .order-title
+            h3 我的訂單
+            a.btn(href="#") 查看全部訂單
+
+          ul.order-list
+            li.order-list-item 
+              span.order-list-item-name  待付款
+              div.order-list-item-count
+                a(href="#") 
+                  span 10筆
+                  img.img-fluid(src="https://static.tpx.tw/sff/urliving/static/img/member-bill-icon.png?v=010" alt="icon")
+            li.order-list-item
+              span.order-list-item-name 待出貨
+              div.order-list-item-count
+                a(href="#") 
+                  span 12筆
+                  img.img-fluid(src="https://static.tpx.tw/sff/urliving/static/img/member-cart-icon.png?v=010" alt="icon")
+            li.order-list-item
+              span.order-list-item-name 待收貨
+              div.order-list-item-count
+                a(href="#") 
+                  span 8筆
+                  img.img-fluid(src="https://static.tpx.tw/sff/urliving/static/img/member-bag-icon.png?v=010" alt="icon")
+
+        .member-recommend-block
+          .recommend-title
+            h3 我的本月推薦
+            a.btn(href="#") 查看推薦明細
+
+          ul.recommend-list
+            li.recommend-list-item
+              span.recommend-list-item-name 總點擊
+              div.recommend-list-item-count
+                span 2000
+                i.icon-question(@click="showTip('clickCount', true)")
+              .recommend-tip(v-if="tipObj.clickCount")
+                img.img-fluid.recommend-tip-close(@click="showTip('clickCount', false)" src="https://static.tpx.tw/sff/urliving/static/img/popup-close.png?v=010" alt="close")
+                p 回饋獎金
+                p 透過您的分享連入購買的朋友可享有95折優惠，您將同步獲得5%的回饋獎金。
+
+            li.recommend-list-item
+              span.recommend-list-item-name 總訂單數
+              div.recommend-list-item-count
+                span 10 筆
+                i.icon-question(@click="showTip('orderCount', true)")
+              .recommend-tip(v-if="tipObj.orderCount")
+                img.img-fluid.recommend-tip-close(@click="showTip('orderCount', false)" src="https://static.tpx.tw/sff/urliving/static/img/popup-close.png?v=010" alt="close")
+                p 回饋獎金2
+                p 透過您的分享連入購買的朋友可享有95折優惠，您將同步獲得5%的回饋獎金。
+
+            li.recommend-list-item
+              span.recommend-list-item-name 總訂單金額
+              div.recommend-list-item-count
+                span $1000
+
+            li.recommend-list-item
+              span.recommend-list-item-name 總預估獎金
+              div.recommend-list-item-count
+                span $100
+
+        .verify-mask(v-if="showPopup")  
+        .verify-popup(v-if="showPopup") 
+          .verify-block
+            img.img-fluid.popup-close(@click="closeVerifyPopup" src="https://static.tpx.tw/sff/urliving/static/img/popup-close.png?v=010" alt="close")
+
+            div(v-show="step === 1")
+              div.verify-mobile-group 
+                select.form-control.phone-select(v-model="countryCode" name='countryCode' required)
+                  option(value='886' selected) +886
+                  option(value='+86') +86
+                dvi
+                  input.form-control.phone-input(v-model.trim="mobile" type="tel" name="mobile" placeholder="請輸入手機號碼" required)
+                  span.phone-warn(v-if="showPhoneWarning") 手機號碼為必填
+              button.btn.btn-verify(@click="getVerifyCode") 取得驗證碼
+
+            div(v-show="step === 2")
+              form.verify-code-form(method="post" action="/member/verify" @submit.prevent="handleSubmit" ref="formRef")
+                input(type="hidden" name="stamp" readonly :value="stamp")
+                div.verify-code-group
+                  dvi.verify-code
+                    input.form-control.phone-input(v-model.trim="verifyCode" name="code" placeholder="請輸入驗證碼" required)
+                    span.code-warn(v-if="showCodeWarning") 驗證碼為必填
+                  div.verify-countdown 已獲得驗證碼 {{ ( countDownSecond ) }} s 
+                  button.btn.btn-resend(v-if="canResendCode === true"  @click="resendCode" type="button") 重新發送
+                button.btn.btn-verify(v-if="canResendCode === false" type="submit") 確認
+
+
+
+
+block JSVAR
+  script(type="text/javascript").
+    window.userRegion = '';
+    window.userCounty = '';
+    window.userZipcode = '';
+    window.userProvince = '';
+    window.userAddress = ''; 

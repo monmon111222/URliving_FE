@@ -1,0 +1,217 @@
+header {
+	position: fixed;
+	display: flex;
+	width: 100%;
+	padding: 32px 0 0px;
+	border-bottom: 1px solid #afafaf;
+	background: #fff;
+	z-index: 999;
+	.header-inner {
+		margin: auto;
+		max-width: 1440px;
+		width: 100%;
+		position: relative;
+		.logo-u {
+			position: absolute;
+			left: 0;
+			width: 48px;
+			height: 32px;
+			background: url($storage-path + "logo-u.png") no-repeat center;
+			background-size: contain;
+			display: none;
+			cursor: pointer;
+		}
+		.nav-block {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: fit-content;
+			margin: auto;
+			.logo-text {
+				justify-self: center;
+				width: 198px;
+				height: 32px;
+				background: url($storage-path + "logo-text.png") no-repeat center;
+				background-size: contain;
+				margin-bottom: 25px;
+				cursor: pointer;
+			}
+			.nav-list {
+				display: flex;
+				.nav-name {
+					display: flex;
+					align-items: center;
+					position: relative;
+					padding-bottom: 25px;
+					a {
+						color: #000;
+						text-decoration: none;
+					}
+					.detail-block {
+						opacity: 0;
+						transition: all 0.5s ease-out;
+						position: fixed;
+						left: 0;
+						width: 100%;
+						padding: 65px 0;
+						display: none;
+						background: #fff;
+						border-top: 1px solid #afafaf;
+						border-bottom: 1px solid #afafaf;
+						.detail-inner.brand {
+							position: relative;
+							max-width: 1440px;
+							margin: auto;
+							width: 100%;
+							@include column_start_start;
+							min-height: 198px;
+							.detail-list {
+								width: calc(100% - 352px);
+								@include row_start_center;
+								li {
+									width: 20%;
+									margin-bottom: 20px;
+									&.font-regular {
+										font-weight: 400;
+									}
+								}
+							}
+							.banner {
+								position: absolute;
+								top: 0;
+								right: 0;
+								max-width: 352px;
+							}
+						}
+						.detail-inner.product {
+							max-width: 1440px;
+							margin: auto;
+							width: 100%;
+							display: flex;
+							justify-content: space-between;
+							min-height: 198px;
+							.detail-list {
+								li {
+									&.font-regular {
+										font-weight: 400;
+									}
+									&:not(.letter):not(:last-child) {
+										margin-bottom: 20px;
+									}
+								}
+							}
+							.banner {
+								max-width: 352px;
+							}
+						}
+					}
+					&:hover {
+						.detail-block {
+							opacity: 1;
+							display: block;
+						}
+						&::after {
+							content: "";
+							position: absolute;
+							display: inline-block;
+							width: 100%;
+							height: 4px;
+							background: #006fff;
+							top: 45px;
+							left: 0;
+						}
+					}
+					&:not(:last-child) {
+						margin-right: 55px;
+					}
+				}
+			}
+		}
+		.action-block {
+			position: absolute;
+			right: 0;
+			top: 10px;
+			.action-btn {
+				width: 24px;
+				height: 24px;
+				i {
+					background-position: center;
+				}
+				&:not(:last-child) {
+					margin-right: 25px;
+				}
+			}
+
+			#header-close {
+				display: none;
+			}
+			#header-cart {
+				position: relative;
+				.total-count {
+					position: absolute;
+					display: inline-block;
+					width: 20px;
+					height: 20px;
+					background: #006fff;
+					color: #fff;
+					font-size: 12px;
+					border-radius: 50%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					right: -8px;
+					top: -6px;
+				}
+			}
+		}
+	}
+	@include min_md {
+		&.active {
+			.header-inner {
+				.logo-u {
+					display: block;
+				}
+				.nav-block {
+					.logo-text {
+						display: none;
+					}
+				}
+				.action-block {
+					top: -3px;
+				}
+			}
+		}
+	}
+	@include max_md {
+		padding: 17px 0;
+		.header-inner {
+			max-width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 15px;
+			.nav-block {
+				margin: 0px;
+				.logo-text {
+					justify-self: flex-start;
+					width: 111px;
+					height: 18px;
+					margin-bottom: 0;
+				}
+				.nav-list {
+					display: none;
+				}
+			}
+			.action-block {
+				position: relative;
+				top: 0;
+				.action-btn#header-search {
+					margin-right: 0;
+				}
+				.action-btn:not(#header-search) {
+					display: none;
+				}
+			}
+		}
+	}
+}

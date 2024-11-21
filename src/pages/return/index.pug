@@ -1,0 +1,193 @@
+extends ../../template/layout
+
+
+block vars
+  - var pageID = '';
+
+block content
+  .container-fluid
+    .qa-block
+      .page-title Returns
+      #accordion-returns
+        ul.static-list
+          li              
+            a(href="#" data-toggle="collapse" data-target="#collapse-returns-1").list-collapse.with-plus.collapsed 如何辦理退貨
+            #collapse-returns-1.collapse.list-collapse-block(data-parent="#accordion-returns")
+              div.list-collapse-inner 
+                div 退貨方式：
+                ol.list-decimal
+                  li 為簡化及加速取得適合商品的流程，mouggan僅提供退貨無換貨服務。
+                  li 若有尺寸不合或未符期望，可選擇於七日鑑賞期內辦理部分或整筆退貨後再重新訂購。
+                  li 七日鑑賞期計算為簽收隔日算起七日內，鑑賞期不為試用期，還請留意請保持商品全新狀態。超商為取件隔日算第一天。黑貓宅配為簽收隔日算第一天，不論是否為買家本人簽收（管理員／家人等）還請務必留意。
+                  li 若於七日內需加退商品，請自行負擔寄送運費。為避免爭議發生，請確實收到商品後再進行退貨，商品優惠恕無法合併訂單計算。
+                  li 包裹完成取件後，系統需48小時內回傳取件資料，請您於收到包裹後(於七日鑑賞期內)，登入會員中心
+                  li 後至訂單查詢內，產生『退貨』的選項即可申請退貨，不便之處敬請見諒！
+                  li 如遇取件資料遲遲未更新狀況，還請您務必於收取包裹七日內盡快與客服人員聯繫以便協助處理，避免影響退貨權益。
+                br
+                div 退貨辦法：
+                .row
+                  .col-md-7.col-12
+                    .table-responsive
+                      table.table.table-bordered
+                        tr
+                          td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272") 取件方式
+                          td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272") 退貨方式
+                        tr
+                          td.bg-primary.text-white.nowrap(style="border-color: white #BC9272" valign="middle") 黑貓、7-11
+                          td(valign="middle") 7-11超商辦理
+                        tr
+                          td.bg-primary.text-white.nowrap(style="border-color: white #BC9272" valign="middle") 離島地區
+                          td(valign="middle") 
+                            | 自行退回
+                            br
+                            | ※ 退貨運費補貼上限80元，以寄回郵戳金額實支實付，請退貨辦理時一併提供退款帳戶（代號+帳號），以利轉帳
+                        tr
+                          td.bg-primary.text-white.nowrap(style="border-color: white #BC9272" valign="middle") 相關說明
+                          td(valign="middle") 
+                            | 申辦退貨系統會根據辦理商品重量自動斷定材積，超過超商材積包裹才會另行安排【宅配】收件！
+                            br
+                            | 自2017/8/28開始，宅急便服務變更，每逢週日不提供收取退貨包裹服務。超商辦理連結說明
+                        tr
+                          td.bg-primary.text-white.nowrap(style="border-color: white #BC9272 #BC9272" valign="middle") 超商退貨代碼使用說明
+                          td(valign="middle") 請於退貨申請當日算起四天內至超商完成寄出,逾期未使用即失效，恕不二次提供
+                  .col-md-5.col-12
+                    | ※退貨商品需完好無損和附件齊全（包含吊牌未拆剪／特殊包裝完善），不影響二次銷售之全新商品
+                    br
+                    | ※組合商品退貨後未達優惠件數，保留品項將恢復原價計算
+                    br
+                    | ※退貨後保留商品金額若未達滿額禮活動門檻，贈品需連同退貨商品一併退回（全新未拆封），未退回將會直接以原價計算。
+                    br
+                    | 以上金額皆先從退貨商品金額中扣除 若有不足扣之狀況，其此訂單將會無法受理退貨，以宅配貨到付款方式退回
+                    .py-3
+                    .border-primary.border-top
+                    .py-3
+                    | ※提醒您，若您無故或惡意三次（含）以上違反mouggan制定訂購與退貨相關規則，本公司有權暫停您的帳號並拒絕您使用本服務，同時列為交易黑名單，請您留意。
+                    br
+                    | ※ 退貨後訂單保留商品金額若未達訂購時享有免運門檻，需負擔原出貨運費於退款款項內扣除，超商運費80元／宅配運費120元（無須額外夾帶現金於包裹內）
+                br
+                div 退貨流程：
+                | 登入mouggan線上申請退貨→記下退貨通代碼→將欲退貨之商品包裝妥當→至超商操作機器並列印退貨單→將退貨包裹及單據交給櫃台人員超商門市退貨步驟詳細說明：【7-11】
+                br
+                | ※請使用不透明包裝袋將商品包裝密封完整
+                br
+                | ※若交寄尺寸不符規定，門市將拒收，還請消費者務必留意！
+                br
+                br
+                img.img-fluid(src="http://staticblob.blob.core.windows.net/sff/mouggan/static/img/returns1.jpg", alt="")
+
+                
+          li 
+            a(href="#" data-toggle="collapse" data-target="#collapse-returns-2").list-collapse.with-plus.collapsed 退款方式及退款時間
+            #collapse-returns-2.collapse.list-collapse-block(data-parent="#accordion-returns")
+              div.list-collapse-inner 
+                | 首次購物請先將商品加入購物車，再點擊購物車下方按鈕前往結帳，登入頁面後會顯示您購物車清單商品,選擇付款方式，於下一步填妥訂購人資訊即可完成購物。訂單成立後，系統將會自動為您加入會員哦！
+                br
+                br 
+                .row
+                  .col-md-7.col-12
+                    .table-responsive
+                      table.table.table-bordered
+                        tr
+                          td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272") 原付款方式
+                          td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272") 退貨作業時間
+                          td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272") 退款方式
+                        tr
+                          td.bg-primary.text-white.nowrap(style="border-color: white #BC9272; padding-top:30px; padding-bottom: 30px;" valign="middle") 超商取貨付款
+                          td.nowrap(valign="middle", rowspan="4") 
+                            | 退貨包裏完成寄送後
+                            br
+                            | 約7-10個工作天完成退款作業
+                          td.nowrap(valign="middle", rowspan="4") 
+                            | 購物金
+                            br
+                            | 訂單購買會員帳號內可於
+                            span.font-w7 會員中心
+                            | →
+                            span.font-w7 線上帳戶
+                            | 確認款項
+                            br
+                            br
+                            | 線上刷退
+                            br
+                            | ※完成退刷後，銀行間的作業處理約需7-14天，
+                            br
+                            | 因個人信用卡的結帳週期不同而影響退刷款項完成時間，
+                            br 
+                            | 建議可於開卡銀行詢問確認
+                            br
+                            | ※若以街口支付平台付款，退款金額會直接退至街口支付帳號
+                        tr
+                          td.bg-primary.text-white.nowrap(style="border-color: white #BC9272; padding-top:30px; padding-bottom: 30px;") 宅配貨到付款
+                        tr
+                          td.bg-primary.text-white.nowrap(style="border-color: white #BC9272; padding-top:30px; padding-bottom: 30px;" valign="middle") 中華郵政寄送
+                        tr
+                          td.bg-primary.text-white.nowrap(style="border-color: white #BC9272 #BC9272; padding-top:30px; padding-bottom: 30px;" valign="middle") 信用卡結帳
+                  .col-md-5.col-12
+                    | ※收到退款完成的E-mail通知後，還請您至mouggan官網於「會員登入」登入後→「線上帳戶」確認購物金金額。
+                    br
+                    | ※中華郵政配送目前籌備中，待籌備完成後將會開放此配送方式，還請稍待見諒。
+                    br
+                    | ※若退回包裹內附上有私人物品（非mouggan販售商品），經客服通知後未於三個月內回覆，將直接報銷處理。
+                    br
+                    | ※若退貨包裹與退貨明細不符，將會直接依照實際收到退貨商品受理退貨，不再另行通知，請於辦理退貨時留意商品項目。
+                    br
+                    | ※退貨包裹一經確認若有人為瑕疵商品將無法受理退貨，其他無異常商品將會先受理退貨退款， 人為瑕疵商品將會再聯繫消費者並且以貨到付款方式退回（宅配130元）。
+                    br
+                    | 寄出後的異常訂單，待mouggan收到後將會通知，若未於通知期限內回覆將取消訂單，請您再重新訂購（依官網現行的庫存數量、優惠活動及售價為主）。
+                    br
+                    | ※鑑賞期內提供一次退貨免運費服務，若原訂單須支付出貨運費（超商30元／宅配120元），將會於退貨金額內扣除，請勿直接將現金包入包裹內，若收到現金，客服將另行通知並且匯款退回(扣除手續費15元）。
+                
+          li 
+            a(href="#" data-toggle="collapse" data-target="#collapse-returns-3").list-collapse.with-plus.collapsed    什麼情況無法辦理退換貨？收到瑕疵商品怎麼辦？
+            #collapse-returns-3.collapse.list-collapse-block(data-parent="#accordion-returns")
+              div.list-collapse-inner 
+                .table-responsive
+                  table.table.table-bordered
+                    tr
+                      td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272") 無法退貨的商品和特殊狀況
+                      td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272") 不屬瑕疵界定
+                    tr
+                      td 1.超過七天鑑賞期
+                      td 線頭、釦眼未開、些許脫線、極小的汙點、可縫回的釦子，合理範圍下不對稱、平放測量尺寸1-2cm的誤差、照片色差、材質想像不如預期、特殊縫線（安心縫線／固定口袋縫線）
+                    tr
+                      td 2.退貨代碼超時、宅配收退超時
+                      td 新品多少會有原布料或及其染劑的氣味，先通風、後清洗，狀況即可漸漸清除
+                    tr
+                      td 
+                        | 3. 貼身內著類衣物（內衣褲／襪子／泳衣類商品）、飾品類商品（手環／耳環／髮飾）及使用安心縫線／塑膠釘線之商品
+                        br
+                        | ※上述商品於網頁標示 ※基於衛生考量/商品開封後無提供退貨服務
+                      td 
+                        | 印刷商品多少會有印染不均現象及膠印點點脫落／印染小色斑
+                        br
+                        | （0.5平方公分以下）
+                    tr
+                      td 4.商品配件不全、吊牌已剪或商品已下水(無保持商品完整性)
+                      td.bg-primary.text-white(style="border-color: #BC9272 white white #BC9272") 收到瑕疵商品流程
+                    tr
+                      td 5.非mouggan商品原樣，在商品上加工，例如：繡花、裁剪、打印…等
+                      td(rowspan="5").nowrap
+                        | Step1. 請將瑕疵疑慮商品E-mail瑕疵細部照片至客服信箱內
+                        br
+                        | Step2. 於信件內留下會員帳號／訂單資訊／手機號碼，以便確認並且依檢核狀況回覆和處理
+                        br
+                        | Step3. 待與相關單位確認後會以信件方式回覆後續處理，還請留意信件
+                    tr
+                      td 6.活動贈品未隨退貨包裹一併退回
+                    tr
+                      td 7.特殊包裝或商品配件損毀
+                    tr
+                      td 8.殘留非商品本身氣味，如香水、體味、煙味…等
+                    tr
+                      td 9.衣物沾有粉妝／使用過產生的髒汙（如鞋底髒污、磨損）…等等
+                br
+                | mouggan誠摯希望與您建立良好的交易關係，但如惡意訂購擊退貨或無法同意／配合相關規範，mouggan將有保留刪除會員帳號之權利。
+                br
+                | ※若確認商品無法受理或非退貨訂單內之商品，會以宅配貨到付款方式寄還給您（運費需請您自行負擔130元）
+                br
+                | ※若無法取得聯繫，取消退貨商品只保留1個月（辦理退貨日期開始計算）逾期商品將直接作廢，恕無法退回購物金或刷退，請留意避免影響自身權益。
+                br
+                | ※因海外地區航空包裹運送費時且跨國退款作業繁瑣，故無法提供國外會員退換貨服務，還請見諒。
+        
+
+   

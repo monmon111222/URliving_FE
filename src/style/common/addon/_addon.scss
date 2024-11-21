@@ -1,0 +1,168 @@
+// 商品頁
+.addon-content {
+	padding: 20px;
+	.addon {
+		h3 {
+			font-size: 14px !important;
+		}
+		.addon-title {
+			font-size: 14px;
+			font-weight: 500;
+			margin-bottom: 8px;
+		}
+		.addon-check-info {
+			padding-bottom: 12px;
+			font-size: 12px;
+			color: #b71c1d;
+		}
+		.addon-list {
+			padding-top: 15px;
+			.addon-list-item {
+				display: flex;
+				position: relative;
+				font-size: 12px;
+				margin-bottom: 20px;
+				padding-bottom: 20px;
+				.addon-img {
+					vertical-align: top;
+					cursor: pointer;
+					img {
+						display: block;
+					}
+				}
+				.addon-info {
+					padding-left: 16px;
+					.item-name {
+						font-size: 14px;
+						display: inline-block;
+						cursor: pointer;
+					}
+					.item-price {
+						padding-top: 4px;
+						span {
+							display: inline-block;
+							vertical-align: middle;
+						}
+						.origin-price {
+							text-decoration: line-through;
+						}
+						.sell-price {
+							padding-left: 4px;
+							color: #006fff;
+						}
+					}
+					.addon-shop-select {
+						padding-top: 8px;
+						display: flex;
+						flex-direction: row;
+						.spec-select,
+						.count-select {
+							width: 105px;
+							height: 32px;
+							font-size: 12px;
+							line-height: 32px;
+							border: 1px solid #acacac;
+							color: #000;
+						}
+						.spec-select {
+							padding: 0 16px;
+							margin-right: 8px;
+							background: url($storage-path + "arrow.svg") no-repeat right 6px top 13px;
+						}
+						.count-select {
+							position: relative;
+							text-align: center;
+							.UiQuantity__btn {
+								cursor: pointer;
+								position: absolute;
+								width: 32px;
+								height: 32px;
+								line-height: 32px;
+							}
+							.UiQuantity__btn--plus {
+								top: 0;
+								right: 0;
+							}
+							.UiQuantity__btn--minus {
+								top: 0;
+								left: 0;
+							}
+							.UiQuantity__text {
+								line-height: 32px;
+							}
+						}
+					}
+					.addon-add {
+						padding-top: 16px;
+						color: #006fff;
+						text-decoration: underline;
+						border: 0;
+						background: transparent;
+						cursor: pointer;
+					}
+					.disabled {
+						background: white !important;
+					}
+				}
+			}
+			.addon-list-item:last-child {
+				border-bottom: 0;
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+		}
+	}
+}
+
+#popup-addon-detail {
+	color: #2a2b2c;
+	font-size: 14px;
+	line-height: 1.5;
+	z-index: 2001;
+	button {
+		border: 0;
+	}
+	.btn {
+		border-radius: 0;
+	}
+	.btn-cart-del {
+		position: absolute;
+		right: 20px;
+		top: 10px;
+	}
+	.modal-header {
+		display: flex;
+		padding-top: 40px;
+		.addon-tab-btn {
+			flex: 50%;
+			box-shadow: none;
+			padding: 10px 0;
+			height: auto;
+		}
+		.addon-tab-btn.active {
+			border-bottom: 2px solid #2a2b2c;
+		}
+	}
+	.modal-body {
+		.color-wrap {
+			padding: 8px 0;
+		}
+		.color-opts {
+			display: inline-block;
+			width: 28px;
+			height: 28px;
+			margin-right: 4px;
+			border: 1px solid #d6d6d6;
+			padding: 2px;
+		}
+		.color-opts.active {
+			border-color: #767676;
+		}
+		.size-guide {
+			color: #2a2b2c;
+			overflow-x: scroll;
+			padding: 0px;
+			background-color: #f6f6f5;
+		}
+	}
+}

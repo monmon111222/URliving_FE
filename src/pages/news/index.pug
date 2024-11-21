@@ -1,0 +1,41 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-news';
+
+block content
+  .main#article
+    .content-block
+      .article-wrap
+        .article-change
+          .article-change-title NEWS
+          ul.article-change-items
+            li.active
+              a(href="") 重要公告
+            li
+              a(href="") 活動資訊
+            li
+              a(href="") 趨勢文章
+        .article-info
+          ul.news-list
+            li
+              a(href="")
+                p 慶開幕！綁定LINE好友 立即獲得500元購物金！活動只到2023.12.12慶開幕！綁定LINE好友
+                span 2023.03.11
+            li
+              a(href="")
+                p 慶開幕！綁定LINE好友 立即獲得500元購物金！活動只到2023.12.12慶開幕！綁定LINE好友
+                span 2023.03.11
+            li
+              a(href="")
+                p 慶開幕！綁定LINE好友 立即獲得500元購物金！活動只到2023.12.12慶開幕！綁定LINE好友
+                span 2023.03.11
+            li
+              a(href="")
+                p 慶開幕！綁定LINE好友 立即獲得500元購物金！活動只到2023.12.12慶開幕！綁定LINE好友
+                span 2023.03.11
+          #pagination
+
+block JSVAR
+  script(type="text/javascript").
+    window.PageCount = 9;

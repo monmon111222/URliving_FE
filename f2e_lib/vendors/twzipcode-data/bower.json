@@ -1,0 +1,24 @@
+{
+  "name": "twzipcode-data",
+  "main": "dist/index.js",
+  "homepage": "https://github.com/yyc1217/twzipcode-data",
+  "authors": [
+    "Yeh-Yung <yyc1217@gmail.com>"
+  ],
+  "description": "開發用中華郵政郵遞區號 / Variety format of Taiwan zipcode for developers.",
+  "keywords": [
+    "Taiwan",
+    "zipcode",
+    "中華郵政",
+    "臺灣",
+    "郵遞區號"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

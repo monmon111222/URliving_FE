@@ -1,0 +1,824 @@
+#page-cart {
+	.shopping-wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	/*共用 與購物車2.3步驟*/
+	.label {
+		margin-bottom: 16px;
+		line-height: 1;
+	}
+	.text-inputBox {
+		padding: 14px 32px;
+		border: 1px solid #afafaf;
+		&.warning {
+			color: #e87942;
+		}
+	}
+
+	.cart-choose {
+		padding: 0 0 16px;
+	}
+
+	/*左側購物車步驟*/
+	//- 步驟
+	.shopping-bag {
+		width: 216px;
+		flex-shrink: 0;
+		padding-top: 16px;
+		margin-right: 32px;
+		border-top: 4px solid #000000;
+		.shopping-bag-title {
+			margin: 0 0 10px;
+			font-size: 30px;
+		}
+		.shopping-bag-steps {
+			display: block;
+			padding-left: 0;
+			margin: 0;
+			color: #afafaf;
+			line-height: 1.75;
+			list-style: none;
+			li {
+				padding: 32px 0 0;
+			}
+			.active {
+				color: #000000;
+			}
+		}
+	}
+
+	/*右側購物車列表*/
+	//- 溫層
+	.tab-btn-wrap,
+	.tab-stock-wrap {
+		display: flex;
+		margin-top: 27px;
+		margin-bottom: 30px;
+		border-radius: 0;
+		border-bottom: 1px solid #afafaf;
+
+		.tab-cart {
+			display: flex;
+			min-width: 62px;
+			padding: 0 0 5px;
+			margin-right: 40px;
+			border: none;
+			background-color: transparent;
+			outline: none;
+			&.active {
+				border-bottom: 4px solid #006fff;
+			}
+
+			.cart-temp-num {
+				margin-left: 10px;
+				width: 18px;
+				height: 18px;
+				line-height: 18px;
+				border-radius: 50%;
+				background: #a1988f;
+				color: #fff;
+			}
+		}
+	}
+	.tab-stock-wrap {
+		display: flex;
+		margin-bottom: 30px;
+		font-size: 14px;
+		font-weight: 400;
+		color: #3b3a39;
+
+		.btn-stock {
+			flex: 1;
+			padding: 10px;
+			color: #3b3a39;
+			background: #fff;
+			border: solid 1px #b5b5b6;
+
+			&.active {
+				background: #b0a9a1;
+				color: #fff;
+			}
+		}
+	}
+	//- 資訊
+	.shopping-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: calc(100% - 248px);
+		h2 {
+			display: none;
+		}
+	}
+
+	//- 資訊列表
+	.item-list {
+		list-style: none;
+		padding: 30px 0 25px;
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid #afafaf;
+	}
+	.item-container {
+		position: relative;
+		display: flex;
+		.product-img {
+			width: 26.85%;
+			max-width: 320px;
+			a {
+				display: inline-block;
+				width: 100%;
+				padding-bottom: 127.5%;
+				height: 0;
+				background-color: #ececec;
+			}
+		}
+		.item-info {
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			justify-content: space-between;
+			padding-left: 40px;
+			.item-brand {
+				margin-bottom: 16px;
+			}
+			.item-name {
+				display: -webkit-box;
+				width: 90%;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 1;
+				overflow: hidden;
+				margin-bottom: 16px;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		.item-price {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 26px;
+			.item-price-count {
+				font-size: 0;
+				.origin-price {
+					padding-right: 16px;
+					font-size: 24px;
+					line-height: 1.08;
+					vertical-align: middle;
+					text-decoration: line-through;
+				}
+				.sell-price {
+					font-size: 24px;
+					line-height: 1.08;
+					vertical-align: middle;
+					color: #006fff;
+				}
+			}
+			.item-price-total {
+				font-size: 24px;
+				line-height: 1;
+			}
+		}
+		.item-counter {
+			.quantity-text {
+				width: 100%;
+			}
+		}
+	}
+	//- 刪除與收藏按鈕
+	.item-btn {
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		width: 24px;
+		.btn-delete-item {
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			margin-bottom: 30px;
+			cursor: pointer;
+			.icon-delete {
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				background: url($storage-path + "delete.svg") no-repeat center;
+			}
+			&:active {
+				.icon-delete {
+					background: url($storage-path + "delete-active.svg") no-repeat center;
+				}
+			}
+		}
+		.btn-add-to-fav {
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			cursor: pointer;
+			.icon-fav {
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				background: url($storage-path + "heart.svg") no-repeat center;
+			}
+			&.active {
+				.icon-fav {
+					background: url($storage-path + "heart-active.svg") no-repeat center;
+				}
+			}
+		}
+	}
+	//- 備註
+	.reminder-block {
+		padding: 15px 0 0;
+		display: flex;
+		align-items: flex-start;
+		.event-label {
+			width: 26.85%;
+			max-width: 320px;
+			padding: 5.5px 0;
+			margin-right: 40px;
+			margin-bottom: 0;
+			text-align: center;
+			font-size: 14px;
+			&.active {
+				background-color: #006fff;
+				color: #ffffff;
+			}
+		}
+		.reminder-content {
+			p {
+				margin-bottom: 5px;
+				font-size: 14px;
+				line-height: 1.28;
+				color: #afafaf;
+				a {
+					color: inherit;
+				}
+			}
+			.active {
+				color: #006fff;
+			}
+		}
+	}
+
+	/*下方選項資訊*/
+	//- 加價輪播
+	.addon-slick {
+		margin-top: 72px;
+		padding-bottom: 25px;
+		border-bottom: 1px solid #afafaf;
+		.slick-track {
+			display: flex;
+		}
+		.slick-slide {
+			margin-right: 20px;
+			height: auto;
+			> div {
+				height: 100%;
+			}
+		}
+		.addon-title {
+			font-size: 24px;
+			margin-bottom: 16px;
+		}
+		.item-container {
+			max-width: 320px;
+			height: 100%;
+			display: flex !important;
+			flex-direction: column;
+			.item-name {
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
+				overflow: hidden;
+			}
+			.item-price {
+				margin-top: auto;
+			}
+			.btn {
+				border: 1px solid #000000;
+				background-color: transparent;
+			}
+		}
+		// .slick-list{padding:0 20% 0 0 !important;}
+		.product-img {
+			width: 100%;
+		}
+	}
+	.coupon-block {
+		position: relative;
+		margin-top: 72px;
+		margin-bottom: 56px;
+		.cancel-icon {
+			position: absolute;
+			right: 20px;
+			z-index: 1;
+			cursor: pointer;
+		}
+	}
+	//- FA POINTS
+	.fasney-block {
+		margin-bottom: 56px;
+		.fasney-wrap {
+			display: flex;
+			justify-content: space-between;
+			border: 1px solid #afafaf;
+			height: 54px;
+			line-height: 54px;
+			padding: 0 32px;
+			input {
+				width: 50px;
+				border: 0;
+				line-height: 1.5;
+				border-bottom: 1px solid #231815;
+				background: transparent;
+				padding: 0;
+				text-align: center;
+				&:focus {
+					outline: none;
+				}
+			}
+
+			.icon-help {
+				margin: 0 0 3px 2px;
+			}
+		}
+
+		.cart-fasney-text {
+			display: flex;
+			justify-content: flex-end;
+			margin: 10px 0;
+			span {
+				border: 1px solid #a38b79;
+				color: #a38b79;
+				padding: 2px 4px;
+			}
+		}
+	}
+
+	//- 運送區域
+	.delivery-block {
+		margin-bottom: 56px;
+	}
+	//- 付款方式
+	.pay-block {
+		margin-bottom: 60px;
+		.pay-message {
+			margin-left: 48px;
+			margin-bottom: 16px;
+			font-size: 14px;
+			color: #e87942;
+		}
+		.fasney-info {
+			font-size: 14px;
+			margin-left: 48px;
+			.info-text {
+				color: #006fff;
+				@media (max-width: 768px) {
+					margin-bottom: 4px;
+				}
+				span {
+					white-space: normal;
+				}
+				.date {
+					border: 1px solid #006fff;
+					border-radius: 4px;
+					padding: 2px 4px;
+					display: inline-block;
+					margin: 0 4px 4px 0;
+				}
+
+				span {
+					vertical-align: unset;
+				}
+			}
+
+			a {
+				color: gray;
+				display: inline-block;
+				margin-bottom: 6px;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	//- 運送方式
+	.delivery-type {
+		margin-bottom: 60px;
+		.delivery-message {
+			margin-top: 8px;
+			font-size: 14px;
+			color: #e87942;
+			text-align: center;
+		}
+		.cvs-block {
+			margin: 16px 0;
+			display: flex;
+			justify-content: space-between;
+		}
+		.btn-choose-csv {
+			width: 50%;
+			height: 56px;
+			display: flex;
+			font-size: 16px;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid #afafaf;
+		}
+	}
+
+	//- 總額
+	.total-block {
+		margin-bottom: 56px;
+		.price-block {
+			padding: 57px 56px;
+			background-color: #e9e9e9;
+		}
+		.row {
+			margin-bottom: 25px;
+		}
+		.shipping-text {
+			font-size: 14px;
+			color: #e87942;
+			.active {
+				color: #006fff;
+			}
+		}
+		.total-price {
+			padding-top: 49px;
+			margin-bottom: 0;
+			border-top: 1px solid #afafaf;
+			.total-price-num {
+				font-size: 30px;
+				line-height: 1;
+				color: #006fff;
+			}
+		}
+		.cart-fasney-memo {
+			margin-top: 16px;
+			text-align: right;
+			color: #006fff;
+			p {
+				margin-bottom: 5px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	//- 下一步
+	.btn-checkout {
+		display: block;
+		margin: auto;
+		width: 100%;
+		height: 56px;
+		background-color: #000000;
+		font-size: 18px;
+		text-align: center;
+		color: #fff;
+		border-radius: 0;
+	}
+
+	/*折價券跳窗*/
+	#lb-my-coupon {
+		.modal-content {
+			padding: 20px;
+		}
+		.modal-header,
+		.modal-body,
+		.modal-footer {
+			padding: 0;
+		}
+		.modal-title {
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			font-size: 22px;
+			font-weight: 500;
+			border-bottom: 1px solid #000;
+		}
+		.modal-close {
+			right: 0px;
+			top: 0px;
+			padding: 0;
+		}
+		.coupon-list {
+			margin-top: 20px;
+			.choose {
+				margin-bottom: 16px;
+			}
+			p {
+				margin-bottom: 0;
+			}
+		}
+		.coupon-info {
+			font-size: 14px;
+		}
+	}
+}
+@media (max-width: 1479.98px) {
+	.content-block {
+		padding: 0 20px;
+	}
+}
+
+@media (max-width: 1200.98px) {
+	#page-cart {
+		.item-container {
+			.item-info {
+				padding-left: 20px;
+			}
+			.item-price {
+				.item-price-count {
+					.origin-price,
+					.sell-price {
+						font-size: 20px;
+					}
+				}
+				.item-price-total {
+					font-size: 20px;
+				}
+			}
+		}
+		//- 備註
+		.reminder-block {
+			.event-label {
+				margin-right: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	#page-cart {
+		.cart-container-fluid {
+			padding: 0 20px 104px;
+		}
+		.shopping-wrap {
+			flex-direction: column;
+		}
+
+		/*共用 與購物車2.3步驟*/
+		.label {
+			margin-bottom: 9px;
+		}
+		.text-inputBox {
+			border: 1px solid #afafaf;
+			padding: 8px 16px;
+			&.warning {
+				color: #e87942;
+			}
+		}
+
+		/*左側購物車步驟*/
+		//- 步驟
+		.shopping-bag {
+			position: relative;
+			width: auto;
+			padding-top: 0;
+			margin-right: 0;
+			border-top: none;
+			.shopping-bag-title {
+				display: none;
+			}
+			&::after {
+				position: absolute;
+				bottom: 0;
+				left: -20px;
+				content: "";
+				display: inline-block;
+				width: calc(100% + 40px);
+				border-bottom: 1px solid #afafaf;
+			}
+			.shopping-bag-steps {
+				display: flex;
+				justify-content: flex-start;
+				padding: 16px 0;
+				li {
+					padding-top: 0;
+					margin-right: 40px;
+					text-align: center;
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+
+		/*右側購物車列表*/
+		//- 溫層
+		.tab-btn-wrap,
+		.tab-stock-wrap {
+			margin-top: 0;
+			margin-bottom: 5px;
+			border-bottom: none;
+			.tab-cart {
+				color: #afafaf;
+				&.active {
+					color: #000000;
+					border-bottom: none;
+				}
+			}
+		}
+		.tab-stock-wrap {
+			font-size: 16px;
+		}
+
+		//- 資訊
+		.shopping-info {
+			padding-top: 28px;
+			width: auto;
+			h2 {
+				display: block;
+				margin: 30px 0 15px;
+				font-weight: 500;
+			}
+		}
+
+		//- 資訊列表
+		.item-list {
+			padding: 15px 0 17px;
+		}
+		.item-container {
+			.product-img {
+				width: 36.1%;
+				max-width: 106px;
+				flex-shrink: 0;
+				a {
+					display: inline-block;
+					width: 100%;
+					padding-bottom: 127.3585%;
+					height: 0;
+				}
+			}
+			.item-info {
+				padding-left: 8px;
+				.item-brand,
+				.item-name,
+				.item-color {
+					margin-bottom: 2px;
+				}
+			}
+			.item-price {
+				flex-wrap: wrap;
+				margin-bottom: 7px;
+				.item-price-count {
+					flex-shrink: 0;
+					margin-bottom: 5px;
+					.origin-price,
+					.sell-price {
+						font-size: 16px;
+					}
+				}
+				.item-price-total {
+					flex-shrink: 0;
+					font-size: 16px;
+					margin-bottom: 5px;
+				}
+			}
+		}
+		//- 刪除與收藏按鈕
+		.item-btn {
+			.btn-delete-item {
+				width: 20px;
+				height: 20px;
+				margin-bottom: 13px;
+			}
+			.btn-add-to-fav {
+				width: 20px;
+				height: 20px;
+			}
+		}
+		//- 備註
+		.reminder-block {
+			.event-label {
+				flex-shrink: 0;
+				width: 36.1%;
+				max-width: 106px;
+				margin-right: 8px;
+			}
+		}
+
+		/*下方選項資訊*/
+		//- 加價輪播
+		.addon-slick {
+			margin-top: 40px;
+			.slick-slide {
+				margin-right: 8px;
+			}
+			.product-img {
+				width: 100%;
+				max-width: none;
+			}
+			.item-container {
+				font-size: 12px;
+				.item-brand {
+					margin-bottom: 10px;
+				}
+				.item-price {
+					.item-price-count {
+						.origin-price,
+						.sell-price {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+		.coupon-block {
+			margin-top: 32px;
+			margin-bottom: 32px;
+			.cancel-icon {
+				position: absolute;
+				right: 8px;
+			}
+		}
+		//- FA POINTS
+		.fasney-block {
+			margin-bottom: 32px;
+		}
+		//- 運送區域
+		.delivery-block {
+			margin-bottom: 32px;
+		}
+		//- 付款方式
+		.pay-block {
+			margin-bottom: 24px;
+			.label {
+				margin-bottom: 17px;
+			}
+			.pay-message {
+				margin-left: 44px;
+			}
+			.fasney-info {
+				margin-left: 44px;
+			}
+		}
+		.delivery-type {
+			margin-bottom: 24px;
+			.btn-choose-csv {
+				width: 40%;
+				height: 42px;
+			}
+		}
+		//- 總額
+		.total-block {
+			margin-bottom: 40px;
+			.price-block {
+				padding: 24px 25px;
+			}
+			.row {
+				margin-bottom: 17px;
+			}
+			.total-price {
+				padding-top: 32px;
+				margin-bottom: 8px;
+				.total-price-num {
+					font-size: 24px;
+				}
+			}
+			.cart-fasney-memo {
+				margin-top: 8px;
+				text-align: right;
+				color: #006fff;
+				font-size: 14px;
+				p {
+					margin-bottom: 2px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		//- 下一步
+		.btn-checkout {
+			height: 44px;
+			font-size: 16px;
+		}
+
+		/*折價券跳窗*/
+		#lb-my-coupon {
+			.modal-dialog {
+				margin: 80px auto;
+				width: 500px;
+				max-width: 90%;
+			}
+		}
+	}
+}
+
+@media (max-width: 400.98px) {
+	#page-cart {
+		//- 步驟
+		.shopping-bag {
+			.shopping-bag-steps {
+				li {
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+}

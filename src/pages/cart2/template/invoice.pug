@@ -1,0 +1,52 @@
+.row(v-if="isOverSeaMode === 'False' && dataIsLoad")
+  .col
+    .title-wrap 發票
+    select#invoice-choose(v-model="selectedInvoice" name='InvoiceType')
+      option(v-for="(i, index) in invoiceArray" :key="i.key" :index="index" :value="i.key" v-text="i.name")
+
+    #invoice-selected
+      div(v-if="selectedInvoice === 1")
+        .invoice-winning
+          span *中獎發票寄送地址
+          .choose.revert(v-if="isEmployee === 'False'")
+            label.choose-input(for='same-as-transfer')
+              input#same-as-transfer.checkbox(name='same-as-buyer' type='checkbox')
+              span.choose-checkMark
+              span.choose-text 同購買人
+        area-tw(ref="invoice_address" :county="datas[0].City" :zipcode="datas[0].District" :address="datas[0].Address" :namecounty="'InvoiceCity'" :nameaddress="'InvoiceAddress'" :namedistrict="'InvoiceDistrict'" :namezipcode="'invoiceZipcode'")
+        //- 目前沒有所以拿掉
+        //- .invoice-attribution
+        //-   .d-lg-block.d-none.my-3(v-if='openEInvioceRegister === "True"')
+        //-     a#member-invoice-attribution(@click.prevent="openInvoiceWindow" href='#')
+        //-       u 會員載具歸戶
+        //-   .d-lg-none.my-3(v-if='openEInvioceRegister === "True"')
+        //-     a(href='/api/v1/einvoice/login' target='_blank')
+        //-       u 會員載具歸戶
+      div(v-if="selectedInvoice === 2")
+        .invoice-carrier
+          input#invoice-mobile-code.form-control.full-border(name='InvoiceMobileCode' type='text', :value="datas[1].MobileCode" placeholder="請輸入手機載具")
+      div(v-if="selectedInvoice === 3")
+        .invoice-donation
+          select.form-control.custom-ui.full-border(name='InvoiceDonate' v-model="datas[2].Donate")
+            option(value='1') 財團法人創世社會福利基金會
+            option(value='2') 財團法人癌症關懷基金會
+            option(value='3') 財團法人台灣兒童暨家庭扶助基金會
+            option(value='4') 財團法人新竹市自閉症協進會
+            option(value='5') 財團法人天主教失智老人社會福利基金會
+      div(v-if="selectedInvoice === 4")
+        .invoice-company
+          .form-row
+            .col
+                label.title 統一編號
+                input.form-control.full-border(name='InvoiceTaxID' type='text', :value='datas[3].TaxID')
+            .col
+                label.title 發票抬頭
+                input.form-control.full-border(name='InvoiceCompanyTitle' type='text', :value='datas[3].Title')
+          div.my-3
+            span.text-danger * 
+            | 統編發票寄送地址：
+          area-tw(:county="datas[3].City" :zipcode="datas[3].District" :address="datas[3].Address" :namecounty="'InvoiceTaxCity'" :nameaddress="'InvoiceTaxAddress'" :namedistrict="'InvoiceTaxDistrict'" :namezipcode="'invoiceTaxZipcode'")
+      .invoice-text
+        | 核准文號：財北國稅內湖營業一字第1071602623號
+        br
+        | ※依統一發票使用辦法規定：發票一經開立不得任意更改或改開發票。

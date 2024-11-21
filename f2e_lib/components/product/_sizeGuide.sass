@@ -1,0 +1,245 @@
+.dialogPopup.dialog-sizeReport
+  &:before
+    content: 'Loading...'
+    display: block
+    width: 100%
+    height: 20px
+    line-height: 20px
+    position: absolute
+    left: 0
+    top: 50%
+    margin-top: -10px
+    color: #888
+    text-align: center
+    opacity: 0
+    +transition(opacity .15s)
+  &.loading:before
+    opacity: 1
+  &.loaded .dialogBox
+    display: block
+  .dialogBox, .dialog--detail
+    width: 100%
+    max-width: 656px
+    margin-top: 80px
+    z-index: 1
+    margin-left: auto !important // 避免 rwd 跑版
+    display: none
+    // +transition(opacity .2s ease-in-out)
+  .bgClose
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    cursor: pointer
+    width: auto
+    height: auto
+    &:before
+      display: none
+
+.size-guide
+  cursor: initial
+  padding: 16px 14px 16px 11px
+  color: $txt_gray_xd
+  font-size: 12px
+  line-height: 22px
+  -webkit-tap-highlight-color: transparent
+  +box-sizing(border-box)
+  &._old
+    h1
+      padding-bottom: 15px
+    th
+      border-bottom: 3px solid $bg_gray_l
+    table
+      width: auto
+      margin-right: 20px
+    p
+      margin-left: 20px
+      margin-right: 20px
+
+.size-guide__header
+  padding-left: 20px
+  h1
+    font-size: 36px
+    line-height: 36px
+    color: $bg_gray_d
+
+.size-guide__switch
+  padding-left: 20px
+  width: 480px
+  margin-top: 20px
+  ul
+    +pie-clearfix
+    margin: 0 -2px
+  li
+    float: left
+    padding: 0 2px
+    width: 33.33%
+    +box-sizing(border-box)
+    &.active h2
+      color: $txt_gray_m
+    &.sg_indexNotice
+      display: none
+  h2
+    font-size: 12px
+    color: #030000
+    background-color: $bg_gray_l
+    line-height: 25px
+    text-align: center
+    cursor: pointer
+    &:hover
+      color: $txt_gray_m
+
+.size-guide__content
+  margin-top: 19px
+  table
+    border-collapse: collapse
+    width: 480px
+    max-width: 100%
+    margin-left: 20px
+  tr:first-child td
+    border-top: 1px solid $bg_gray_l
+  td
+    height: 33px
+    vertical-align: middle
+    text-align: center
+    padding: 0
+    position: relative
+    border-bottom: 1px solid $bg_gray_l
+    &.etc
+      text-align: left
+      padding-top: 15px
+      border-bottom: 0
+
+.size-guide__section, .dialog--detail
+  position: relative
+  display: none
+  &.active
+    display: block
+  .size-guide__content
+    .tac td:nth-child(n),
+    td.tac:nth-child(n)
+      padding-left: 0
+      padding-right: 0
+      text-align: center
+
+.size-guide__images
+  border-top: 1px solid $bg_gray_l
+  margin-top: 15px
+  img
+    display: block
+    margin-left: -11px
+
+// 尺寸表
+.size-guide__section.sg_sizeChart
+  tr:first-child td
+    border-bottom-width: 3px
+  td
+    &:nth-child(1)
+      text-align: left
+      padding-left: 19px
+    &.etc
+      padding-left: 0
+
+// 指標參考
+.size-guide__section.sg_indexNotice
+  b
+    position: absolute
+    top: 4px
+    bottom: 4px
+    right: 2px
+    left: 2px
+    height: 25px
+    line-height: 25px
+    +box-shadow(0 0 0 3px #c9c9c9 inset)
+
+// 試穿報告
+.size-guide__section.sg_fittingReport
+  td
+    &:first-child
+      text-align: left
+      padding-left: 11px
+      min-width: 4em
+    &.etc
+      padding-left: 0
+
+// 模特兒參考
+.size-guide__section.sg_modelsRefference
+  td
+    &:first-child
+      text-align: left
+      padding-left: 11px
+      img
+        display: block
+        margin: 5px 0
+    &.etc
+      padding-left: 0
+
+@media (max-width: 1024px)
+  .dialogPopup.dialog-sizeReport .dialogBox, .dialog--detail
+    margin-top: 50px
+  .size-guide__header
+    padding-left: 0
+  .size-guide__switch
+    padding-left: 0
+    width: 100%
+  .size-guide__section, .dialog--detail
+    h2
+      color: #111
+      font-weight: bold
+  .size-guide._old
+    table, p
+      margin-left: 0
+      margin-right: 0
+      width: 100%
+  .size-guide__content
+    table
+      margin-left: 0
+      width: 100%
+  .size-guide__section
+    td.etc
+      padding-left: 10px
+      padding-right: 10px
+    &.sg_sizeChart td
+      &:first-child
+        padding-left: 10px
+    &.sg_fittingReport td
+      &:first-child
+        min-width: 3em
+        padding-left: 6px
+      &.etc
+        padding-right: 6px
+    &.sg_modelsRefference td
+      white-space: nowrap
+      &:first-child
+        padding-left: 10px
+        img
+          display: block
+          margin: 5px 0
+      &.etc
+        white-space: normal
+
+// 手機版
+@media (max-width: 670px), (max-height: 425px)
+  .dialogPopup.dialog-sizeReport
+    background-color: #fff
+    .dialogBox
+      top: 0
+      min-height: 100%
+      padding: 4px
+      margin: 0
+      border: 0
+  .size-guide
+    padding: 0
+    font-size: 10px
+    h1
+      font-size: 28px
+      line-height: 28px
+      padding: 14px 11px 0
+    .m-hide
+      display: none
+  .size-guide__content
+    overflow: auto
+    -webkit-overflow-scrolling: touch
+  .size-guide__images
+    display: none

@@ -1,0 +1,150 @@
+$mask-bg: rgba(0, 0, 0, 0.2);
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+// z-index
+$zindex: (
+	other: 1,
+	header: 1030,
+	sidebar: 1035,
+	mask: 1020,
+	alert: 3000,
+	loadingMask: 1025,
+	popup: 1045,
+	btnTop: 10,
+);
+@mixin animation($name, $second) {
+	animation-duration: $second;
+	animation-fill-mode: both;
+	animation-name: $name;
+}
+
+.modal-header {
+	padding-bottom: 0;
+	.title {
+		font-size: 20px;
+		text-align: left;
+	}
+}
+
+.modal-footer {
+	padding-top: 0;
+}
+
+.exclusive_list {
+	line-height: 2;
+	text-align: center;
+}
+
+.btn-secondary:active {
+	background-color: #b0a9a1 !important;
+}
+
+.alert-modal-style {
+	@include animation(fadeIn, 0.2s);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: $mask-bg;
+	z-index: map-get($zindex, alert);
+	color: $primary;
+
+	.modal-body {
+		@include animation(alert, 0.3s);
+		animation-delay: 0.1s;
+		background-color: #fff;
+		padding: 40px 36px;
+		width: 80%;
+		margin: 100px auto 0 auto;
+
+		.modal-info {
+			text-align: center;
+			padding-bottom: 20px;
+		}
+
+		@include min_md {
+			width: 500px;
+		}
+	}
+
+	.btn-confirm-alert,
+	.btn-close-alert {
+		width: 100%;
+		height: auto;
+		padding: 18px 0px;
+		line-height: 1;
+		border: $primary solid 1px;
+		background: $primary;
+		font-size: 16px;
+		text-align: center;
+		color: #fff;
+
+		&:hover {
+			background: #fff;
+			color: $primary;
+		}
+	}
+
+	.btn-cancel-alert {
+		width: 100%;
+		height: auto;
+		padding: 18px 0px;
+		line-height: 1;
+		border: $primary solid 1px;
+		background: #fff;
+		font-size: 16px;
+		text-align: center;
+		color: $primary;
+
+		&:hover {
+			background: $primary;
+			color: #fff;
+		}
+	}
+}
+
+a.modal-close {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	z-index: 2;
+}
+
+.popup_content_init {
+	position: relative;
+}
+
+.modal-content {
+	border-radius: 0;
+}
+
+.theme-black .back-bar {
+	height: 2px;
+}
+
+.theme-black .back-bar .pointer {
+	width: 7px;
+	height: 7px;
+	top: -2px;
+}
+
+.theme-black .scale span {
+	border-left: 0;
+}
+
+.slider-container .scale ins {
+	padding: 8px 0;
+
+	&:before {
+		content: "NT.";
+	}
+}

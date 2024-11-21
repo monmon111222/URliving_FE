@@ -1,0 +1,46 @@
+doctype html
+<!--[if IE 8]><html class="ie8" lang="zh-TW"><![endif]-->
+<!--[if gte IE 8]><html class="gte-ie8" lang="zh-TW"><![endif]-->
+<!--[if gt IE 8]><!-->
+html(lang='zh-TW')
+  <!--<![endif]-->
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=0')
+    link(rel='icon', type='image/jpg', href='#')
+    title mouggan
+    link(rel='stylesheet', href='/css/main.css')
+
+  body(id="page-onePage")
+      header.header-bg-color.header-txt-color
+        a.float-left(href="#")
+            img.brand-logo.img-fluid(src="", alt="Mouggan")
+        a#app-mini-cart.float-right.pt-2(href="#")
+            span Cart
+            span (
+            span#cart-count(v-text="count")
+            span )
+        .clearfix
+
+      #app-market
+
+      footer
+        .container
+            .row
+                .col-12.col-lg-8.offset-lg-2.lh-2.p-0
+                    .my-5 ＊為保護彼此權益，Meier.Q不隨意更改活動內容，但保留修改內容之權利。
+                    .float-left
+                        p 客服信箱
+                        p 
+                            a(href="mailto:service@pazzo.com.tw") service@meier.com.tw
+                        p MON.-FRI. 09:00-12:00 / 13:00-18:00
+                    .float-right
+                        p 　
+                        p 　
+                        p © Meier.Q All Rights Reserved
+
+
+
+      script(type="text/javascript").
+        window.cvsCode=''; window.cvsName=''; window.cvsAddress=''; window.StaticImgDomain = 'pics.pzcdn.tw'; window.PictureContainer = 'pazzo';

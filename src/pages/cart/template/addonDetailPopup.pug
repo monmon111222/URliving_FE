@@ -1,0 +1,28 @@
+#popup-addon-detail.modal.fade(tabindex='-1')
+    .modal-dialog.modal-md.tab-action(role='document')
+        .modal-content.tab-wrap(v-if='popupData')
+            .modal-header
+                a.btn-cart-del(href='#' data-dismiss='modal' aria-label='Close')
+                    i.icon-close
+                button.btn.addon-tab-btn(@click="changeContent" :class="{'active':showImage}") 商品照片
+                button.btn.addon-tab-btn(@click="changeContent" :class="{'active':!showImage}") 商品描述
+            .modal-body
+                template(v-if="showImage")
+                    .color-wrap
+                        a.color-opts(v-for='(colorPic,index) in popupData.Colors' :key="'colorPic'+index" @click.prevent='changePicIdx(index)' :class="{'active': selectedImgIndex === index}")
+                            img.img-fluid(:src='colorPic.PintSizePictureUrl')
+                    template(v-for='(colorPic, index) in popupData.Colors')
+                        div(v-show='selectedImgIndex === index' :key="colorPic.ID" )
+                            div(v-for='img in colorPic.Images' :key="img.Url")
+                                img.img-fluid.mb-2(:src='img.Url')
+                template(v-else)
+                    div(v-html='popupData.Description')
+                    br
+                    br
+                    div(v-html='popupData.MaterialDescription')
+                    br
+                    br
+                    .item-report(v-html='popupData.SizeReport')
+                    br
+                    br
+                    div(v-html='popupData.CareLabelDesc')

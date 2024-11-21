@@ -1,0 +1,61 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-shop';
+
+block content
+  include ../../template/product/productMenuMB
+  .main
+    include ../../template/product/productMenuPC
+    #app-shop
+      cart-dialog(ref="c_dialog", :isnotice="isNotice")
+      .sort-list
+        .product-num 12345個商品
+        sort-app(:data="sortConditionDatas", :isload="sortConditionIsLoad")
+      .item-list.item-list-box                         
+        .item-box
+          wish-btn(:wishactive="'False'", :custommarketid="'123'")
+          share-btn(:marketid="'123'")
+          a.item-pic(href="shopContent.html")
+            .soldout-mask
+              img.img-fluid(src="https://via.placeholder.com/752x956/0000FF/808080" alt="")
+            .item-info
+              .brand-name miyuki select miyuki select
+              .item-name
+                h3 日常感圓領排釦針織外套日常感圓領排釦針織外套日常感圓領排釦針織外套日常感圓領排釦針織外套日常感圓領排釦針織外套日常感圓領排釦針織外套
+              .item-price
+                span.origin-price NT.2500
+                span.sell-price NT.2300
+          .tag-block 
+            .tag-label
+              span NEW
+              span SALE
+            a(class="open-dialog" data-custommarketid="'123'") 
+              i.icon-add-cart
+
+        - for (var i=0; i<5; i++)
+          .item-box
+            wish-btn(:wishactive="'True'", :custommarketid="'123'")
+            share-btn(:marketid="'123'")
+            a.item-pic(href="shopContent.html")
+              img.img-fluid(src="https://via.placeholder.com/752x956/0000FF/808080" alt="")
+              .item-info
+                .brand-name PAZZO
+                .item-name
+                  h3 日常感圓領排釦針織外套
+                .item-price
+                  span.origin-price NT.2500
+                  span.sell-price NT.2300
+            .tag-block 
+              .tag-label
+                span NEW
+                span SALE
+              a(class="open-dialog" data-custommarketid="'123'") 
+                i.icon-add-cart
+      #pagination
+    .clearfix
+
+block JSVAR
+  script(type="text/javascript").
+    window.PageCount = 9; window.OrderMode = 1;window.StaticImgDomain = 'pics.pzcdn.tw';window.PictureContainer = 'pazzo';
+

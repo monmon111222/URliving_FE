@@ -1,0 +1,69 @@
+extends ../../template/layout
+
+block vars
+	- var pageID = 'page-order';
+
+block content
+	#app-order.container
+		.member-container
+			.menu-block
+				include ../../template/member/memberMenu.pug
+			.info-block
+				.per-order-block
+					.order-status
+						span.shipping-status 出貨中
+						span.active-date 鑑賞期：2023/03/01
+					.info-block-content
+						.text-group
+							.subtitle 
+								span 訂單編號：
+								div.order-no 
+									span 7S5c6RvvBWpe
+									span (官網訂單)
+							.paragraph
+								p 訂單日期：2022/10/06
+								p 訂單金額：$3,240
+								p 付款方式：貨到付款
+								p 配送方式：宅配
+								p 發票號碼：
+							.subtitle 配送資訊
+							.paragraph
+								p 收件人：金珍妮 / 886 926725020
+								p 配送地址：台北市南港區南港路三段47巷8號6樓
+								p 配送時段：不指定
+						a.btn.btn-order-detail.btn-outline-primary.d-none.d-md-block(href='#' data-orderid='TP59B8FDDF0926') 訂單明細
+					a.btn.btn-order-detail.btn-outline-primary.btn-block.d-block.d-md-none(href='#' data-orderid='TP59B8FDDF0926') 訂單明細
+				.per-order-block
+					.order-status
+						span.shipping-status 出貨中
+						span.expired-date 鑑賞期：2023/03/01
+					.info-block-content
+						.text-group
+							.subtitle 
+								span 訂單編號：
+								div.order-no 
+									span 7S5c6RvvBWpe
+									span (官網訂單)
+							.paragraph
+								p 訂單日期：2022/10/06
+								p 訂單金額：$3,240
+								p 付款方式：貨到付款
+								p 配送方式：宅配
+								p 發票號碼：
+							.subtitle 配送資訊
+							.paragraph
+								p 收件人：金珍妮 / 886 926725020
+								p 配送地址：台北市南港區南港路三段47巷8號6樓
+								p 配送時段：不指定
+						a.btn.btn-order-detail.btn-outline-primary.d-none.d-md-block(href='#' data-orderid='TP59B8FDDF0926') 訂單明細
+					a.btn.btn-order-detail.btn-outline-primary.btn-block.d-block.d-md-none(href='#' data-orderid='TP59B8FDDF0926') 訂單明細
+
+		refund-list(ref="c_refund_list")
+		order-progress(ref="c_order_progress")
+		refund-detail(ref="c_refund_detail")
+		atm-info(ref="c_atm_info")
+		cancel-order(ref="c_cancel_order")
+
+block JSVAR
+	script(type="text/javascript").
+		window.BuyAgainData='[{"CMID":"MT1M67CL117SZ4","Count":"1","UtmTag":null},{"CMID":"MT1M67CL117SZ3","Count":"1","UtmTag":null}]'

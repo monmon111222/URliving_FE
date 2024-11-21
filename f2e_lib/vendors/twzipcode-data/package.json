@@ -1,0 +1,76 @@
+{
+  "_from": "twzipcode-data",
+  "_id": "twzipcode-data@1.6.0",
+  "_inBundle": false,
+  "_integrity": "sha512-EUfb99N71GY4ir5bfpdgnDhzgG8YM2D35y88VnlNhAdnZqPP9YAK3881x1JTzd3MAsK4zqkL+MVH6dG66qmkpQ==",
+  "_location": "/twzipcode-data",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "twzipcode-data",
+    "name": "twzipcode-data",
+    "escapedName": "twzipcode-data",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/twzipcode-data/-/twzipcode-data-1.6.0.tgz",
+  "_shasum": "46abff14959a6a31126008f60daa1fdc414adcde",
+  "_spec": "twzipcode-data",
+  "_where": "D:\\pazzo_vue",
+  "author": {
+    "name": "Yeh-Yung Chang"
+  },
+  "bugs": {
+    "url": "https://github.com/yyc1217/twzipcode-data/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "accept-language": "^3.0.17"
+  },
+  "deprecated": false,
+  "description": "開發用中華郵政郵遞區號 / Variety format of Taiwan zipcode for developers.",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "coveralls": "^2.13.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "nyc": "^10.3.2",
+    "should": "^11.2.1",
+    "standard": "^9.0.1"
+  },
+  "homepage": "https://github.com/yyc1217/twzipcode-data#readme",
+  "keywords": [
+    "Taiwan",
+    "zipcode",
+    "中華郵政",
+    "臺灣",
+    "郵遞區號"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "twzipcode-data",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyc1217/twzipcode-data.git"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "cover": "nyc mocha --compilers js:babel-core/register",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "test": "mocha --compilers js:babel-core/register"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
+  },
+  "version": "1.6.0"
+}

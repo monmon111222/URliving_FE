@@ -1,0 +1,12 @@
+#lb-fa-check.modal.fade(tabindex='-1')
+  .modal-dialog
+    .modal-content
+      .modal-header
+        .logo-u
+        a.modal-close(href='#' data-dismiss='modal')
+          i.icon-close
+      .modal-body
+        p fa points係由fasney發放，欲查詢點數使用紀錄，請下載fasney App查看。
+      .modal-footer
+        a.btn.btn-primary.btn-block(v-if="isMobile")(:href='faUrl') 確定
+        a.btn.btn-primary.btn-block(v-else href='#' data-dismiss='modal') 確定

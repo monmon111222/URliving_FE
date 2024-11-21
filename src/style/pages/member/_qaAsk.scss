@@ -1,0 +1,167 @@
+#page-qaAsk,
+#page-qaAskRecord {
+	.qa-block {
+		.title-block {
+			margin-bottom: 45px;
+			@include row_start_center;
+			.title-text {
+				font-size: 24px;
+			}
+			.btn-more-info {
+				margin-left: 15px;
+			}
+		}
+		.tab-block {
+			width: 100%;
+			border-bottom: 1px solid $gray;
+			margin-bottom: 40px;
+			@include row_between_center;
+			.tab-item {
+				width: 50%;
+				cursor: pointer;
+				padding-bottom: 5px;
+				&.active {
+					span {
+						position: relative;
+						&::after {
+							content: "";
+							position: absolute;
+							background: $blue;
+							height: 4px;
+							width: 100%;
+							bottom: -9px;
+							left: 0;
+						}
+					}
+				}
+			}
+		}
+		.chat-list {
+			padding: 40px 65px;
+			border: 1px solid $gray;
+			margin-bottom: 65px;
+			li {
+				padding: 25px 35px;
+				width: fit-content;
+				margin-bottom: 60px;
+				&.ask {
+					border-radius: 32px 32px 0 32px;
+					background: #acacac;
+					color: #fff;
+					margin: 0 0 60px auto;
+				}
+				&.reply {
+					border-radius: 32px 32px 32px 0;
+					background: #e6e6e6;
+				}
+				.text {
+					margin-bottom: 20px;
+				}
+			}
+		}
+		.reminder-block {
+			margin-top: 40px;
+			.subtitle {
+				margin-bottom: 20px;
+			}
+			p {
+				margin-bottom: 10px;
+			}
+		}
+		.record-block {
+			.record-table {
+				width: 100%;
+				thead {
+					border-bottom: 1px solid $gray;
+					th {
+						padding-bottom: 15px;
+					}
+				}
+				tbody {
+					tr {
+						border-bottom: 1px solid $gray;
+						td {
+							padding: 35px 0;
+							&.action {
+								text-align: right;
+								.btn-get-record {
+									padding: 8px 0;
+									width: 80px;
+									font-size: 16px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		@include max_md {
+			margin: 40px 20px;
+			.title-block {
+				margin-bottom: 25px;
+				@include row_between_center;
+				.title-text {
+					font-size: 20px;
+				}
+				.btn-more-info > i {
+					width: 22px;
+					height: 22px;
+				}
+			}
+			.tab-block {
+				.tab-item {
+					text-align: center;
+				}
+			}
+			.chat-list {
+				padding: 25px 40px;
+				margin-bottom: 40px;
+				li {
+					padding: 25px 35px;
+					width: fit-content;
+					margin-bottom: 40px;
+					&.ask {
+						&:not(:last-child) {
+							margin: 0 0 60px auto;
+						}
+						&:last-child {
+							margin: 0 0 0 auto;
+						}
+					}
+				}
+			}
+			.reminder-block {
+				.subtitle {
+					margin-bottom: 5px;
+				}
+				p {
+					margin-bottom: 5px;
+				}
+			}
+			.record-block {
+				.record-table {
+					thead {
+						font-size: 14px;
+						th {
+							padding-bottom: 10px;
+						}
+					}
+					tbody {
+						tr {
+							td {
+								padding: 20px 0;
+								font-size: 14px;
+								&.action {
+									.btn-get-record {
+										width: 40px;
+										font-size: 12px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

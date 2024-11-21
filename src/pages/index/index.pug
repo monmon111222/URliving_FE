@@ -1,0 +1,124 @@
+extends ../../template/layout
+
+block css
+  link(rel='stylesheet' href='/css/rwd-content.css')
+
+block vars
+  - var pageID = 'page-home';
+  - var swiperImage = ['a-01.jpg', 'a-02.jpg', 'a-03.jpg', 'a-04.jpg', 'a-05.jpg', 'a-06.jpg']
+  - var items = ['m-01.jpg?v=01', 'm-02.jpg', 'm-03.jpg', 'm-04.jpg', 'm-05.jpg', 'm-06.jpg']
+
+mixin img-fluid(src, className)
+  img.img-fluid(class=className, src=src, alt=src.split('/').pop())
+
+mixin favorite-img(className, eventName)
+  i(class=`icon-heart ${className}` , @click=eventName, data-custommarketid="MT1M11335CL12691SZ_")
+
+
+block content
+
+  div.swiper.mySwiper
+    div.swiper-wrapper
+      each banner in swiperImage
+        div.swiper-slide
+          a(href="#") 
+            +img-fluid('https://pics.mercci22.tw/img/mainpage/2021SS/index/091321/' + banner)
+
+    div.swiper-pagination
+    div.swiper-scrollbar
+
+  #home-content.home-content
+    .new-arrive-block
+      h3.new-arrive-title NEW ARRIVALS
+      ul.new-arrive 
+        each item, index in items
+          li.new-arrive-list 
+            .card-head
+              if index % 2 === 0
+                +favorite-img('favorite-img',"toggleFavorite")
+              else
+                +favorite-img('favorite-img icon-heart-active',"toggleFavorite")
+              a.share-link(href="#") 
+                +img-fluid('https://static.tpx.tw/sff/urliving/static/img/share.svg','share-image')
+              +img-fluid('https://static.tpx.tw/sff/urliving/static/img/' + item)
+
+            .card-body 
+              if index !== 1 && index !== 4
+                h4.product-brand PAZZO
+                h5.product-name V領薄針織開襟
+                .product-price
+                  span.product-origin.active NT.790
+                  span.product-sell NT.590
+              else 
+                h4.product-brand miyuki select miyuki select
+                h5.product-name V領薄針織開襟外套
+                .product-price
+                  span.product-origin NT.790
+
+            .card-footer
+              if index !== 1 && index !== 4
+                span.tag NEW
+                span.tag SALE
+              else 
+                span.tag NEW
+              a.add-cart.open-dialog(data-custommarketid="123456" ) 
+                +img-fluid('https://static.tpx.tw/sff/urliving/static/img/add-cart.svg')
+
+    .mag-block 
+      h3.mag-title TREND
+      ul.mag-list 
+        li.mag-list-item(v-for="article in popularList") 
+          img.img-fluid.mag-image( :src="article.CoverImage" alt="TREND List")
+          .mag-content 
+            small.mag-date {{ article.PostTime }}
+            h5.mag-title-text {{ article.Title }}
+            p.mag-text {{ article.Content }}
+            .mag-label 
+              each tag in ['#APPAREL', '#PAZZO', '#MEIER.Q', '#MERCCI22', '#miyukiselect']
+                span.label #{tag}
+
+    .brand-block 
+      each i in [1,2,3,4,5,6]
+        .brand-list
+          h3.brand-title APPAERL
+          a.brand-img(href="#")
+            +img-fluid('https://static.tpx.tw/sff/urliving/static/img/brand-01.jpg')
+          ul.brand-product-list 
+            each i in [1,2]
+              li.brand-product-list-item
+                if i === 1
+                  +img-fluid('https://static.tpx.tw/sff/urliving/static/img/brand-product-02.jpg','brand-image')
+                else 
+                  +img-fluid('https://static.tpx.tw/sff/urliving/static/img/brand-product-01.jpg','brand-image')
+                .brand-product-info 
+                  h4.brand-product PAZZO
+                  h5.brand-product-name V領薄針織開襟
+                  .brand-price  
+                    span.brand-origin.active NT.790
+                    span.brand-sell NT.590
+                .brand-product-icon
+                  if i === 1
+                    +favorite-img('favorite-img',"toggleFavorite")
+                  else
+                    +favorite-img('favorite-img icon-heart-active',"toggleFavorite")
+
+                  a.share-link(href="#") 
+                    +img-fluid('https://static.tpx.tw/sff/urliving/static/img/share.svg')
+                  a.add-cart.open-dialog(data-custommarketid="123456" ) 
+                    +img-fluid('https://static.tpx.tw/sff/urliving/static/img/add-to-cart.png')
+
+    cart-dialog(ref="c_dialog", :isnotice="isNotice")
+
+
+
+
+
+
+
+
+
+
+
+
+
+

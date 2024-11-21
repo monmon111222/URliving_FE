@@ -1,0 +1,281 @@
+{
+  "Code": 200,
+  "Message": null,
+  "Description": null,
+  "Response": {
+      "TotalCount": 66,
+      "Page": 1,
+      "PageCount": 11,
+      "PageSize": 6,
+      "Data": [
+          {
+              "NineDigitsBarcode": "BU4000069",
+              "MarketID": 333,
+              "Type": 1,
+              "Name": "BUTTER奶油家族圖案上衣",
+              "SubTitle": "此款版型適中",
+              "SellPrice": 480,
+              "OriginPrice": 480,
+              "EventPrice": 390,
+              "CurrencySymbol": null,
+              "EventName": "超值優惠．2件780元",
+              "IsPreShow": false,
+              "ProductID": 309,
+              "IsSoldOut": false,
+              "Brand": null,
+              "Pattern": 0,
+              "Series": null,
+              "Labels": [
+                  {
+                      "Description": "new",
+                      "Style": "new",
+                      "LabelEnum": 0
+                  },
+                  {
+                      "Description": "sale",
+                      "Style": "sale",
+                      "LabelEnum": 0
+                  }
+              ],
+              "Colors": [
+                  {
+                      "CustomMarketID": "MT1M333CL559SZ_",
+                      "MarketID": 333,
+                      "MarketType": 1,
+                      "Covers": [
+                          "https://pic.tpx.tw/thebutters/ProductCover/427a936d-9c32-466a-a5ee-3eeb1856db10.jpg",
+                          "https://pic.tpx.tw/thebutters/ProductBasic/427a936d-9c32-466a-a5ee-3eeb1856db10.jpg"
+                      ],
+                      "PintSizePictureUrl": "https://pic.tpx.tw/thebutters/ProductColor/5958fed4-049f-4bfc-bf67-2ddd773b1513.jpg",
+                      "MarketUrl": "/zh-tw/market/n/333?c=559",
+                      "ColorID": 559,
+                      "ColorName": "淺粉",
+                      "FavoriteCount": 16,
+                      "SalesCountDescription": "售出: 50",
+                      "IsFavorite": true,
+                      "IsSoldOut": false
+                  }
+              ]
+          },
+          {
+              "NineDigitsBarcode": "BU4000070",
+              "MarketID": 344,
+              "Type": 1,
+              "Name": "BUTTER 奶油家族拼圖印花上衣",
+              "SubTitle": "此款版型適中",
+              "SellPrice": 680,
+              "OriginPrice": 680,
+              "EventPrice": 580,
+              "CurrencySymbol": null,
+              "EventName": "超值甜甜價．單件$580",
+              "IsPreShow": false,
+              "ProductID": 320,
+              "IsSoldOut": false,
+              "Brand": null,
+              "Pattern": 0,
+              "Series": null,
+              "Labels": [
+                  {
+                      "Description": "new",
+                      "Style": "new",
+                      "LabelEnum": 0
+                  },
+                  {
+                      "Description": "sale",
+                      "Style": "sale",
+                      "LabelEnum": 0
+                  }
+              ],
+              "Colors": [
+                  {
+                      "CustomMarketID": "MT1M344CL575SZ_",
+                      "MarketID": 344,
+                      "MarketType": 1,
+                      "Covers": [
+                          "https://pic.tpx.tw/thebutters/ProductCover/13cf94e1-72bb-4290-a2b4-45c2478ebb30.jpg",
+                          "https://pic.tpx.tw/thebutters/ProductBasic/13cf94e1-72bb-4290-a2b4-45c2478ebb30.jpg"
+                      ],
+                      "PintSizePictureUrl": "https://pic.tpx.tw/thebutters/ProductColor/c5863679-376d-41ce-8829-5a7f689ca595.jpg",
+                      "MarketUrl": "/zh-tw/market/n/344?c=575",
+                      "ColorID": 575,
+                      "ColorName": "白",
+                      "FavoriteCount": 20,
+                      "SalesCountDescription": "售出: 20",
+                      "IsFavorite": false,
+                      "IsSoldOut": false
+                  }
+              ]
+          },
+          {
+              "NineDigitsBarcode": "BU4000068",
+              "MarketID": 324,
+              "Type": 1,
+              "Name": "BUTTER小兔節奶油刺繡長袖衛衣",
+              "SubTitle": "此款版型適中",
+              "SellPrice": 980,
+              "OriginPrice": 980,
+              "EventPrice": 880,
+              "CurrencySymbol": null,
+              "EventName": "超值甜甜價．單件$880",
+              "IsPreShow": false,
+              "ProductID": 304,
+              "IsSoldOut": false,
+              "Brand": null,
+              "Pattern": 0,
+              "Series": null,
+              "Labels": [
+                  {
+                      "Description": "sale",
+                      "Style": "sale",
+                      "LabelEnum": 0
+                  }
+              ],
+              "Colors": [
+                  {
+                      "CustomMarketID": "MT1M324CL551SZ_",
+                      "MarketID": 324,
+                      "MarketType": 1,
+                      "Covers": [
+                          "https://pic.tpx.tw/thebutters/ProductCover/16954787-4049-460f-bc5a-e26cfd989504.jpg",
+                          "https://pic.tpx.tw/thebutters/ProductBasic/16954787-4049-460f-bc5a-e26cfd989504.jpg"
+                      ],
+                      "PintSizePictureUrl": "https://pic.tpx.tw/thebutters/ProductColor/155d7dea-b004-4d13-bc3f-779c062033c9.jpg",
+                      "MarketUrl": "/zh-tw/market/n/324?c=551",
+                      "ColorID": 551,
+                      "ColorName": "杏",
+                      "FavoriteCount": 29,
+                      "SalesCountDescription": "銷售破百",
+                      "IsFavorite": false,
+                      "IsSoldOut": false
+                  }
+              ]
+          },
+          {
+              "NineDigitsBarcode": "BU4000057",
+              "MarketID": 311,
+              "Type": 1,
+              "Name": "BUTTER野餐印花內刷毛大學TEE",
+              "SubTitle": "此款版型寬鬆",
+              "SellPrice": 780,
+              "OriginPrice": 780,
+              "EventPrice": 0,
+              "CurrencySymbol": null,
+              "EventName": null,
+              "IsPreShow": false,
+              "ProductID": 296,
+              "IsSoldOut": false,
+              "Brand": null,
+              "Pattern": 0,
+              "Series": null,
+              "Labels": [],
+              "Colors": [
+                  {
+                      "CustomMarketID": "MT1M311CL535SZ_",
+                      "MarketID": 311,
+                      "MarketType": 1,
+                      "Covers": [
+                          "https://pic.tpx.tw/thebutters/ProductCover/85803bf8-47b4-48d8-ba9e-0453e1f55b87.jpg",
+                          "https://pic.tpx.tw/thebutters/ProductBasic/85803bf8-47b4-48d8-ba9e-0453e1f55b87.jpg"
+                      ],
+                      "PintSizePictureUrl": "https://pic.tpx.tw/thebutters/ProductColor/a48fb445-6c6f-4b2f-9770-a58e2517d662.jpg",
+                      "MarketUrl": "/zh-tw/market/n/311?c=535",
+                      "ColorID": 535,
+                      "ColorName": "杏",
+                      "FavoriteCount": 41,
+                      "SalesCountDescription": "銷售破百",
+                      "IsFavorite": false,
+                      "IsSoldOut": false
+                  }
+              ]
+          },
+          {
+              "NineDigitsBarcode": "BU4000059",
+              "MarketID": 272,
+              "Type": 1,
+              "Name": "BUTTER大領片造型針織上衣",
+              "SubTitle": "此款版型寬鬆",
+              "SellPrice": 980,
+              "OriginPrice": 980,
+              "EventPrice": 880,
+              "CurrencySymbol": null,
+              "EventName": "超值甜甜價．單件$880",
+              "IsPreShow": false,
+              "ProductID": 260,
+              "IsSoldOut": false,
+              "Brand": null,
+              "Pattern": 0,
+              "Series": null,
+              "Labels": [
+                  {
+                      "Description": "sale",
+                      "Style": "sale",
+                      "LabelEnum": 0
+                  }
+              ],
+              "Colors": [
+                  {
+                      "CustomMarketID": "MT1M272CL455SZ_",
+                      "MarketID": 272,
+                      "MarketType": 1,
+                      "Covers": [
+                          "https://pic.tpx.tw/thebutters/ProductCover/5cea35bc-002b-4f78-b327-a7dcda2bad00.jpg",
+                          "https://pic.tpx.tw/thebutters/ProductBasic/5cea35bc-002b-4f78-b327-a7dcda2bad00.jpg"
+                      ],
+                      "PintSizePictureUrl": "https://pic.tpx.tw/thebutters/ProductColor/57408647-7724-4adf-b697-f979196c1f18.jpg",
+                      "MarketUrl": "/zh-tw/market/n/272?c=455",
+                      "ColorID": 455,
+                      "ColorName": "灰杏",
+                      "FavoriteCount": 28,
+                      "SalesCountDescription": "售出: 81",
+                      "IsFavorite": false,
+                      "IsSoldOut": false
+                  }
+              ]
+          },
+          {
+              "NineDigitsBarcode": "BU4020015",
+              "MarketID": 319,
+              "Type": 1,
+              "Name": "奶油印花",
+              "SubTitle": "此款版型寬鬆",
+              "SellPrice": 1280,
+              "OriginPrice": 1280,
+              "EventPrice": 1080,
+              "CurrencySymbol": null,
+              "EventName": "超值甜甜價．單件$1080",
+              "IsPreShow": false,
+              "ProductID": 300,
+              "IsSoldOut": false,
+              "Brand": null,
+              "Pattern": 0,
+              "Series": null,
+              "Labels": [
+                  {
+                      "Description": "sale",
+                      "Style": "sale",
+                      "LabelEnum": 0
+                  }
+              ],
+              "Colors": [
+                  {
+                      "CustomMarketID": "MT1M319CL546SZ_",
+                      "MarketID": 319,
+                      "MarketType": 1,
+                      "Covers": [
+                          "https://pic.tpx.tw/thebutters/ProductCover/027d1df3-0f43-465f-8928-47279ffbb911.jpg",
+                          "https://pic.tpx.tw/thebutters/ProductBasic/027d1df3-0f43-465f-8928-47279ffbb911.jpg"
+                      ],
+                      "PintSizePictureUrl": "https://pic.tpx.tw/thebutters/ProductColor/626af321-ed16-4ab2-a7b8-046897d66992.jpg",
+                      "MarketUrl": "/zh-tw/market/n/319?c=546",
+                      "ColorID": 546,
+                      "ColorName": "杏",
+                      "FavoriteCount": 25,
+                      "SalesCountDescription": "售出: 51",
+                      "IsFavorite": false,
+                      "IsSoldOut": false
+                  }
+              ]
+          }
+      ]
+  }
+}

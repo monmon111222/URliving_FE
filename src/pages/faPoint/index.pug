@@ -1,0 +1,25 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = "page-fa-member";
+
+block content
+  .container
+    .member-container
+      .menu-block
+        include ../../template/member/memberMenu.pug
+      .info-block
+        #fasney-bind
+        .term-block
+          p fa points服務條款
+          p 1.fa points係由美而快電商金融科技股份有限公司(以下稱fasney) 所提供之點數服務，可於合作商家消費、活動中獲得fa points。
+          p 2.如欲進行 fa points 綁定、累積點數及折抵消費，需先完成 fasney 會員註冊。
+          p 3.獲得的 fa points，可於結帳當下折抵消費金額，限折抵消費（1 fa points = 1元），滿千使用。
+          p 4.fa points 僅可折抵消費金額，恕無法要求兌換成現金、轉換成購物金及無法移轉給他人使用。
+          p 5.fa points 於鑑賞期7日後，發放至綁定的 fasney App 中「會員中心」>「點數使用紀錄」。
+          p 6.若您取消交易（包括取消訂單、完成退貨），將返還以折抵 fa points。
+          p 7.fasney 會員權益以及相關服務辦法請依照 fasney 官網公告為準。
+
+
+block JSVAR
+  script(type="text/javascript").

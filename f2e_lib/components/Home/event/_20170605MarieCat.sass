@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Asap')
+
+body, body *
+  cursor: url(//pazzo.cloudcdn.tw/pazzo/PAZZO_EVENT/2017SS/060517/cursor_mariecat-.png), auto !important
+
+.event-mariecat
+  margin: 110px auto 160px
+  width: 1320px
+  max-width: 100%
+  .slider-title
+    display: block
+    text-align: center
+    color: #4b4b4b
+    font-size: 20px
+    font-family: 'myriad pro', georgia, '微軟正黑體', '新細明體', '細明體'
+    font-style: italic
+    letter-spacing: .14em
+    margin-bottom: 80px
+  li
+    position: relative
+    text-align: center
+    &:hover .pdinfo
+      opacity: 1
+    .pdimage
+      width: 90%
+      margin: auto
+    .pdinfo
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      background-color: rgba(255, 255, 255, .66)
+      opacity: 0
+      +transition(opacity .3s)
+    .pdprice,
+    .pddesc
+      display: block
+      width: 100%
+      position: absolute
+      top: 50%
+      text-align: center
+      font-size: 12px
+      font-family: 'Asap', sans-serif
+      font-weight: bold
+      +text-shadow(0 0 .0001em rgba(0, 0, 0, .5))
+    .pdprice
+      margin-top: -22px
+      letter-spacing: .08em
+      i
+        display: inline-block
+        +transform(scale(.66) translateZ(0))
+    .pddesc
+      margin-top: -8px
+      letter-spacing: .1em
+      +transform(scale(.81) translateZ(0))
+  .slick-arrow
+    height: 45px
+    width: 45px
+    top: 50%
+    margin-top: -22px
+    background-color: #fff
+    border: 1px solid #3c3c3c
+    +box-shadow(0 0 0 1px rgba(60, 60, 60, .4) inset, 0 0 0 4px #fff inset, 0 0 0 5px #3c3c3c inset, 0 0 0 6px rgba(60, 60, 60, .4) inset)
+    +box-sizing(border-box)
+    +transition(opacity .3s)
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      margin-top: -8px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 8px
+      border-color: transparent
+    &:hover
+      opacity: .5
+  .slick-prev
+    left: -130px
+    &:before
+      border-left-width: 0
+      border-right-color: #3c3c3c
+      margin-left: -5px
+  .slick-next
+    right: -130px
+    &:before
+      border-right-width: 0
+      border-left-color: #3c3c3c
+      margin-left: -3px
+
+@media (max-width: 1620px)
+  .event-mariecat
+    padding: 0 70px
+    +box-sizing(border-box)
+    .slick-prev
+      left: -58px
+    .slick-next
+      right: -58px
+
+@media (max-width: 1024px)
+  .event-mariecat
+    margin: 10.74vw auto 15.625vw
+    .slider-title
+      margin-bottom: 7.8125vw
+
+@media (max-width: 767px)
+  .event-mariecat
+    padding: 0 54px
+    +box-sizing(border-box)
+    .slick-arrow
+      height: 30px
+      width: 30px
+      margin-top: -15px
+      +box-shadow(0 0 0 1px rgba(60, 60, 60, .3) inset, 0 0 0 2px #fff inset, 0 0 0 3px #3c3c3c inset, 0 0 0 4px rgba(60, 60, 60, .3) inset)
+      &:before
+        border-width: 6px
+        margin-top: -6px
+    .slick-prev
+      left: -42px
+      &:before
+        margin-left: -9px
+    .slick-next
+      right: -42px
+      &:before
+        margin-left: -2px
+
+@media (max-width: 480px)
+  .event-mariecat
+    padding: 0 30px
+    li .pdimage
+      width: 100%
+    .slick-prev
+      left: -30px
+    .slick-next
+      right: -30px

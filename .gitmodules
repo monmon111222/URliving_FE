@@ -1,0 +1,6 @@
+[submodule "webpack_setting"]
+	path = webpack_setting
+	url = https://urtoday.visualstudio.com/_git/WEBPACK_SETTING
+[submodule "f2e_lib"]
+	path = f2e_lib
+	url = https://urtoday.visualstudio.com/_git/F2E_LIBS

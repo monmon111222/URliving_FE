@@ -1,0 +1,16 @@
+//- 訂閱電子報modal
+#modal-newsletter.modal.fade(tabindex='-1')
+  .modal-dialog
+    .modal-content#app-newsletter-signup
+      .modal-header
+        h4.modal-title Newsletter Signup
+        a.close(href='#', data-dismiss='modal', aria-label='Close')
+          i.icon-remove-x
+      form#form-newsletter-signup
+        .modal-body
+          .form-g.enter-input-block
+            label(for='input-newsletter') Sign up for email updates and promotions
+            .enter-input-block
+              input.input-newsletter.form-control.with-enter(name='newsletter', placeholder='enter your E-mail', required, type="email")
+              button.btn-input-enter.btn-submit
+        .modal-footer

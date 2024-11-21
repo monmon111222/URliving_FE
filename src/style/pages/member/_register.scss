@@ -1,0 +1,111 @@
+#page-register,
+#page-login,
+#page-register-success,
+#page-reset-password,
+#page-social-check {
+	.login-menu {
+		border-top: 4px solid #000;
+		width: 215px;
+		margin-right: 15px;
+		display: flex;
+		flex-direction: column;
+		.menu-title {
+			font-size: 30px;
+			margin: 22px 0 40px;
+		}
+		.menu-type {
+			font-size: 16px;
+			margin-bottom: 30px;
+			&:not(.active) {
+				color: #afafaf;
+			}
+		}
+		@include max_md {
+			display: none;
+		}
+	}
+	.content-block {
+		display: flex;
+		.form-block {
+			width: 440px;
+			margin: 0 auto;
+			.btn-line-login {
+				border-color: #22ba4f;
+				color: #22ba4f;
+			}
+			.or-text {
+				margin: 40px auto;
+				text-align: center;
+			}
+			.title {
+				font-size: 23px;
+				margin-bottom: 30px;
+			}
+			.btn-submit-form {
+				margin-bottom: 15px;
+			}
+			.btn-forget-pws {
+				margin: auto;
+				font-size: 14px;
+				text-decoration: underline;
+				text-align: center;
+			}
+			&.is-login {
+				display: none;
+				#form-user-forgot {
+					display: none;
+				}
+			}
+
+			&.is-forgot {
+				#form-login {
+					display: none;
+				}
+
+				#form-user-forgot {
+					display: block;
+				}
+
+				.btn-line-login,
+				.or-text {
+					display: none;
+				}
+			}
+		}
+		.success-block {
+			width: 440px;
+			margin: 0 auto;
+			text-align: center;
+			.title {
+				font-size: 23px;
+				margin-bottom: 30px;
+			}
+			.paragraph {
+				margin-bottom: 30px;
+				font-size: 16px;
+				&.regular {
+					p,
+					span,
+					a {
+						font-weight: 400;
+					}
+				}
+				p {
+					margin-bottom: 0px;
+				}
+			}
+			&#success-msg {
+				display: none;
+			}
+		}
+		@include max_md {
+			.success-block {
+				padding: 32px 15px 0;
+			}
+			.form-block {
+				width: 100%;
+				padding: 32px 15px 0;
+			}
+		}
+	}
+}

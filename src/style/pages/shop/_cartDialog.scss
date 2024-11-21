@@ -1,0 +1,258 @@
+.mask {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 1020;
+	background: rgba(0, 0, 0, 0.5);
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+.cart-content {
+	position: relative;
+
+	.btn-delete {
+		cursor: pointer;
+		position: absolute;
+		right: 0;
+	}
+	.item-detail {
+		display: flex;
+		padding-bottom: 14px;
+	}
+	.item-img {
+		width: 50%;
+		flex: 0 1 50%;
+		margin-right: 8px;
+	}
+	.item-info {
+		width: 50%;
+		flex: 0 1 50%;
+		.item-order {
+			margin-top: 40px;
+			.brand-name {
+				font-size: 14px;
+			}
+			.item-name {
+				margin-top: 8px;
+				font-size: 14px;
+			}
+			.item-price {
+				margin: 8px 0;
+				font-size: 14px;
+				.origin-price {
+					margin-right: 8px;
+					text-decoration: line-through;
+				}
+				.sell-price {
+					color: #006fff;
+				}
+			}
+			.item-event {
+				margin-bottom: 30px;
+
+				li {
+					display: block;
+					margin-bottom: 4px;
+					color: #006fff;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	@include min_lg {
+		.modal-close {
+			position: absolute;
+			right: 30px;
+			top: 50px;
+		}
+		.item-detail {
+			padding: 48px 40px;
+		}
+		.item-img {
+			margin-right: 40px;
+		}
+		.item-info {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.item-order {
+				.brand-name {
+					font-size: 16px;
+				}
+				.item-name {
+					font-size: 16px;
+				}
+				.item-price {
+					margin-top: 30px;
+					font-size: 24px;
+					.origin-price {
+						margin-right: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// 共用 select
+.item-pick {
+	.select-block {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 8px;
+		.select-style {
+			position: relative;
+			flex: 0 1 49%;
+			font-size: 14px;
+			width: 100%;
+			line-height: 1;
+			text-align: center;
+			.select-btn {
+				border: 1px #afafaf solid;
+				padding: 0 10px;
+				height: 44px;
+				line-height: 44px;
+				width: 100%;
+				display: block;
+				letter-spacing: 0.5px;
+				background: url($storage-path + "arrow.svg") no-repeat right 10px top 18px;
+			}
+			.select-opts {
+				display: none;
+				position: absolute;
+				top: 44px;
+				left: 0;
+				border: 1px #afafaf solid;
+				border-top: 0;
+				width: 100%;
+				background: white;
+				z-index: 2;
+				@media (max-width: 1023px) {
+					height: 100px;
+					overflow-y: scroll;
+				}
+				&.isopen {
+					display: block;
+				}
+				> li {
+					padding: 10px;
+					cursor: pointer;
+					&:hover {
+						background: #000;
+						color: white;
+					}
+					&.soldout {
+						color: $gray-400;
+					}
+				}
+			}
+		}
+	}
+	.UiQuantity {
+		position: relative;
+		display: inline-block;
+		border: 1px solid #afafaf;
+		vertical-align: middle;
+		text-align: center;
+		width: 100%;
+		height: 44px;
+		margin-bottom: 8px;
+		.UiQuantity__btn {
+			cursor: pointer;
+			position: absolute;
+			width: 44px;
+			height: 44px;
+			line-height: 44px;
+		}
+		.UiQuantity__btn--plus {
+			top: 0;
+			right: 0;
+		}
+		.UiQuantity__btn--minus {
+			top: 0;
+			left: 0;
+		}
+		.UiQuantity__text {
+			line-height: 44px;
+		}
+	}
+	.btn-add2cart {
+		background: #000;
+		color: #fff;
+		padding: 0;
+		height: 44px;
+		line-height: 44px;
+		font-size: 14px;
+	}
+
+	@include min_md {
+		.select-block {
+			.select-style {
+				font-size: 16px;
+				.select-btn {
+					height: 56px;
+					line-height: 56px;
+					background: url($storage-path + "arrow.svg") no-repeat right 10px top 23px;
+				}
+				.select-opts {
+					top: 56px;
+				}
+			}
+		}
+		.UiQuantity {
+			height: 56px;
+			.UiQuantity__btn {
+				line-height: 56px;
+			}
+			.UiQuantity__text {
+				line-height: 56px;
+			}
+		}
+		.btn-add2cart {
+			height: 56px;
+			line-height: 56px;
+			font-size: 16px;
+		}
+	}
+}
+
+// mb版 上滑popup
+.dialog-bottom {
+	transition: all 0.3s ease-out;
+	position: fixed;
+	left: 0;
+	bottom: -100%;
+	width: 100%;
+	z-index: 2000;
+	background-color: white;
+	&.active {
+		bottom: 0;
+		.mask {
+			display: block;
+		}
+	}
+
+	&.slideup-enter-active,
+	&.slideup-leave-active {
+		bottom: 0;
+	}
+	&.slideup-enter,
+	&.slideup-leave-to {
+		bottom: -100%;
+	}
+	.dialog-inner {
+		position: relative;
+		z-index: 1050;
+		background-color: white;
+		padding: 20px 20px 40px;
+	}
+}

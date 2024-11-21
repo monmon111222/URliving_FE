@@ -1,0 +1,283 @@
+{
+"Code": 200,
+"Message": "",
+"Description": "",
+"Response" :{
+        "TotalCount": 6,
+        "Page": 1,
+        "PageCount": 5,
+        "PageSize": 15,
+        "Data": [
+            {
+                "CustomMarketID" : "MT1M123C123CL123SZ_",
+                "MarketID": 8,
+                "Type": 1,
+                "Name": "24H．夏日限定編織草帽",
+                "SubTitle": "FRINGED STRAW HAT",
+                "SellPrice": 399,
+                "OriginPrice": 399,
+                "IsPreShow": false,
+                "Labels": [
+                       {
+                            "Description" : "new",
+                            "Style" : "new"
+                       },
+                       {
+                            "Description" : "sold out",
+                            "Style" : "soldout"
+                       }
+                 ],
+                "Cover": "https://cdn.tpx.tw/tpxpic/CelebrityProduct/64227ef8-3339-4b00-8af1-735a19aac882.jpg",
+                "ProductID": 9,
+                "MarketUrl": "/market/n/8?c=17",
+                "ColorID": 1436,
+                "IsFavorite": true,
+                "FavoriteCount" : 999,
+                "SalesCountDescription" : "售出 : 101"
+            },
+            {
+               "CustomMarketID" : "MT1M123C123CL123SZ_",
+                "MarketID": 8,
+                "Type": 1,
+                "Name": "24H．夏日限定編織草帽",
+                "SubTitle": "FRINGED STRAW HAT",
+                "SellPrice": 399,
+                "OriginPrice": 399,
+                "IsPreShow": false,
+                "Labels": [],
+                "Cover": "https://cdn.tpx.tw/tpxpic/CelebrityProduct/f96d40c3-6535-42eb-910c-5991a1435e5c.jpg",
+                "ProductID": 9,
+                "MarketUrl": "/MMYAYA/market/n/8?c=17",
+                "ColorID": 1417,
+                "IsFavorite": false,
+                "FavoriteCount" : 999,
+                "SalesCountDescription" : "售出 : 101"
+            },
+            {
+                "CustomMarketID" : "MT1M123C123CL123SZ_",
+                "MarketID": 8,
+                "Type": 1,
+                "Name": "24H．夏日限定編織草帽",
+                "SubTitle": "FRINGED STRAW HAT",
+                "SellPrice": 399,
+                "OriginPrice": 399,
+                "IsPreShow": false,
+                "Labels": [
+                       {
+                            "Description" : "new",
+                            "Style" : "new"
+                       },
+                       {
+                            "Description" : "sold out",
+                            "Style" : "soldout"
+                       }
+                 ],
+                "Cover": "https://cdn.tpx.tw/tpxpic/CelebrityProduct/64227ef8-3339-4b00-8af1-735a19aac882.jpg",
+                "ProductID": 9,
+                "MarketUrl": "/market/n/8?c=17",
+                "ColorID": 1436,
+                "IsFavorite": false,
+                "FavoriteCount" : 999,
+                "SalesCountDescription" : "售出 : 101"
+            },
+            {
+               "CustomMarketID" : "MT1M123C123CL123SZ_",
+                "MarketID": 8,
+                "Type": 1,
+                "Name": "24H．夏日限定編織草帽",
+                "SubTitle": "FRINGED STRAW HAT",
+                "SellPrice": 399,
+                "OriginPrice": 399,
+                "IsPreShow": false,
+                "Labels": [],
+                "Cover": "https://cdn.tpx.tw/tpxpic/CelebrityProduct/f96d40c3-6535-42eb-910c-5991a1435e5c.jpg",
+                "ProductID": 9,
+                "MarketUrl": "/MMYAYA/market/n/8?c=17",
+                "ColorID": 1417,
+                "IsFavorite": false,
+                "FavoriteCount" : 999,
+                "SalesCountDescription" : "售出 : 101"
+            },
+            {
+                "CustomMarketID" : "MT1M123C123CL123SZ_",
+                "MarketID": 8,
+                "Type": 1,
+                "Name": "24H．夏日限定編織草帽",
+                "SubTitle": "FRINGED STRAW HAT",
+                "SellPrice": 399,
+                "OriginPrice": 399,
+                "IsPreShow": false,
+                "Labels": [
+                       {
+                            "Description" : "new",
+                            "Style" : "new"
+                       },
+                       {
+                            "Description" : "sold out",
+                            "Style" : "soldout"
+                       }
+                 ],
+                "Cover": "https://cdn.tpx.tw/tpxpic/CelebrityProduct/64227ef8-3339-4b00-8af1-735a19aac882.jpg",
+                "ProductID": 9,
+                "MarketUrl": "/market/n/8?c=17",
+                "ColorID": 1436,
+                "IsFavorite": false,
+                "FavoriteCount" : 999,
+                "SalesCountDescription" : "售出 : 101"
+            },
+            {
+               "CustomMarketID" : "MT1M123C123CL123SZ_",
+                "MarketID": 8,
+                "Type": 1,
+                "Name": "24H．夏日限定編織草帽",
+                "SubTitle": "FRINGED STRAW HAT",
+                "SellPrice": 399,
+                "OriginPrice": 399,
+                "IsPreShow": false,
+                "Labels": [],
+                "Cover": "https://cdn.tpx.tw/tpxpic/CelebrityProduct/f96d40c3-6535-42eb-910c-5991a1435e5c.jpg",
+                "ProductID": 9,
+                "MarketUrl": "/MMYAYA/market/n/8?c=17",
+                "ColorID": 1417,
+                "IsFavorite": false,
+                "FavoriteCount" : 999,
+                "SalesCountDescription" : "售出 : 101"
+            },
+            {
+                "CustomMarketID" : "MT1M123C123CL123SZ_",
+                "MarketID": 8,
+                "Type": 1,
+                "Name": "24H．夏日限定編織草帽",
+                "SubTitle": "FRINGED STRAW HAT",
+                "SellPrice": 399,
+                "OriginPrice": 399,
+                "IsPreShow": false,
+                "Labels": [
+                       {
+                            "Description" : "new",
+                            "Style" : "new"
+                       },
+                       {
+                            "Description" : "sold out",
+                            "Style" : "soldout"
+                       }
+                 ],
+                "Cover": "https://cdn.tpx.tw/tpxpic/CelebrityProduct/64227ef8-3339-4b00-8af1-735a19aac882.jpg",
+                "ProductID": 9,
+                "MarketUrl": "/market/n/8?c=17",
+                "ColorID": 1436,
+                "IsFavorite": false,
+                "FavoriteCount" : 999,
+                "SalesCountDescription" : "售出 : 101"
+            },
+            {
+               "CustomMarketID" : "MT1M123C123CL123SZ_",
+                "MarketID": 8,
+                "Type": 1,
+                "Name": "24H．夏日限定編織草帽",
+                "SubTitle": "FRINGED STRAW HAT",
+                "SellPrice": 399,
+                "OriginPrice": 399,
+                "IsPreShow": false,
+                "Labels": [],
+                "Cover": "https://cdn.tpx.tw/tpxpic/CelebrityProduct/f96d40c3-6535-42eb-910c-5991a1435e5c.jpg",
+                "ProductID": 9,
+                "MarketUrl": "/MMYAYA/market/n/8?c=17",
+                "ColorID": 1417,
+                "IsFavorite": false,
+                "FavoriteCount" : 999,
+                "SalesCountDescription" : "售出 : 101"
+            },
+            {
+                "CustomMarketID" : "MT1M123C123CL123SZ_",
+                "MarketID": 8,
+                "Type": 1,
+                "Name": "24H．夏日限定編織草帽",
+                "SubTitle": "FRINGED STRAW HAT",
+                "SellPrice": 399,
+                "OriginPrice": 399,
+                "IsPreShow": false,
+                "Labels": [
+                       {
+                            "Description" : "new",
+                            "Style" : "new"
+                       },
+                       {
+                            "Description" : "sold out",
+                            "Style" : "soldout"
+                       }
+                 ],
+                "Cover": "https://cdn.tpx.tw/tpxpic/CelebrityProduct/64227ef8-3339-4b00-8af1-735a19aac882.jpg",
+                "ProductID": 9,
+                "MarketUrl": "/market/n/8?c=17",
+                "ColorID": 1436,
+                "IsFavorite": false,
+                "FavoriteCount" : 999,
+                "SalesCountDescription" : "售出 : 101"
+            },
+            {
+               "CustomMarketID" : "MT1M123C123CL123SZ_",
+                "MarketID": 8,
+                "Type": 1,
+                "Name": "24H．夏日限定編織草帽",
+                "SubTitle": "FRINGED STRAW HAT",
+                "SellPrice": 399,
+                "OriginPrice": 399,
+                "IsPreShow": false,
+                "Labels": [],
+                "Cover": "https://cdn.tpx.tw/tpxpic/CelebrityProduct/f96d40c3-6535-42eb-910c-5991a1435e5c.jpg",
+                "ProductID": 9,
+                "MarketUrl": "/MMYAYA/market/n/8?c=17",
+                "ColorID": 1417,
+                "IsFavorite": false,
+                "FavoriteCount" : 999,
+                "SalesCountDescription" : "售出 : 101"
+            },
+            {
+                "CustomMarketID" : "MT1M123C123CL123SZ_",
+                "MarketID": 8,
+                "Type": 1,
+                "Name": "24H．夏日限定編織草帽",
+                "SubTitle": "FRINGED STRAW HAT",
+                "SellPrice": 399,
+                "OriginPrice": 399,
+                "IsPreShow": false,
+                "Labels": [
+                       {
+                            "Description" : "new",
+                            "Style" : "new"
+                       },
+                       {
+                            "Description" : "sold out",
+                            "Style" : "soldout"
+                       }
+                 ],
+                "Cover": "https://cdn.tpx.tw/tpxpic/CelebrityProduct/64227ef8-3339-4b00-8af1-735a19aac882.jpg",
+                "ProductID": 9,
+                "MarketUrl": "/market/n/8?c=17",
+                "ColorID": 1436,
+                "IsFavorite": false,
+                "FavoriteCount" : 999,
+                "SalesCountDescription" : "售出 : 101"
+            },
+            {
+               "CustomMarketID" : "MT1M123C123CL123SZ_",
+                "MarketID": 8,
+                "Type": 1,
+                "Name": "24H．夏日限定編織草帽",
+                "SubTitle": "FRINGED STRAW HAT",
+                "SellPrice": 399,
+                "OriginPrice": 399,
+                "IsPreShow": false,
+                "Labels": [],
+                "Cover": "https://cdn.tpx.tw/tpxpic/CelebrityProduct/f96d40c3-6535-42eb-910c-5991a1435e5c.jpg",
+                "ProductID": 9,
+                "MarketUrl": "/MMYAYA/market/n/8?c=17",
+                "ColorID": 1417,
+                "IsFavorite": false,
+                "FavoriteCount" : 999,
+                "SalesCountDescription" : "售出 : 101"
+            }
+        ]
+    }
+}

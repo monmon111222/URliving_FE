@@ -1,0 +1,9 @@
+#filter-order-date
+    form#from-order-date.d-flex.justify-content-around.align-items-center(method="GET" action="/user/order")
+        input(type="hidden" name="StartTimeStamp" id="orderStartTimeStamp")
+        input(type="hidden" name="EndTimeStamp" id="orderEndTimeStamp")
+        input#btn-date-pre( type="button" @click="preMonth")
+        span#order_date1.order-date(v-text='startDate')
+        span.order-date -
+        span#order_date2.order-date(v-text='endDate')
+        input#btn-date-next( type="button" @click="nextMonth")

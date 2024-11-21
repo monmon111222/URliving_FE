@@ -1,0 +1,329 @@
+{
+  "Code": 200,
+  "Message": null,
+  "Description": null,
+  "Response": {
+    "ShoppingCart": {
+      "Count": 3,
+      "MarketCount": 2,
+      "AddOnMarketCount": 1,
+      "Markets": [
+        {
+          "CustomMarketID": "MT1M20CL36SZ0",
+          "Name": "V領薄針織開襟外套",
+          "ColorName": "白色",
+          "Size": "S",
+          "SellPrice": 1180.0,
+          "OriginPrice": 1280.0,
+          "Count": 2,
+          "Cover": "https://pics.tpx.tw/thebutters/ProductCovers/9a2e9d42-b14d-42c8-83a5-e009dd8844fd.jpg",
+          "Url": "/zh-tw/market/n/20?c=36",
+          "BarCode": "Y402000020700",
+          "Subtotal": 8960.0,
+          "Stock": 15,
+          "StockMessage": "Stock Message",
+          "Limit": 20,
+          "LimitMessage": "Limit Message",
+          "IsNotEmployeeDiscount": false,
+          "IsLimitedRefund": true,
+          "IsOffshoreIsland": true,
+          "IsForeginDeliver": false,
+          "IsVipDiscount": true,
+          "IsBuyable": true,
+          "PreOrder": false,
+          "PintSizePictureUrl": "https://pics.tpx.tw/thebutters/ProductCovers/9a2e9d42-b14d-42c8-83a5-e009dd8844fd.jpg",
+          "FavoriteFlag": 1,
+          "Pattern": 2,
+          "BrandName":"The Butters",
+          "Series": {
+            "FlavorName": "辣味",
+            "SpecName": "180g"
+          },
+          "Events": [
+            {
+              "ID": 69,
+              "Name": "滿3件每件8折",
+              "IsMatch": true
+            },
+            {
+              "ID": 1,
+              "Name": "員工優惠七折",
+              "IsMatch": false
+            }
+          ],
+          "Levels": [
+            {
+              "ID": 5,
+              "Name": "親友團",
+              "LevelEventName": "親友團會員7折優惠",
+              "Discount": "7折",
+              "IsMatch": true
+            }
+          ],
+          "Coupons": [
+            {
+              "Code": "coupon0928",
+              "IsMatch": true
+            }
+          ]
+        },
+        {
+          "CustomMarketID": "MT1M1CL3SZ0",
+          "Name": "棉麻抽繩罩衫棉麻",
+          "ColorName": "駝",
+          "Size": "F",
+          "SellPrice": 590.0,
+          "OriginPrice": 490.0,
+          "Count": 1,
+          "Cover": "https://pic.tpx.tw/yyandu/ProductCover/c21daa75-de59-46c0-b42e-a7c22d6f3d75.jpg",
+          "Url": "/zh-tw/market/n/1?c=3",
+          "BarCode": "Y402000050800",
+          "Subtotal": 490.0,
+          "Stock": 20,
+          "StockMessage": null,
+          "Limit": 0,
+          "LimitMessage": null,
+          "IsNotEmployeeDiscount": false,
+          "IsLimitedRefund": false,
+          "IsOffshoreIsland": true,
+          "IsForeginDeliver": true,
+          "IsVipDiscount": true,
+          "IsBuyable": true,
+          "PreOrder": false,
+          "PintSizePictureUrl": "https://pic.tpx.tw/yyandu/ProductColor/17c5deeb-7535-41b7-8be2-177c2c443716.jpg",
+          "FavoriteFlag": 0,
+          "Pattern": 1,
+          "BrandName":"The Butters",
+          "Events": [],
+          "Levels": [],
+          "Coupons": []
+        }
+      ],
+      "GiftEvents": [
+        {
+          "ID": "40",
+          "Name": "購買指定商品，單筆訂單滿NT1,000，即可獲得 【某某贈品贈品贈品】",
+          "Gifts": [
+            {
+              "CustomMarketID": "MT2M96CL58SZ3",
+              "Name": "粗針織素色背心",
+              "ColorName": "灰",
+              "Size": "M",
+              "SellPrice": 0.0,
+              "OriginPrice": 490.0,
+              "Count": 1,
+              "Cover": "https://pic.tpx.tw/yyandu/ProductBasic/15161136-6bb3-4d2d-b057-d720f4212f4a.jpg",
+              "Url": "/zh-tw/market/g/96?c=58",
+              "BarCode": "Y400000150503",
+              "HasStock": true,
+              "IsOffshoreIsland": true,
+              "PintSizePictureUrl": "https://pic.tpx.tw/yyandu/ProductColor/076af8ec-fd45-4361-98c4-3081afc4b90f.jpg",
+              "Pattern": 1,
+              "BrandName":"The Butters"
+            }
+          ],
+          "GiftDetails": [
+            {
+              "CustomMarketID": "MT2M96CL58SZ2",
+              "Name": "粗針織素色背心",
+              "ColorName": "灰",
+              "Size": "S",
+              "SellPrice": 0.0,
+              "OriginPrice": 490.0,
+              "Count": 0,
+              "Cover": "https://pic.tpx.tw/yyandu/ProductBasic/15161136-6bb3-4d2d-b057-d720f4212f4a.jpg",
+              "Url": "/zh-tw/market/g/96?c=58",
+              "BarCode": "Y400000150502",
+              "HasStock": false,
+              "IsOffshoreIsland": true,
+              "PintSizePictureUrl": "https://pic.tpx.tw/yyandu/ProductColor/076af8ec-fd45-4361-98c4-3081afc4b90f.jpg",
+              "BrandName":"The Butters"
+            },
+            {
+              "CustomMarketID": "MT2M96CL58SZ3",
+              "Name": "粗針織素色背心",
+              "ColorName": "灰",
+              "Size": "M",
+              "SellPrice": 0.0,
+              "OriginPrice": 490.0,
+              "Count": 1,
+              "Cover": "https://pic.tpx.tw/yyandu/ProductBasic/15161136-6bb3-4d2d-b057-d720f4212f4a.jpg",
+              "Url": "/zh-tw/market/g/96?c=58",
+              "BarCode": "Y400000150503",
+              "HasStock": true,
+              "IsOffshoreIsland": true,
+              "PintSizePictureUrl": "https://pic.tpx.tw/yyandu/ProductColor/076af8ec-fd45-4361-98c4-3081afc4b90f.jpg",
+              "BrandName":"The Butters"
+            },
+            {
+              "CustomMarketID": "MT2M96CL59SZ2",
+              "Name": "粗針織素色背心",
+              "ColorName": "墨綠",
+              "Size": "S",
+              "SellPrice": 0.0,
+              "OriginPrice": 490.0,
+              "Count": 1,
+              "Cover": "https://pic.tpx.tw/yyandu/ProductBasic/0a5fd2a9-a790-479f-9c2a-2fe81f8f479a.jpg",
+              "Url": "/zh-tw/market/g/96?c=59",
+              "BarCode": "Y400000152302",
+              "HasStock": true,
+              "IsOffshoreIsland": true,
+              "PintSizePictureUrl": "https://pic.tpx.tw/yyandu/ProductColor/4cbff378-088f-434c-b3e0-b7b132f2af65.jpg",
+              "BrandName":"The Butters"
+            },
+            {
+              "CustomMarketID": "MT2M96CL59SZ3",
+              "Name": "粗針織素色背心",
+              "ColorName": "墨綠",
+              "Size": "M",
+              "SellPrice": 0.0,
+              "OriginPrice": 490.0,
+              "Count": 1,
+              "Cover": "https://pic.tpx.tw/yyandu/ProductBasic/0a5fd2a9-a790-479f-9c2a-2fe81f8f479a.jpg",
+              "Url": "/zh-tw/market/g/96?c=59",
+              "BarCode": "Y400000152303",
+              "HasStock": true,
+              "IsOffshoreIsland": true,
+              "PintSizePictureUrl": "https://pic.tpx.tw/yyandu/ProductColor/4cbff378-088f-434c-b3e0-b7b132f2af65.jpg",
+              "BrandName":"The Butters"
+            }
+          ]
+        }
+      ],
+      "AddOnEvents": [
+        {
+          "ID": 45,
+          "Name": "滿3件達3000元可加購",
+          "CountLimit": 2,
+          "IsOverCountLimit": true,
+          "IsMatch": false,
+          "Items": [
+            {
+              "CustomMarketID": "MT3M157CL37SZ0",
+              "Name": "刺繡標語挺版帆布包",
+              "ColorName": "白",
+              "Size": "F",
+              "SellPrice": 100.0,
+              "OriginPrice": 1380.0,
+              "Count": 1,
+              "Cover": "https://pic.tpx.tw/yyandu/ProductBasic/b1a6254a-521e-4a77-9887-fef54a2bb94a.jpg",
+              "Url": "/zh-tw/market/a/157?c=37",
+              "BarCode": "Y405000010100",
+              "HasStock": false,
+              "Stock": 20,
+              "StockMessage": null,
+              "IsOffshoreIsland": true,
+              "IsLimitedRefund": true,
+              "PintSizePictureUrl": "https://pic.tpx.tw/yyandu/ProductColor/b2f3b130-b6ac-490e-9e14-6457f5d406c5.jpg",
+              "Pattern": 2,
+              "BrandName":"The Butters",
+              "Series": {
+                "FlavorName": "辣味",
+                "SpecName": "180g"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Memo": {
+      "TotalPrice": 300.0,
+      "AddOnPrice": 200.0,
+      "EventDiscount": 0.0,
+      "LevelDiscount": 0.0,
+      "CouponDiscount": 100.0,
+      "ShareDiscount":0,
+      "ShippingCost": "80",
+      "BaseShippingCost": 0.0,
+      "ExtraShippingCost": 0.0,
+      "PayPrice": 5220.0,
+      "UserVirtualCurrency": 0.0,
+      "UseRewardPoints": 400,
+      "UseFaPoints": 20,
+      "UseRebate":50,
+      "ShippingThreshold": 899,
+      "NoShippingCostGap": 10,
+      "CouponMemo": {
+        "Code": "買一送一",
+        "Message": null
+      },
+      "SortOutMemo": {
+        "Message": ""
+      },
+      "DeliveryMemo": {
+        "Message": "因近期包裹量多，出貨時間調整為7-10個工作天，實際出貨日將依出貨通知信為主，還請見諒。",
+        "AlertMessage": "",
+        "CanUseDelivery": [
+          1,
+          2,
+          4,
+          5,
+          7
+        ],
+        "AllDelivery": [
+          1,
+          2,
+          4,
+          5,
+          7
+        ]
+      },
+      "PayMemo": {
+        "Message": "Oops！您的商品超過此運送方式限制，請更改配送方式或分開訂購喔！",
+        "CanUsePay": [
+          1,
+          9
+        ],
+        "AllPayType": [
+          1,
+          4,
+          5,
+          2,
+          3,
+          9
+        ],
+        "CanUseFasneyInstallmentPlan": [
+          1,
+          3,
+          6,
+          12
+        ]
+      },
+      "LimitMemo": {
+        "Message": ""
+      },
+      "UserLevelMemo": {
+        "Name": "一般會員",
+        "LevelUpRemaining": 0.0,
+        "UserLevelPeriod": null,
+        "RemindWords": [],
+        "RemindWord": null
+      },
+      "EmployeeMemo": {
+        "Message": ""
+      },
+      "AddOnEventMemo": {
+        "Message": ""
+      },
+      "RewardPointsMemo": {
+        "PointsBalance": 0.0,
+        "CanUse": false,
+        "Threshold": 1000,
+        "PointsAvailable": 0.0,
+        "Message": "",
+        "RewardDescription": "一般會員消費$100獲得1 P POINTS",
+        "AddRewardPoints": 0.0
+      },
+      "FaPointsMemo": {
+        "IsBound": true,
+        "PointsBalance": 100.0,
+        "CanUse": false,
+        "Threshold": 1000,
+        "PointsAvailable": 1000.0,
+        "Message": "",
+        "FaPointsDescription": "消費 100 元送 1 FA Points",
+        "AddFaPoints": 100.0
+      }
+    }
+  }
+}

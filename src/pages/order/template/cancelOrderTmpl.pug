@@ -1,0 +1,22 @@
+div
+  #lb-cancel-order.modal.fade(tabindex='-1')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          .logo-u
+          a.modal-close(href='#' data-dismiss='modal')
+            i.icon-close
+        .modal-body
+          span 提醒您訂單一經取消後，
+            br.show-mb
+          span 原訂單之優惠活動將一併取消，
+            br.show-mb
+          span 欲購買商品請重新訂購，
+            br.show-mb
+          span 其商品庫存及相關優惠
+            br.show-mb
+          span 將依訂購當下網頁資訊為準。
+        .modal-footer
+          button.btn.btn-outline-primary(type='button' data-dismiss='modal') 取消
+          button.btn.btn-primary(:disabled='lockBtn', @click.prevent='confirmCancel' type='button') 確認
+  order-loading(:showloadingmodel='ShowLoadingModel')

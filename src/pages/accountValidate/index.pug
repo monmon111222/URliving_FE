@@ -1,0 +1,25 @@
+extends ../../template/layout
+
+
+block vars
+  - var pageID = 'page-validate';
+
+block content
+  .container-fluid
+    div.content-block.content-sm
+      .display-3.text-center.mb-5 Welcome!
+      form#form-social-check
+        .page-title.title.with-underline 會員驗證
+        h5.my-5.lh-15
+          div
+            | 親愛的 
+            span ○○
+            |  您好！
+          br
+          div
+            | 歡迎您加入YUYU網站會員，貼心提醒您的Email信箱 
+            span pazomi@email.com
+            |  尚未完成認證，
+          div 現在就完成Email認證啟用會員中心，獲得更多優惠訊息及會員專屬通知吧！
+        div.text-center
+          input(type="submit" value="重新發送驗證").btn.btn-outline-primary 

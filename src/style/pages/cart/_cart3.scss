@@ -1,0 +1,142 @@
+#page-cart {
+	.order-block {
+		margin-top: 30px;
+		margin-bottom: 56px;
+		.cart-info-order {
+			color: #000;
+			.cart-info-order-title {
+				margin-bottom: 20px;
+				font-size: 24px;
+				font-weight: 500;
+				line-height: 1;
+				color: #006fff;
+			}
+			.cart-info-order-number {
+				line-height: 1;
+				font-weight: 500;
+				margin-bottom: 10px;
+				a {
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+			ul {
+				padding-left: 0;
+				font-weight: 400;
+				li {
+					margin-bottom: 4px;
+				}
+			}
+			.atm-text {
+				margin-top: 16px;
+				p {
+					margin-bottom: 2px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	.order-recipient {
+		margin-bottom: 56px;
+		.cart-info {
+			color: #000;
+		}
+	}
+	.order-products {
+		position: relative;
+		margin-bottom: 72px;
+		.card {
+			position: relative;
+		}
+		.cart-info {
+			color: #000;
+			overflow: hidden;
+		}
+		.product {
+			flex-shrink: 0;
+			max-width: 120px;
+			margin-right: 32px;
+			.item-order {
+				margin-top: 7px;
+				margin-bottom: 14px;
+			}
+			.item-name {
+				margin-bottom: 9px;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			.item-color {
+				margin-bottom: 9px;
+			}
+			.item-size {
+				margin-bottom: 0;
+			}
+		}
+		.order-products-more {
+			position: absolute;
+			right: 1px;
+			top: 1px;
+			bottom: 1px;
+			padding: 32px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: #fff;
+			a {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				i {
+					margin-top: 16px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	#page-cart {
+		.order-block {
+			margin-top: 0;
+			margin-bottom: 32px;
+			.cart-info-order {
+				.cart-info-order-title {
+					font-size: 20px;
+				}
+				.cart-info-order-number {
+					font-size: 14px;
+					span {
+						display: block;
+						margin-top: 4px;
+						margin-left: 64px;
+					}
+				}
+				ul {
+					font-size: 14px;
+				}
+				.atm-text {
+					margin-top: 16px;
+					p {
+						margin-bottom: 2px;
+					}
+				}
+			}
+		}
+		.order-recipient {
+			margin-bottom: 40px;
+		}
+		.order-products {
+			margin-bottom: 72px;
+			.product {
+				margin-right: 16px;
+			}
+			.order-products-more {
+				padding: 20px;
+			}
+		}
+	}
+}

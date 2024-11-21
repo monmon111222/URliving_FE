@@ -1,0 +1,395 @@
+@import "swiper/swiper.scss";
+@import "swiper/modules/autoplay/autoplay.scss";
+@import "swiper/modules/pagination/pagination.scss";
+@import "swiper/modules/scrollbar/scrollbar.scss";
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.swiper-scrollbar-drag {
+	background-color: rgb(0, 111, 255);
+}
+
+.swiper-pagination {
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #000;
+	width: 56px;
+	border-radius: 12px;
+	padding: 4px 0;
+	font-size: 12px;
+	color: #fff;
+
+	span {
+		color: #fff;
+	}
+}
+
+#page-home {
+	.home-content {
+		max-width: 1440px;
+		margin: auto;
+	}
+
+	.new-arrive-block {
+		padding: 48px 12px 0;
+
+		.new-arrive-title {
+			text-align: center;
+			padding-bottom: 16px;
+			font-size: 18px;
+			margin-bottom: 0px;
+		}
+
+		.new-arrive {
+			display: flex;
+			justify-content: space-around;
+			align-items: flex-start;
+			flex-wrap: wrap;
+
+			.new-arrive-list {
+				flex: 0 1 33%;
+				padding: 0 3px;
+				margin-bottom: 32px;
+			}
+
+			.card-head {
+				position: relative;
+
+				.favorite-img {
+					cursor: pointer;
+					position: absolute;
+					top: 16px;
+					right: 8px;
+					width: 20px;
+				}
+
+				.share-link {
+					position: absolute;
+					top: 50px;
+					right: 8px;
+
+					.share-image {
+						width: 20px;
+					}
+				}
+			}
+
+			.card-body {
+				padding-top: 13px;
+				height: 122px;
+				max-height: 122px;
+				font-size: 14px;
+
+				.product-brand {
+					color: #000;
+					height: 50px;
+					max-height: 50px;
+					margin-bottom: 0px;
+				}
+
+				.product-name {
+					display: inline-block;
+					color: #000;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+					width: 110px;
+					max-width: 110px;
+				}
+
+				.product-price {
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+
+					.product-origin {
+						color: #000;
+					}
+
+					.product-origin.active {
+						text-decoration: line-through;
+					}
+
+					.product-sell {
+						color: #006fff;
+						margin-left: 8px;
+					}
+				}
+			}
+
+			.card-footer {
+				&::after {
+					content: "";
+					clear: both;
+				}
+
+				span.tag {
+					font-size: 12px;
+					display: inline-block;
+					background-color: #006fff;
+					color: #fff;
+					padding: 2px 5px;
+					vertical-align: middle;
+				}
+
+				span ~ span {
+					margin-left: 4px;
+				}
+
+				.add-cart {
+					float: right;
+				}
+			}
+		}
+	}
+
+	.mag-block {
+		padding: 0 12px;
+		margin-top: 59px;
+
+		.mag-title {
+			text-align: center;
+			font-size: 18px;
+			margin-bottom: 16px;
+		}
+
+		.mag-list {
+			.mag-list-item {
+				margin-bottom: 32px;
+
+				.mag-content {
+					padding-top: 16px;
+
+					.mag-date {
+						display: block;
+						font-size: 12px;
+					}
+
+					.mag-title-text {
+						padding-top: 8px;
+						font-size: 20px;
+						letter-spacing: 0.4px;
+					}
+
+					.mag-text {
+						font-size: 12px;
+						letter-spacing: 0.24px;
+						line-height: 1.5;
+					}
+
+					.mag-label {
+						display: flex;
+						justify-content: flex-start;
+						align-items: center;
+						flex-wrap: wrap;
+
+						span.label {
+							font-size: 12px;
+							padding: 5px 8px;
+							text-align: center;
+							border: 1px solid #afafaf;
+							margin-right: 8px;
+							margin-bottom: 8px;
+							border-radius: 1px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.brand-block {
+		padding-top: 40px;
+		display: flex;
+		flex-wrap: wrap;
+
+		.brand-list {
+			flex: 0 1 100%;
+			max-width: 100%;
+			padding: 0 12px;
+		}
+
+		.brand-title {
+			text-align: center;
+			padding-bottom: 8px;
+			margin-bottom: 0px;
+		}
+
+		.brand-img {
+			display: block;
+			margin-bottom: 24px;
+		}
+
+		.brand-product-list {
+			border-top: 1px solid #afafaf;
+			border-bottom: 1px solid #afafaf;
+			padding: 16px 0;
+			margin-bottom: 50px;
+
+			.brand-product-list-item {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				margin-bottom: 16px;
+
+				.brand-image {
+					max-width: 120px;
+				}
+
+				.brand-product-info {
+					font-size: 14px;
+					color: #000000;
+					padding-left: 8px;
+
+					.brand-product-name {
+						margin-bottom: 25px;
+					}
+
+					.brand-price {
+						font-size: 18px;
+						letter-spacing: 0.4px;
+
+						span {
+							display: inline-block;
+						}
+
+						.brand-origin.active {
+							text-decoration: line-through;
+						}
+
+						.brand-sell {
+							padding-left: 16px;
+							color: #006fff;
+						}
+					}
+				}
+
+				.brand-product-icon {
+					display: flex;
+					flex-direction: column;
+					max-width: 20px;
+					flex: 0 1 20px;
+					margin-left: auto;
+
+					.favorite-img {
+						width: 20px;
+						height: 20px;
+					}
+
+					.share-link {
+						margin-top: 16px;
+					}
+
+					.add-cart {
+						margin-top: 16px;
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+		.mag-block {
+			margin-top: 120px;
+
+			.mag-title {
+				font-size: 30px;
+				margin-bottom: 24px;
+			}
+
+			.mag-list {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				flex-wrap: wrap;
+
+				.mag-list-item {
+					flex: 0 1 50%;
+
+					&:nth-child(odd) {
+						padding-right: 16px;
+					}
+
+					&:nth-child(even) {
+						padding-left: 16px;
+					}
+
+					.mag-content {
+						.mag-title-text {
+							padding-top: 0px;
+							font-size: 30px;
+							letter-spacing: 0.6px;
+						}
+
+						.mag-text {
+							font-size: 16px;
+							letter-spacing: 0.32px;
+							line-height: 2;
+						}
+					}
+				}
+			}
+		}
+
+		.brand-block {
+			.brand-list {
+				flex: 0 1 50%;
+				max-width: 50%;
+			}
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.new-arrive-block {
+			padding-top: 120px;
+
+			.new-arrive-title {
+				font-size: 30px;
+				padding-bottom: 24px;
+			}
+
+			.new-arrive {
+				.new-arrive-list {
+					flex: 0 1 16.666%;
+					padding: 0 8px;
+				}
+
+				.card-body {
+					font-size: 16px;
+					height: 150px;
+					max-height: 150px;
+
+					.product-price {
+						font-size: 24px;
+					}
+				}
+			}
+		}
+
+		.brand-block {
+			.brand-list {
+				flex: 0 1 33%;
+				max-width: 33%;
+			}
+		}
+	}
+}

@@ -1,0 +1,241 @@
+// desktop/tablet/mobile display status
+.displaySMALL900,
+.displaySMALL1024,
+.displaySMALL400,
+.displaySMALL420
+  display: none
+
+// margin, padding & column
+$offset-list: 5 10 20 30 40 50
+$vw-offset-list: 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100
+$total-column: 6
+
+@mixin verticalAlign($column)
+  @if $column == 1
+    vertical-align: middle
+  @else
+    vertical-align: top
+
+@for $i from 1 through $total-column
+  .column#{$i}
+    width: #{100% / $i}
+    box-sizing: border-box
+    text-align: center
+    display: inline-block
+    +verticalAlign($i)
+    position: relative
+    @for $j from 1 through $i
+      &.span#{$j}
+        width: #{100% / $i * $j}
+
+  @media only screen and (max-width: 1024px)
+    .sim-row
+      &[t-col='1'] .column#{$i}:not(.t-break)
+        width: 100%
+      &[t-col='2'] .column#{$i}:not(.t-break)
+        width: 50%
+
+    .t-break.column#{$i}
+      width: 100%
+
+  @media only screen and (max-width: 420px)
+    .sim-row
+      &[m-col='1'], &[m-col='1'] .t-break
+        .column#{$i}:not(.t-break)
+          width: 100%
+      &[m-col='2']
+        .column#{$i}:not(.t-break)
+          width: 50%
+
+@each $offset-size in $offset-list
+  .padding#{$offset-size}
+    padding: #{$offset-size}px
+    box-sizing: border-box
+
+  .margin#{$offset-size}
+    margin: #{$offset-size}px
+
+  @media only screen and (max-width: 1024px)
+    .t-break.column2.margin#{$offset-size}
+      width: calc(100% - #{$offset-size * 2}px)
+
+  @for $i from 1 through $total-column
+    .margin#{$offset-size}.column#{$i}
+      width: calc(#{100% / $i} - #{$offset-size * 2}px)
+
+    @media only screen and (max-width: 1024px)
+      .sim-row
+        &[t-col='1'] .column#{$i}.margin#{$offset-size}:not(.t-break)
+          width: calc(100% - #{$offset-size * 2}px)
+        &[t-col='2'] .column#{$i}.margin#{$offset-size}:not(.t-break)
+          width: calc(50% - #{$offset-size * 2}px)
+
+    @media only screen and (max-width: 420px)
+      .sim-row
+        &[m-col='1'], &[m-col='1'] .t-break
+          .column#{$i}.margin#{$offset-size}:not(.t-break)
+            width: calc(100% - #{$offset-size * 2}px)
+        &[m-col='2']
+          .column#{$i}.margin#{$offset-size}:not(.t-break)
+            width: calc(50% - #{$offset-size * 2}px)
+
+@each $vw-offset-size in $vw-offset-list
+  .padding#{$vw-offset-size}vw
+    padding: #{$vw-offset-size/10}vw
+    box-sizing: border-box
+
+  .margin#{$vw-offset-size}vw
+    margin: #{$vw-offset-size/10}vw
+
+  @media only screen and (max-width: 1024px)
+    .t-break.column2.margin#{$vw-offset-size}vw
+      width: calc(100% - #{$vw-offset-size/10 * 2}vw)
+
+  @for $i from 1 through $total-column
+    .margin#{$vw-offset-size}vw.column#{$i}
+      width: calc(#{100% / $i} - #{$vw-offset-size/10 * 2}vw)
+
+    @media only screen and (max-width: 1024px)
+      .sim-row
+        &[t-col='1'] .column#{$i}.margin#{$vw-offset-size}vw:not(.t-break)
+          width: calc(100% - #{$vw-offset-size/10 * 2}vw)
+        &[t-col='2'] .column#{$i}.margin#{$vw-offset-size}vw:not(.t-break)
+          width: calc(50% - #{$vw-offset-size/10 * 2}vw)
+
+    @media only screen and (max-width: 420px)
+      .sim-row
+        &[m-col='1'], &[m-col='1'] .t-break
+          .column#{$i}.margin#{$vw-offset-size}vw:not(.t-break)
+            width: calc(100% - #{$vw-offset-size/10 * 2}vw)
+        &[m-col='2']
+          .column#{$i}.margin#{$vw-offset-size}vw:not(.t-break)
+            width: calc(50% - #{$vw-offset-size/10 * 2}vw)
+
+// radius
+.radiusAll
+  border-radius: 100%
+
+.radius5
+  border-radius: 5px
+
+.radius10
+  border-radius: 10px
+
+// border
+.border_dashed
+  border: 1px dashed #ccc
+
+.border_dotted
+  border: 1px dotted #ccc
+
+.border_solid
+  border: 1px solid #ccc
+
+// hover effect
+.hoverOpacity0
+  transition: opacity 0.3s
+  &:hover
+    opacity: 0
+
+.hoverOpacity50
+  transition: opacity 0.3s
+  &:hover
+    opacity: 0.5
+
+.hoverScale11, .hoverScale12
+  transition: transform 0.5s
+  &:hover
+    transform: scale(1.1)
+
+.hoverRotate7
+  transition: transform 0.5s
+  &:hover
+    transform: rotate(7deg)
+
+.hoverChildrenOpacity0
+  > *
+    transition: opacity 0.3s
+  &:hover > *
+    opacity: 0
+
+.hoverScaleX
+  transition: transform 0.5s
+  &:hover
+    transform: scaleX(-1)
+
+.hoverTranslateX
+  overflow: hidden
+  > *
+    transition: transform 0.5s
+  &:hover > *
+    transform: translateX(100%)
+
+
+.hoverTranslateY-padding
+  overflow: hidden
+  position: relative
+  > *
+    transition: transform 0.5s
+    display: block
+  > *:nth-child(2)
+    position: absolute
+  &:hover > *
+    transform: translateY(-100%)
+
+// animation
+@keyframes animation_fade
+  0%
+    opacity: 1
+  10%
+    opacity: 0
+  50%
+    opacity: 0
+  60%
+    opacity: 1
+
+@keyframes animation_fade_
+  0%
+    opacity: 0
+  10%
+    opacity: 1
+  50%
+    opacity: 1
+  60%
+    opacity: 0
+
+@keyframes animation_fade50
+  0%
+    opacity: 0
+  10%
+    opacity: 0.5
+  50%
+    opacity: 0.5
+  60%
+    opacity: 0
+
+.animation_fade
+  animation: animation_fade 2s infinite ease-in-out
+
+.animation_fade_
+  animation: animation_fade_ 2s infinite ease-in-out
+  opacity: 0
+
+.animation_fade50
+  animation: animation_fade50 2s infinite ease-in-out
+  opacity: 0
+
+// other
+.textDecoration a
+  text-decoration: underline
+
+@media only screen and (max-width: 1024px)
+  .displayBIG900, .displayBIG1024
+    display: none !important
+  .displaySMALL900, .displaySMALL1024
+    display: block
+
+@media only screen and (max-width: 420px)
+  .displayBIG400, .displayBIG420
+    display: none !important
+  .displaySMALL400, .displaySMALL420
+    display: block

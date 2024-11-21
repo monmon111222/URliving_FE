@@ -1,0 +1,31 @@
+{
+    "Code": 200,
+    "Message": null,
+    "Description": null,
+    "Response": {
+        "CategoryCode": "All",
+        "CategoryName": "All",
+        "TotalCount": 5,
+        "Page": 1,
+        "PageCount": 2,
+        "PageSize": 5,
+        "Data": [
+            {
+                "ID": 310,
+                "Title": "2023穿搭新主張：換上春季熱門單品",
+                "CoverImage": "https://pic.pzcdn.tw/pazzo/ArticleCover/25018de7-b56a-4074-8d5b-fcdacf6a00f5.jpg",
+                "PostTime": "2023.03.11",
+                "Summary": null,
+                "Content": "2023是脫穎而出的好時節。經典款式縱然倍受歡迎，但掙脫束縛盡情做自己無疑更令人神往。在向 2022告別之際，請大膽嘗試新款印花、紋理和圖案。"
+            },
+            {
+                "ID": 307,
+                "Title": "2023穿搭新主張：換上春季熱門單品",
+                "CoverImage": "https://pic.pzcdn.tw/pazzo/ArticleCover/b05b0ad4-515f-4bf2-a886-e8d6b06131bf.jpg",
+                "PostTime": "2023.03.11",
+                "Summary": null,
+                "Content": "2023是脫穎而出的好時節。經典款式縱然倍受歡迎，但掙脫束縛盡情做自己無疑更令人神往。在向 2022告別之際，請大膽嘗試新款印花、紋理和圖案。"
+            }
+        ]
+    }
+}

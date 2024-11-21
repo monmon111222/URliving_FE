@@ -1,0 +1,25 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-member-info';
+
+block content
+  .container
+    .member-container
+      .menu-block
+        include ../../template/member/memberMenu.pug
+      .info-block
+        include ../../template/member/info.pug
+        include ../../template/member/password.pug
+        a.btn.btn-invoice(href="#") 會員載具歸戶 
+
+
+
+
+block JSVAR
+  script(type="text/javascript").
+    window.userRegion = '台灣及離島';
+    window.userCounty = '';
+    window.userZipcode = '';
+    window.userProvince = '';
+    window.userAddress = ''; 

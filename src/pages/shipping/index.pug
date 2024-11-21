@@ -1,0 +1,176 @@
+extends ../../template/layout
+
+
+block vars
+  - var pageID = '';
+
+block content
+  .container-fluid
+    .qa-block
+      .page-title Shipping
+      #accordion-shipping
+        ul.static-list
+          li              
+            a(href="#" data-toggle="collapse" data-target="#collapse-shipping-1").list-collapse.with-plus.collapsed 配送時效／運費計算
+            #collapse-shipping-1.collapse.list-collapse-block(data-parent="#accordion-shipping")
+              div.list-collapse-inner 
+                br
+                | 【國內配送方式 】
+                .table-responsive
+                  table.table.table-bordered
+                    tr
+                      td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272", align="center") 現貨訂單
+                      td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272", align="center") 每日訂購時間截止點
+                      td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272", align="center") 出貨後送達時間
+                      td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272", align="center") 運費計算
+                      td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272", align="center") 免運門檻
+                    tr
+                      td.bg-primary.text-white(style="border-color: white #BC9272", align="center" valign="middle") 黑貓
+                      td(align="center" valign="middle") 週一至週六14:00前
+                      td(align="center" valign="middle") 
+                        | 當日出貨完成
+                        br
+                        | 預計1-2日送達
+                      td.nowrap(align="center" valign="middle") NT.80
+                      td.nowrap(align="center" rowspan="2" valign="middle") NT.3500 
+                    tr
+                      td.bg-primary.text-white(style="border-color: white #BC9272", align="center") 
+                        | 7-11
+                      td(align="center" valign="middle") 
+                        | 昨日14:00後-當日10:00前
+                        br
+                        | 當日10:00後-隔日14:00前
+                      td(align="center" valign="middle") 預計2-3日送達
+                      td(align="center" valign="middle") NT.80
+                br
+                ol
+                  li 注意事項
+                  li ※宅急便配送時段調整：8:00-13:00﹑13:00-18:00，晚上無配送服務
+                  li ※超過表單內所指示訂單時間訂購視為隔日訂單
+                  li ※若包裹為異常包裹，客服人員將會與您聯繫通知
+                  li ※線上刷卡訂單，依信用卡對帳成功完成付款之訂單依序安排出貨
+                  li ※如遇不可抗力之因素，mouggan將視狀況處理並於官網及粉絲團公告
+                  li ※如遇包裹量較多，訂單將延遲1-2日出貨，實際出貨時間將以您收到的出貨通知E-mail為準，敬請見諒
+                  li 7-11門市七日內取件，若未取件，門市將於商品到店第六天開始辦理退貨，建議可於收到簡訊時前往門市領取包裹，以免門市提早退回
+                  li ※提醒您，簡訊絕非通知的唯一方式，若未收到取貨通知，請主動登入官網訂單內的"詢問紀錄"提問
+                  li ※因應黑貓宅急便政策，2019/6/20起取消宅配北北基地區當日配服務
+                  li ※宅急便不提供週日配送包裹服務，如遇周日配送，工作日將順延一天
+                  li ※提醒您，若您無故或惡意三次(含)以上違反mouggan制定訂購與退貨相關規則，本公司有權暫停您的帳號並拒絕您使用本服務，同時列為交易黑名單，請您留意
+
+                br
+                | 【國外配送方式 】
+                br
+                .table-responsive
+                  table.table.table-bordered
+                    tr
+                      td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272", align="center") 配送方式
+                      td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272", align="center") 配送地區
+                      td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272", align="center") 出貨後送達時間
+                      td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272", align="center") 運費計算
+                      td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272", align="center") 付款方式
+                      td.bg-primary.text-white.nowrap(style="border-color: #BC9272 white white #BC9272", align="center") 備註
+                    tr
+                      td.bg-primary.text-white(style="border-color: white #BC9272", align="center" valign="middle") 順豐快遞
+                      td(valign="middle") 香港、澳門、中國、越南
+                      td(valign="middle", rowspan="2") 
+                        | 預計5-7天送達，包裹統一時間寄出待出貨後可利用包裹編號至各通路查詢
+                        br
+                        br
+                        a(href="http://postserv.post.gov.tw/pstmail/main_mail.html", target="_blank") EMS查詢
+                        br
+                        a(href="https://www.sf-express.com/tw/tc/", target="_blank") 順豐查詢
+                        br
+                        a(href="https://www.ups.com/us/en/global.page", target="_blank") UPS查詢
+                        br
+                        a(href="https://www.fedex.com/global/choose-location.html", target="_blank") FedEx查詢
+                        br
+                        a(href="https://www.logistics.dhl/tw-zh/home.html", target="_blank") DHL查詢
+                      td(rowspan="2") 無提供免運服務不參與官網相關運費優惠
+                      td(rowspan="2") mouggan 使用第三方支付平台系統，凡各家銀行的VISA、MASTER、JCB信用卡及銀聯卡皆可使用。
+                      td.nowrap(valign="middle") 
+                        | 香港地區的貨件，配送地址若為較偏遠地區/
+                        br 
+                        | 非工商服務地址/倉庫碼頭等轉運站，
+                        br
+                        | 會加收30元港幣的物流處理費，
+                        br
+                        | 香港偏遠地區及非工商地區確認查詢
+                    tr
+                      td.bg-primary.text-white(style="border-color: white #BC9272", align="center") 
+                        | 其他
+                        br
+                        | (將依照配送地區及包裹特性選擇適合的國際快遞業者進行配送)
+                      td(valign="middle") 
+                        | 新加坡、美國、加拿大、澳洲、紐西蘭、英國、德國、法國、日本等國家
+                      td(valign="middle") 收件人務必填寫英文名
+                br
+                | 注意事項
+                ul.list-decimal
+                  li 因各運送公司不定期調整運費之計算方式，故實際將以結帳時所顯示之運費為主
+                  li 各國進口關稅標準不同，若領取包裹時，貴國欲收取商品之關稅或偏遠地區另收之費用，需由買家自行支付
+                  li 包裹寄出後，未於預定送達天數內收到，還請盡快與客服聯繫
+                | ※結帳完成後視同同意運費酌收方式和關稅/物流費之處理方法
+                br
+                br
+                | 售後服務
+                ul.list-decimal
+                  li 請務必填寫正確收件人資訊，若因為收件信息不正確無法配送且無人簽收，導致包裹退回我們將直接取消整筆訂單。
+                  li 被退回之包裹僅會以購物金方式歸還商品金額(運費一律不歸還)；作業完成後也會以E-mail方式通知您。
+                | ※特別提醒：若當地的快遞公司多次投遞未成功且客服通知收件人也未取得聯繫，部份快遞公司將不再退回包裹，而我們也將不會再進行任何款項退款，還請您留意。
+                br
+                br
+                | INVOICE說明
+                br
+                | 依照台灣營業稅法mouggan將不會開立統一發票。（營業稅法：直接外銷貨物或勞務予國外買受人得免開立統一發票），mouggan會於包裹中附上商品明細以供核對商品。
+                br
+          li 
+            a(href="#" data-toggle="collapse" data-target="#collapse-shipping-2").list-collapse.with-plus.collapsed 門市取貨注意事項
+            #collapse-shipping-2.collapse.list-collapse-block(data-parent="#accordion-shipping")
+              div.list-collapse-inner 
+                | 包裹送達指定門市後隔日下午會發送簡訊通知，待收到通知後即可前往領取，請於送達日後領取期限內完成取件（7-11超商取件時間當日算起七日），若未領取將會有一次未領取紀錄。
+                br 
+                | 待收到貨到簡訊通知後至指定門市取貨時請告知店員您的姓名及手機末三碼，並確認應付包裹姓名及金額是否正確，若您不克前往領取，建議您可請家人或朋友代領亦可。
+                br
+                | ※特別提醒：若訂單使用『購物金』全額扣抵，0元包裹純取件不付款，請務必攜帶訂購人身分證件前往指定門市取件，避免領取包裹產生爭議。
+                br
+                br
+                | 若您逾期位完成門市／宅配配送取貨時，商品將會退回本公司，訂單亦將自動取消無法重新配送，如您仍需要該商品，請再次重新上網訂購。
+                br
+                | 當包裹出貨完成未被領取或拒收退回，該訂購帳號若累計達三次將無法使用此配送方式。
+                br 
+                | ※黑貓宅配及7-11超商取件未領取紀錄獨立計算。
+                br
+                | ※請您與我們共同珍惜寶貴的訂購資源及維護自身權益
+                br
+                br
+                | 因超商門市取貨購物流程，須連結到超商訂單系統中，並非單獨於本公司系統中完成，若您完成超商門市選取後，若非因門市自身暫停服務問題，將無法再變更門市，請您見諒！可由「會員登入」登入查詢，如訂單尚未進入包裝作業前，您可自行取消訂單，再重新下單選擇正確的取件門市即可。
+                br
+                | 因超商取貨服務時限為超商訂定作業規範，無法依個人需求彈性更動，請您見諒！
+                br
+                br
+                | 商品送達門市後，當天即會寄送信件，並於隔天寄送簡訊，如於簡訊發送前已完成取件的會員，將不再重複發送取件通知。
+                br
+                | 若您未收到「貨到門市通知函」，有可能是因網路狀況、信箱容量不足、伺服器是否正常運作等不確定因素。建議您可進行信箱設定檢測。
+                br
+                | 若您未收到取件簡訊通知，有可能是您所在的地點收訊不理想、手機簡訊儲存容量已滿，或手機門號本身預設拒收廣告簡訊功能，麻煩您再與門號所屬通訊業者確認。建議
+                br
+                | 您可由官網「會員登入」登入帳號 → 進入「訂單查詢」→查看訂單狀態確認出貨進度。
+                br
+                br
+                | 便利超商門市可能因其營運考量或是裝修計劃，以致造成會員們在選定取件門市後，又臨時接到暫停服務通知。
+                br
+                | 您可參考以下說明操作，再回覆客服人員您想更新的取件門市。
+                br
+                br
+                | Step1.超商門市查詢
+                a(href="https://emap.pcsc.com.tw/", target="_blank") 【7-11門市查詢】
+                br
+                | Step2.查得欲更換取件門市後，煩請於「訂單查詢」系統內的客服紀錄處點選「詢問／紀錄」，提供欲更改門市名稱即可。
+                br
+                | Step3. 貼上您想要更新的門市名稱及店號，並按「確定送出」，以便mouggan為您的訂單安排重新出貨，謝謝您的協助。
+                
+
+
+        
+
+   

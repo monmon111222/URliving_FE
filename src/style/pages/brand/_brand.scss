@@ -1,0 +1,45 @@
+#page-brand {
+	.content-block {
+		display: flex;
+		.filter-block {
+			border-top: 4px solid #000;
+			width: 215px;
+			margin-right: 15px;
+			.filter-title {
+				font-size: 24px;
+				margin: 22px 0 40px;
+			}
+			.detail-list {
+				li.letter {
+					display: flex;
+					a:not(:last-child) > p {
+						font-size: 14px;
+						width: 35.8px;
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+		.brand-block {
+			margin-left: 15px;
+			width: 100%;
+			.block-title {
+				font-size: 30px;
+				margin-bottom: 30px;
+			}
+		}
+		.brand-group {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 55px;
+		}
+		.brand-name {
+			width: 25%;
+			display: flex;
+			margin-bottom: 25px;
+			.btn-wish {
+				margin-right: 10px;
+			}
+		}
+	}
+}

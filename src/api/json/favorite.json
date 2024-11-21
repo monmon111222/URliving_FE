@@ -1,0 +1,389 @@
+{
+    "Code": 200,
+    "Message": "",
+    "Description": "",
+    "Response": {
+        "TotalCount": 6,
+        "Page": 1,
+        "PageCount": 1,
+        "PageSize": 15,
+        "Data": [
+            {
+                "NineDigitsBarcode": "T00001136",
+                "MarketID": 2852,
+                "Type": 1,
+                "Name": "氣質名媛毛呢耳針式耳環",
+                "SubTitle": "寒流不怕怕!",
+                "SellPrice": 490.0,
+                "OriginPrice": 590.0,
+                "EventPrice": 0.0,
+                "EventName": null,
+                "IsPreShow": false,
+                "ProductID": 1648,
+                "IsSoldOut": true,
+                "Labels": [
+                    {
+                        "Description": "sale",
+                        "Style": "sale"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "CustomMarketID": "MT1M2852CL15844SZ_",
+                        "MarketID": 2852,
+                        "MarketType": 1,
+                        "Covers": [
+                            "https://pic.tpx.tw/fastip-t/ProductCover/739d30a7-c03e-420d-91ae-1fbc129769c5.jpg",
+                            "https://pic.tpx.tw/fastip-t/ProductBasic/58ba00e6-57ed-475a-8da6-01718d14d517.jpg"
+                        ],
+                        "PintSizePictureUrl": null,
+                        "MarketUrl": "/market/n/2852?c=15844",
+                        "ColorID": 15844,
+                        "ColorName": "黑",
+                        "FavoriteCount": 1,
+                        "SalesCountDescription": "售出: 10",
+                        "IsFavorite": true,
+                        "IsSoldOut": true
+                    }
+                ],
+                "Brand": {
+                    "ID": 1,
+                    "Name": "Pazzo",
+                    "Code": "Pazzo",
+                    "Url": "/brand/Pazzo",
+                    "FavoriteCount": 999,
+                    "SalesCountDescription": "售出 : 101"
+                }
+            },
+            {
+                "NineDigitsBarcode": "T00001136",
+                "MarketID": 2852,
+                "Type": 1,
+                "Name": "氣質名媛毛呢耳針式耳環",
+                "SubTitle": "寒流不怕怕!",
+                "SellPrice": 490.0,
+                "OriginPrice": 590.0,
+                "EventPrice": 0.0,
+                "EventName": null,
+                "IsPreShow": false,
+                "ProductID": 1648,
+                "IsSoldOut": false,
+                "Labels": [
+                    {
+                        "Description": "sale",
+                        "Style": "sale"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "CustomMarketID": "MT1M2852CL15844SZ_",
+                        "MarketID": 2852,
+                        "MarketType": 1,
+                        "Covers": [
+                            "https://pic.tpx.tw/fastip-t/ProductCover/739d30a7-c03e-420d-91ae-1fbc129769c5.jpg",
+                            "https://pic.tpx.tw/fastip-t/ProductBasic/58ba00e6-57ed-475a-8da6-01718d14d517.jpg"
+                        ],
+                        "PintSizePictureUrl": null,
+                        "MarketUrl": "/market/n/2852?c=15844",
+                        "ColorID": 15844,
+                        "ColorName": "黑",
+                        "FavoriteCount": 1,
+                        "SalesCountDescription": "售出: 10",
+                        "IsFavorite": true,
+                        "IsSoldOut": true
+                    }
+                ],
+                "Brand": {
+                    "ID": 1,
+                    "Name": "Pazzo",
+                    "Code": "Pazzo",
+                    "Url": "/brand/Pazzo",
+                    "FavoriteCount": 999,
+                    "SalesCountDescription": "售出 : 101"
+                }
+            },
+            {
+                "NineDigitsBarcode": "T00001136",
+                "MarketID": 2852,
+                "Type": 1,
+                "Name": "氣質名媛毛呢耳針式耳環",
+                "SubTitle": "寒流不怕怕!",
+                "SellPrice": 490.0,
+                "OriginPrice": 590.0,
+                "EventPrice": 0.0,
+                "EventName": null,
+                "IsPreShow": false,
+                "ProductID": 1648,
+                "IsSoldOut": true,
+                "Labels": [
+                    {
+                        "Description": "sale",
+                        "Style": "sale"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "CustomMarketID": "MT1M2852CL15844SZ_",
+                        "MarketID": 2852,
+                        "MarketType": 1,
+                        "Covers": [
+                            "https://pic.tpx.tw/fastip-t/ProductCover/739d30a7-c03e-420d-91ae-1fbc129769c5.jpg",
+                            "https://pic.tpx.tw/fastip-t/ProductBasic/58ba00e6-57ed-475a-8da6-01718d14d517.jpg"
+                        ],
+                        "PintSizePictureUrl": null,
+                        "MarketUrl": "/market/n/2852?c=15844",
+                        "ColorID": 15844,
+                        "ColorName": "黑",
+                        "FavoriteCount": 1,
+                        "SalesCountDescription": "售出: 10",
+                        "IsFavorite": true,
+                        "IsSoldOut": true
+                    }
+                ],
+                "Brand": {
+                    "ID": 1,
+                    "Name": "Pazzo",
+                    "Code": "Pazzo",
+                    "Url": "/brand/Pazzo",
+                    "FavoriteCount": 999,
+                    "SalesCountDescription": "售出 : 101"
+                }
+            },
+            {
+                "NineDigitsBarcode": "T00001136",
+                "MarketID": 2852,
+                "Type": 1,
+                "Name": "氣質名媛毛呢耳針式耳環",
+                "SubTitle": "寒流不怕怕!",
+                "SellPrice": 490.0,
+                "OriginPrice": 590.0,
+                "EventPrice": 0.0,
+                "EventName": null,
+                "IsPreShow": false,
+                "ProductID": 1648,
+                "IsSoldOut": true,
+                "Labels": [
+                    {
+                        "Description": "sale",
+                        "Style": "sale"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "CustomMarketID": "MT1M2852CL15844SZ_",
+                        "MarketID": 2852,
+                        "MarketType": 1,
+                        "Covers": [
+                            "https://pic.tpx.tw/fastip-t/ProductCover/739d30a7-c03e-420d-91ae-1fbc129769c5.jpg",
+                            "https://pic.tpx.tw/fastip-t/ProductBasic/58ba00e6-57ed-475a-8da6-01718d14d517.jpg"
+                        ],
+                        "PintSizePictureUrl": null,
+                        "MarketUrl": "/market/n/2852?c=15844",
+                        "ColorID": 15844,
+                        "ColorName": "黑",
+                        "FavoriteCount": 1,
+                        "SalesCountDescription": "售出: 10",
+                        "IsFavorite": true,
+                        "IsSoldOut": true
+                    }
+                ],
+                "Brand": {
+                    "ID": 1,
+                    "Name": "Pazzo",
+                    "Code": "Pazzo",
+                    "Url": "/brand/Pazzo",
+                    "FavoriteCount": 999,
+                    "SalesCountDescription": "售出 : 101"
+                }
+            },
+            {
+                "NineDigitsBarcode": "T00001136",
+                "MarketID": 2852,
+                "Type": 1,
+                "Name": "氣質名媛毛呢耳針式耳環",
+                "SubTitle": "寒流不怕怕!",
+                "SellPrice": 490.0,
+                "OriginPrice": 590.0,
+                "EventPrice": 0.0,
+                "EventName": null,
+                "IsPreShow": false,
+                "ProductID": 1648,
+                "IsSoldOut": true,
+                "Labels": [
+                    {
+                        "Description": "sale",
+                        "Style": "sale"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "CustomMarketID": "MT1M2852CL15844SZ_",
+                        "MarketID": 2852,
+                        "MarketType": 1,
+                        "Covers": [
+                            "https://pic.tpx.tw/fastip-t/ProductCover/739d30a7-c03e-420d-91ae-1fbc129769c5.jpg",
+                            "https://pic.tpx.tw/fastip-t/ProductBasic/58ba00e6-57ed-475a-8da6-01718d14d517.jpg"
+                        ],
+                        "PintSizePictureUrl": null,
+                        "MarketUrl": "/market/n/2852?c=15844",
+                        "ColorID": 15844,
+                        "ColorName": "黑",
+                        "FavoriteCount": 1,
+                        "SalesCountDescription": "售出: 10",
+                        "IsFavorite": true,
+                        "IsSoldOut": true
+                    }
+                ],
+                "Brand": {
+                    "ID": 1,
+                    "Name": "Pazzo",
+                    "Code": "Pazzo",
+                    "Url": "/brand/Pazzo",
+                    "FavoriteCount": 999,
+                    "SalesCountDescription": "售出 : 101"
+                }
+            },
+            {
+                "NineDigitsBarcode": "T00001136",
+                "MarketID": 2852,
+                "Type": 1,
+                "Name": "氣質名媛毛呢耳針式耳環",
+                "SubTitle": "寒流不怕怕!",
+                "SellPrice": 490.0,
+                "OriginPrice": 590.0,
+                "EventPrice": 0.0,
+                "EventName": null,
+                "IsPreShow": false,
+                "ProductID": 1648,
+                "IsSoldOut": true,
+                "Labels": [
+                    {
+                        "Description": "sale",
+                        "Style": "sale"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "CustomMarketID": "MT1M2852CL15844SZ_",
+                        "MarketID": 2852,
+                        "MarketType": 1,
+                        "Covers": [
+                            "https://pic.tpx.tw/fastip-t/ProductCover/739d30a7-c03e-420d-91ae-1fbc129769c5.jpg",
+                            "https://pic.tpx.tw/fastip-t/ProductBasic/58ba00e6-57ed-475a-8da6-01718d14d517.jpg"
+                        ],
+                        "PintSizePictureUrl": null,
+                        "MarketUrl": "/market/n/2852?c=15844",
+                        "ColorID": 15844,
+                        "ColorName": "黑",
+                        "FavoriteCount": 1,
+                        "SalesCountDescription": "售出: 10",
+                        "IsFavorite": true,
+                        "IsSoldOut": true
+                    }
+                ],
+                "Brand": {
+                    "ID": 1,
+                    "Name": "Pazzo",
+                    "Code": "Pazzo",
+                    "Url": "/brand/Pazzo",
+                    "FavoriteCount": 999,
+                    "SalesCountDescription": "售出 : 101"
+                }
+            },
+            {
+                "NineDigitsBarcode": "T00001136",
+                "MarketID": 2852,
+                "Type": 1,
+                "Name": "氣質名媛毛呢耳針式耳環",
+                "SubTitle": "寒流不怕怕!",
+                "SellPrice": 490.0,
+                "OriginPrice": 590.0,
+                "EventPrice": 0.0,
+                "EventName": null,
+                "IsPreShow": false,
+                "ProductID": 1648,
+                "IsSoldOut": true,
+                "Labels": [
+                    {
+                        "Description": "sale",
+                        "Style": "sale"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "CustomMarketID": "MT1M2852CL15844SZ_",
+                        "MarketID": 2852,
+                        "MarketType": 1,
+                        "Covers": [
+                            "https://pic.tpx.tw/fastip-t/ProductCover/739d30a7-c03e-420d-91ae-1fbc129769c5.jpg",
+                            "https://pic.tpx.tw/fastip-t/ProductBasic/58ba00e6-57ed-475a-8da6-01718d14d517.jpg"
+                        ],
+                        "PintSizePictureUrl": null,
+                        "MarketUrl": "/market/n/2852?c=15844",
+                        "ColorID": 15844,
+                        "ColorName": "黑",
+                        "FavoriteCount": 1,
+                        "SalesCountDescription": "售出: 10",
+                        "IsFavorite": true,
+                        "IsSoldOut": true
+                    }
+                ],
+                "Brand": {
+                    "ID": 1,
+                    "Name": "Pazzo",
+                    "Code": "Pazzo",
+                    "Url": "/brand/Pazzo",
+                    "FavoriteCount": 999,
+                    "SalesCountDescription": "售出 : 101"
+                }
+            },
+            {
+                "NineDigitsBarcode": "T00001136",
+                "MarketID": 2852,
+                "Type": 1,
+                "Name": "氣質名媛毛呢耳針式耳環",
+                "SubTitle": "寒流不怕怕!",
+                "SellPrice": 490.0,
+                "OriginPrice": 590.0,
+                "EventPrice": 0.0,
+                "EventName": null,
+                "IsPreShow": false,
+                "ProductID": 1648,
+                "IsSoldOut": true,
+                "Labels": [
+                    {
+                        "Description": "sale",
+                        "Style": "sale"
+                    }
+                ],
+                "Colors": [
+                    {
+                        "CustomMarketID": "MT1M2852CL15844SZ_",
+                        "MarketID": 2852,
+                        "MarketType": 1,
+                        "Covers": [
+                            "https://pic.tpx.tw/fastip-t/ProductCover/739d30a7-c03e-420d-91ae-1fbc129769c5.jpg",
+                            "https://pic.tpx.tw/fastip-t/ProductBasic/58ba00e6-57ed-475a-8da6-01718d14d517.jpg"
+                        ],
+                        "PintSizePictureUrl": null,
+                        "MarketUrl": "/market/n/2852?c=15844",
+                        "ColorID": 15844,
+                        "ColorName": "黑",
+                        "FavoriteCount": 1,
+                        "SalesCountDescription": "售出: 10",
+                        "IsFavorite": true,
+                        "IsSoldOut": true
+                    }
+                ],
+                "Brand": {
+                    "ID": 1,
+                    "Name": "Pazzo",
+                    "Code": "Pazzo",
+                    "Url": "/brand/Pazzo",
+                    "FavoriteCount": 999,
+                    "SalesCountDescription": "售出 : 101"
+                }
+            }
+        ]
+    }
+}

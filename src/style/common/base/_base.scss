@@ -1,0 +1,90 @@
+html,
+body {
+	font-family: "Montserrat", "Noto Sans TC", sans-serif;
+	font-weight: 500;
+	scroll-behavior: smooth;
+}
+
+.main {
+	max-width: 1440px;
+	padding-top: 206px;
+	padding-bottom: 100px;
+	margin: auto;
+
+	@include max_md {
+		max-width: 100%;
+		padding-top: 59px;
+		padding-bottom: 59px;
+	}
+}
+
+.container {
+	max-width: 1440px;
+	padding: 70px 12px 60px;
+}
+
+ul,
+ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.hide {
+	display: none;
+}
+
+.btn {
+	@include transition(all 0.2s ease-out);
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	user-select: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+
+	// Share hover and focus styles
+	@include hover-focus {
+		text-decoration: none;
+	}
+
+	&:focus,
+	&.focus {
+		outline: 0;
+	}
+
+	// Disabled comes first so active can properly restyle
+	&.disabled,
+	&:disabled {
+		opacity: 0.65;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		padding-top: 206px;
+		padding-bottom: 100px;
+	}
+
+	.member-container {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+
+		.menu-block {
+			flex: 0 1 216px;
+			max-width: 216px;
+		}
+
+		.info-block {
+			width: calc(100% - 216px - 32px);
+			padding-left: 32px;
+		}
+	}
+}

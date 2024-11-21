@@ -1,0 +1,21 @@
+$main-path: "https://static.tpx.tw/sff/urliving/static/img/";
+$sub-path: "https://static.tpx.tw/sff-t/urliving/static/img/";
+$local-path: "/static/img/";
+$storage-path: $main-path;
+
+$main-static: "https://static.tpx.tw/sff/urliving/static/";
+$sub-static: "https://static.tpx.tw/sff-t/urliving/static/";
+$local-static: "/static/";
+$storage-static: $main-static;
+
+$main-domain: "https://www.fastip2thelabel.com/";
+$sub-domain: "https://www-t.fastip2thelabel.com/";
+$storage-domain: $main-domain;
+
+// change bootstrap original color
+$primary: #000;
+$gray: #afafaf;
+$error: #e87942;
+$blue: #006fff;
+
+$border-color: $gray;

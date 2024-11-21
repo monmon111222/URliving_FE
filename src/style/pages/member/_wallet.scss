@@ -1,0 +1,72 @@
+#page-wallet {
+	.detail-list {
+		margin-top: 55px;
+		.detail-item {
+			border-bottom: 1px solid $gray;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			.header {
+				@include row_between_center;
+				margin-bottom: 30px;
+				.result {
+					font-size: 36px;
+					line-height: 1;
+				}
+			}
+
+			.content {
+				@include row_between_center;
+				font-size: 14px;
+				.result {
+					font-size: 36px;
+					line-height: 1;
+				}
+				.btn-search i {
+					width: 15px;
+					height: 15px;
+					margin-left: 10px;
+				}
+			}
+		}
+		@include max_md {
+			margin: 40px 20px;
+			.detail-item {
+				.header {
+					.result {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+	#lb-virtual-currency {
+		.form-input {
+			label {
+				@include row_between_center;
+			}
+
+			input ~ .error {
+				top: 7px;
+				right: 0px;
+				font-size: 12px;
+				margin-top: 5px;
+			}
+		}
+
+		select ~ .error {
+			top: 7px;
+			right: 0px;
+			font-size: 12px;
+		}
+
+		.memo {
+			color: $gray;
+			font-size: 12px;
+			margin-top: 5px;
+		}
+		.modal-close > .icon-close {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}

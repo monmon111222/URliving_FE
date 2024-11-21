@@ -1,0 +1,81 @@
+.sidebar {
+	@include transition(all 0.3s ease-out);
+	position: fixed;
+	left: -100%;
+	bottom: 0;
+	top: 59px;
+	width: 100%;
+	z-index: 2000;
+	background-color: white;
+	visibility: hidden;
+	font-family: "Arial";
+	overflow: auto;
+	border-top: 1px solid #afafaf;
+
+	&.active {
+		visibility: visible;
+		left: 0%;
+	}
+
+	.list-group {
+		display: flex;
+		height: 100%;
+		.main-block {
+			min-width: 100px;
+			border-right: 1px solid #afafaf;
+			padding: 15px;
+			white-space: nowrap;
+			.main-list {
+				.sidebar-main-type {
+					margin-bottom: 25px;
+					&.active {
+						color: #006fff;
+					}
+				}
+			}
+		}
+		.sub-block {
+			padding: 15px;
+			.banner {
+				margin-bottom: 20px;
+			}
+			.level2-list {
+				display: none;
+				overflow-y: scroll;
+				height: calc(100% - 20px - 138px);
+				width: 100%;
+				.level2-title {
+					margin-bottom: 25px;
+				}
+				.brand-name {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					margin-bottom: 25px;
+					.btn-heart {
+						margin-right: 10px;
+						width: 20px;
+						height: 20px;
+						background-size: contain;
+						&.active {
+							background: url($storage-path + "heart-active.svg?v=006") no-repeat center;
+						}
+						&:not(.active) {
+							background: url($storage-path + "heart.svg?v=006") no-repeat center;
+						}
+					}
+				}
+				.level3-list > li {
+					margin-left: 15px;
+					font-weight: 400;
+					&:not(:last-child) {
+						margin-bottom: 20px;
+					}
+					&:last-child {
+						margin-bottom: 25px;
+					}
+				}
+			}
+		}
+	}
+}

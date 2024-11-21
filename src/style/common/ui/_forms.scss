@@ -1,0 +1,175 @@
+select,
+select.form-control {
+	width: 100%;
+	height: 54px;
+	padding: 0 15px;
+	font-size: 16px;
+	line-height: 54px;
+	border-radius: 0;
+	border: 1px solid #afafaf;
+	outline: none;
+	appearance: none;
+	background: url($storage-path + "arrow.svg") no-repeat right 15px top 23px;
+	&:focus {
+		border: 1px solid #000;
+	}
+	:-webkit-autofill {
+		box-shadow: 0 0 0 50px white inset;
+		-webkit-text-fill-color: black;
+		background: white;
+		transition: background 5000s ease-in-out 0s;
+	}
+}
+
+.form-select {
+	position: relative;
+	div.error {
+		font-size: 17px;
+		color: $error;
+		position: absolute;
+		top: 23px;
+		right: 37px;
+	}
+}
+
+// checkbox radio
+.choose {
+	.choose-input {
+		display: block;
+		position: relative;
+		padding-left: 48px;
+		margin-bottom: 0;
+		cursor: pointer;
+		font-size: 16px;
+		color: #afafaf;
+		input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			&:checked ~ .choose-checkMark {
+				border: 1px solid #000000;
+				&:after {
+					display: block;
+				}
+			}
+			&:checked ~ .choose-text {
+				color: #000000;
+			}
+		}
+	}
+	.choose-text {
+		line-height: 32px;
+	}
+	.choose-checkMark {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		height: 32px;
+		width: 32px;
+		border: 1px solid #afafaf;
+		border-radius: 2px;
+		&:after {
+			content: "";
+			display: none;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 24px;
+			height: 24px;
+			background: url($storage-path + "arrow.svg") no-repeat center center;
+		}
+	}
+	&.revert {
+		.choose-input {
+			padding-left: 0;
+			padding-right: 48px;
+		}
+		.choose-checkMark {
+			left: auto;
+			right: 0;
+		}
+	}
+}
+
+.quantity {
+	border: 1px solid #afafaf;
+	display: flex;
+	.quantity-btn-minus,
+	.quantity-btn-plus {
+		width: 40px;
+		height: 54px;
+		font-size: 20px;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		cursor: pointer;
+		&.disabled {
+			opacity: 0.5;
+			cursor: default;
+		}
+	}
+	.quantity-text {
+		flex: 1;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		text-align: center;
+	}
+	&.disabled {
+		opacity: 0.5;
+		.quantity-btn-minus,
+		.quantity-btn-plus {
+			cursor: default;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	select {
+		height: 44px;
+		padding: 0 15px;
+		line-height: 44px;
+		background: url($storage-path + "arrow.svg") no-repeat right 15px top 16px;
+	}
+	.form-select {
+		position: relative;
+		div.error {
+			font-size: 17px;
+			color: $error;
+			position: absolute;
+			top: 18px;
+			right: 37px;
+		}
+	}
+	.choose {
+		.choose-input {
+			padding-left: 40px;
+		}
+		.choose-text {
+			line-height: 28px;
+		}
+		.choose-checkMark {
+			height: 28px;
+			width: 28px;
+			&:after {
+				width: 20px;
+				height: 20px;
+			}
+		}
+		&.revert {
+			.choose-input {
+				padding-left: 0;
+				padding-right: 40px;
+			}
+		}
+	}
+	.quantity {
+		.quantity-btn-minus,
+		.quantity-btn-plus {
+			width: 28px;
+			height: 42px;
+		}
+	}
+}

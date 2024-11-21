@@ -1,0 +1,45 @@
+div(v-if="dataIsLoad")
+    ul.addon-list(v-if="type === 'market'")
+        li.addon-list-item(v-for='(item, index) in addonData' :key='item.CustomMarketID_withoutSize')
+            template(v-if='index < maxShow')
+                a.addon-img(@click.prevent='getItemDetail(item.CustomMarketID_withoutSize)')
+                    //- img.img-fluid(src='https://via.placeholder.com/306x426/0000FF/808080' alt='圖騰感棉麻長裙(附腰帶)')
+                    img.img-fluid(:src="renderPic(item.Cover, '_w306_h426')" :alt='item.Name')
+                .addon-info
+                    a.item-name(@click.prevent='getItemDetail(item.CustomMarketID_withoutSize)') {{item.Name}}
+                    .item-price
+                        span.origin-price(v-if='item.OriginPrice !== item.SellPrice') NT.{{item.OriginPrice}}
+                        span.sell-price NT.{{item.SellPrice}}
+                    .addon-shop-select.select-style
+                        select.spec-select(v-if="!hasMainItem" @click.prevent='checkAddonInCart')
+                            option(value='default') 請選擇規格
+                        select.spec-select(v-else v-model='selectedCustomMarketID[index]' @click.prevent='openSelector')
+                            option(value='default') 請選擇規格
+                            option(v-for='(spec, index) in item.Specs' :key='spec.CustomMarketID' :disabled='!spec.HasStock' :value='spec.CustomMarketID')
+                                | {{spec.ColorName}}-{{spec.Size}} {{!spec.HasStock?'(已售完)':''}}
+                        .UiQuantity.count-select(v-if="!hasMainItem")
+                            a.UiQuantity__btn.UiQuantity__btn--minus(@click.prevent='checkAddonInCart') -
+                            span.UiQuantity__text 1
+                            a.UiQuantity__btn.UiQuantity__btn--plus(@click.prevent='checkAddonInCart') +
+                        .UiQuantity.count-select(v-else)
+                            a.UiQuantity__btn.UiQuantity__btn--minus(@click.prevent='onMinus(index)') -
+                            span.UiQuantity__text {{ selectedCount[index] }}
+                            a.UiQuantity__btn.UiQuantity__btn--plus(@click.prevent='onPlus(index)') +
+                    button.btn.btn-add-cart.addon-add(v-if="!hasMainItem" @click.prevent='checkAddonInCart') 加入購物車
+                    button.btn.btn-add-cart.addon-add(v-else @click.prevent='addToCart(index)') 加入購物車
+    .cart-addon-slick-block(v-if="type === 'shoppingCart'")
+        a.arrow-left
+            img.img-fluid(src="https://static.tpx.tw/sff-t/thebutters/static/img/arrow-left.svg")
+        .addon-slide
+            div(v-for='(item, index) in addonData' :key='item.CustomMarketID_withoutSize').addon-wrap
+                //- img.img-fluid.cart-addon-img(src='https://via.placeholder.com/452x632/0000FF/808080' alt='圖騰感棉麻長裙(附腰帶)')
+                img.img-fluid.cart-addon-img(:src="renderPic(item.Cover, '_w452_h632')" :alt='item.Name')
+                .addon-wrap-wrap
+                    h3.item-name {{item.Name}}
+                    .item-price
+                        span.sell-price NT.{{item.SellPrice}}
+                        span.origin-price(v-if='item.OriginPrice !== item.SellPrice') NT.{{item.OriginPrice}}
+                    .addon-add-wrap
+                        button.btn.addon-add(@click.prevent="showCartDialog(item.CustomMarketID_withoutSize)") 加入購物車
+        a.arrow-right
+            img.img-fluid(src="https://static.tpx.tw/sff-t/thebutters/static/img/arrow-right.svg")

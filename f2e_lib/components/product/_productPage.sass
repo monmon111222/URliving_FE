@@ -1,0 +1,516 @@
+// slick style
+#product-page .slick-initialized .slick-slide
+  padding: 2px
+
+// photo cloumn
+.product-photos
+  float: left
+  width: 618px
+  margin-top: 13px
+  .slick-list
+    overflow: auto
+  img
+    width: 100%
+    display: block
+    margin-bottom: 15px
+    &:last-child
+      margin-bottom: 0
+
+// mobile photo
+.product-photos__jumbo
+  display: none
+
+.product-photos__model, .product-photos__zoomitem
+  img
+    cursor: url(/img/icon-magnifier.png), pointer
+
+.product-photos__item
+  margin-top: 15px
+  
+
+.product-photos__sliderbox
+  margin: 25px 0
+  h3
+    color: #000
+    font-size: 12px
+    letter-spacing: .1em
+
+.product-photos__slider
+  position: relative
+  overflow: hidden
+  margin-top: 10px
+  padding: 0 29px
+  > div
+    float: left
+    width: 20%
+    padding: 2px
+    +box-sizing(border-box)
+  &.slick-initialized
+    overflow: visible
+    padding: 0 30px
+    > div
+      float: none
+      width: auto
+      padding: 0
+  a, span
+    display: block
+    width: 100%
+    +box-sizing(border-box)
+  img
+    display: block
+    width: 100%
+    height: auto
+  .slick-prev,
+  .slick-next
+    position: absolute
+    background-color: transparent
+    width: 27px
+    height: 100%
+    top: 0
+    &:before
+      position: absolute
+      top: 50%
+      margin-top: -18px
+      left: 4px
+    &:hover:before
+      +opacity(.5)
+    &.disabled
+      cursor: default
+      &:before
+        +opacity(.25)
+  .slick-prev
+    left: 0
+    &:before
+      content: ''
+      +icon(19px, 37px, 190px, 35px)
+  .slick-next
+    right: 0
+    &:before
+      content: ''
+      +icon(19px, 37px, 214px, 35px)
+ .product-lookplus
+    margin-top: 240px
+// product detail column
+.product-details
+  float: right
+  width: 310px
+  margin-bottom: 25px
+
+// intro
+.product-intro
+  position: relative
+  margin-top: 32px
+  border-bottom: 1px solid $bd_gray_l
+  padding-bottom: 27px
+  font-size: 15px
+  letter-spacing: .1em
+  +pie-clearfix
+
+.product-info
+  position: absolute
+  top: 0
+  left: 0
+  width: 190px
+  font-size: 12px
+  line-height: 1.5em
+  hr
+    opacity: 0
+
+.product-title
+  font-size: 15px
+
+.product-subtitle,
+.product-barcode
+  font-size: 12px
+  margin-top: 20px
+
+.product-subtitle
+  color: $clr_brand_m
+
+.product-price
+  text-align: right
+
+.product-price--selling
+  // color: $txt_red_m
+  font-size: 50px
+  letter-spacing: .04em
+  font-weight: bold
+
+.product-price--unit
+  font-size: 14px
+  letter-spacing: .1em
+  font-family: $font_roboto
+  font-weight: normal
+
+.product-price--before
+  text-decoration: line-through
+  font-size: 18px
+  color: $txt_gray_m
+
+.product-price--onsale
+  @extend .product-price--selling
+  margin-top: 18px
+
+.product-event-info
+  margin-top: 20px
+  a
+    color: $txt_gold_m
+    font-size: 12px
+
+// order
+.product-order
+  margin-top: 26px
+  +pie-clearfix
+
+.product-color
+  font-size: 12px
+  letter-spacing: .1em
+  ul
+    overflow: hidden
+    margin-top: -6px
+  li
+    float: left
+    margin: 16px 16px 0 0
+  a
+    display: block
+    padding: 2px
+    border: 1px solid transparent
+  img
+    display: block
+    width: 24px
+    height: 24px
+  .active a
+    border-color: $txt_gray_xd
+
+.product-size
+  ul
+    +sizeSellector
+    li
+      margin: 16px 16px 0 0
+      &:first-child
+        margin-left: 0
+    span
+      min-width: 28px
+      height: 28px
+      line-height: 28px
+
+.product-size-report
+  margin: 27px 0 15px
+  font-size: 12px
+  padding-bottom: 25px
+  border-bottom: 1px solid $bd_gray_l
+
+#SizeReportUrl
+  display: inline-block
+  line-height: 28px
+  border: 1px solid $bd_gray_xl
+  width: 93px
+  text-align: center
+  &:hover
+    text-decoration: none
+    background-color: $bg_gray_l
+
+.product-qty
+  float: left
+  &.ui-quantity, &.UiQuantity
+    width: 95px
+    height: 40px
+
+.UiQuantity
+  height: 32px
+  line-height: 32px
+  text-align: center
+
+
+.product-buttons, .BuyAndWish
+  float: right
+  width: 100%
+  > button
+    width: 207px
+    height: 40px
+    border: 0
+    background-color: $bg_gray_d
+    color: #fff
+    font-size: 14px
+    letter-spacing: .1em
+    cursor: pointer
+    > span
+      position: relative
+      top: 0
+      left: 0
+      // this fix ie text shift when active
+    &:hover
+      background-color: $bg_gray_m
+    &.product-btn-preBuy-none
+      background-color: $bg_gray_m
+      cursor: default
+
+.product-btn-callme,
+.product-btn-preBuy-none,
+.product-btn-preBuy
+  display: none
+
+.product-PreoderDAY,
+.product-PreoderDAY--info
+  margin-top: 12px
+  font-size: 12px
+  line-height: 1.5em
+  clear: both
+  .date
+    color: $txt_gold_m
+  p
+    padding-left: 10px
+    position: relative
+    &.em
+      color: $txt_gold_m
+    &:before
+      content: "*"
+      position: absolute
+      left: 0
+
+.product-summary
+  margin-top: 18px
+  .tabs__content
+    font-size: 12px
+    line-height: 2em
+    color: #767676
+
+.product-ootd
+  margin-top: 30px
+  h4
+    font-size: 12px
+    letter-spacing: .1em
+    text-transform: uppercase
+
+.product-ootd__slider
+  overflow: hidden
+  margin-top: 15px
+  +pie-clearfix
+  > div
+    width: 33.33%
+    float: left
+  &.slick-initialized
+    overflow: visible
+    > div
+      float: none
+      width: auto
+      margin: 0 -1px 0 -2px
+  a, span
+    display: block
+    width: 100%
+    +box-sizing(border-box)
+  img
+    display: block
+    width: 100%
+    height: auto
+  a.play
+    display: block
+    position: relative
+    &:before
+      content: ""
+      display: block
+      background: url(../img/play_bottom.svg) 0 0 no-repeat rgba(0, 0, 0, 0.4)
+      background-size: 30%
+      background-position: center
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      z-index: 1
+  .slick-dots
+    position: absolute
+    top: -36px
+    right: 0
+    width: 33.33333%
+    bottom: auto
+    text-align: right
+    li
+      width: 7px
+      height: 8px
+      margin: 0 0 0 8px
+      border: 1px solid #646565
+      button
+        width: 7px
+        height: 8px
+        padding: 0
+        &:before
+          width: 7px
+          height: 8px
+          top: 0
+          left: 0
+          border-radius: 0
+      &.slick-active button:before
+        background-color: #646565
+
+.product-details--pplus
+  .product-info:before
+    content: ""
+    display: block
+    width: 215px
+    height: 49px
+    margin-bottom: 10px
+    background: url(../img/icon-pplus.gif) 0 0 no-repeat
+  .product-ootd
+    display: none
+
+
+@media (max-width: 1230px)
+  .product-content--pdpage
+    width: calc(100% - 200px)
+  .product-photos
+    width: calc(100% - 330px)
+
+@media (max-width: 1024px)
+  // slick style
+  //#product-page .slick-initialized .slick-slide
+    //padding: 0
+
+  // photo column
+  .product-content--pdpage
+    width: 100%
+    padding-top: 0
+
+  .product-photos
+    width: 100%
+    float: none
+    margin-top: 0
+    img
+      margin-bottom: 0
+
+  .product-photos__jumbo
+    display: block
+    overflow: hidden
+    position: relative
+    img
+      width: 100%
+      height: auto
+    > img
+      position: absolute
+      top: 0
+      left: 0
+      z-index: -1
+      &:first-child
+        display: block
+        position: static
+  #product-page .product-photos__jumbo.slick-initialized .slick-slide
+    padding: 0
+  .product-photos__model,
+  .product-photos__item
+    display: none
+
+  // 搭配參考單品
+  .product-photos__featured
+    padding: 0 20px
+    text-align: center
+  .product-photos__slider
+    // > div
+    //   width: 33.3333%
+    //   padding: 0 2px
+    //   box-sizing: border-box
+    //   float: none
+    //   display: inline-block
+    height: auto
+    letter-spacing: -6px
+
+  // 右欄
+  .product-details
+    width: 100%
+    float: none
+    margin-bottom: 0
+
+  // 商品資訊
+  .product-intro
+    position: relative
+    margin-top: 23px
+    padding-bottom: 13px
+  .product-info
+    position: static
+    width: 100%
+  .product-title
+    font-size: 14px
+  .product-barcode
+    position: absolute
+    margin-top: 0
+    bottom: -33px
+    right: 0
+  .product-price
+    width: 100%
+    float: none
+    text-align: left
+    margin-top: 16px
+  .product-price--onsale,
+  .product-price--selling
+    float: left
+    margin-top: 0
+    font-size: 30px
+  .product-price--before
+    display: inline-block
+    font-size: 17px
+    padding-top: 10px
+    margin-left: 20px
+  .product-price--unit
+    font-size: 13px
+    margin-right: 4px
+  .product-event-info
+    clear: left
+    margin-top: 13px
+
+  // order options
+  .product-order
+    margin-top: 17px
+  .product-color
+    font-size: 11px
+    img
+      width: 22px
+      height: 22px
+  .product-size
+    ul span
+      min-width: 26px
+      height: 26px
+      line-height: 26px
+
+  // 尺寸表
+  .product-size-report
+    margin-top: 18px
+    padding-bottom: 18px
+    font-size: 11px
+
+  // 按鈕
+  .product-qty
+    float: none
+    &.ui-quantity
+      width: 100%
+      height: 37px
+      padding: 0 35px
+    .ui-quantity__btn, .UiQuantity__btn
+      width: 35px
+    .ui-quantity__text
+      line-height: 35px
+      background-color: transparent
+  .product-buttons, .BuyAndWish
+    float: none
+    margin-top: 12px
+    width: 100%
+    > button
+      width: 100%
+      height: 37px
+      &:hover
+        background-color: $bg_gray_d
+      &.product-btn-preBuy-none
+        background-color: $bg_gray_m
+
+
+  // 員工穿搭
+  .product-ootd
+    width: 420px
+    max-width: 100%
+  .product-ootd__slider
+    > div
+      width: 25%
+    &.slick-initialized > div
+      margin: 0
+
+  // 其他說明
+  .product-summary
+    margin-top: 32px

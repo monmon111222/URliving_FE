@@ -1,0 +1,52 @@
+#zoombox
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 99999
+  width: 100%
+  height: 100%
+  background-color: #fff
+  &.zb-ootd
+    background-color: rgba(255, 255, 255, 0.9)
+  img, video
+    position: absolute
+    display: block
+    max-width: 100%
+  .btn-close--bigger
+    position: absolute
+    top: 30px
+    right: 40px
+    background: url($storage-path + 'close.svg') no-repeat
+    width: 18px
+    height: 18px
+    text-indent: -999999999px
+    cursor: pointer
+  .prev, .next
+    position: absolute
+    top: 50%
+    margin-top: -18px
+    background: url($storage-path + 'arrow-left.svg') no-repeat
+    text-indent: -9999px
+    display: inline-block
+    padding: 3px
+    width: 12.5px
+    height: 22px
+  .prev
+    left: 30px
+  .next
+    right: 30px
+    transform: rotate(180deg)
+
+
+.LaundryUl
+  list-style-position: outside
+  list-style-type: decimal
+  padding-left: 15px
+  li
+    margin-bottom: 5px
+
+@media (max-width: 1024px)
+  #zoombox
+    img, video
+      max-width: none
+      max-height: 100%

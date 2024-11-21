@@ -1,0 +1,23 @@
+{
+	"Code":200,
+	"Message":null,
+	"Description":null,
+	"Response":[
+		{
+			"Code":"DJriRkYn2o2E",
+			"DiscountType":1,
+			"EndDate":"20180530",
+			"Value":1000,
+			"Threshold":0,
+			"MarketIDs":[4001,4005]
+		},
+		{
+			"Code":"聖誕禮物",
+			"DiscountType":1,
+			"EndDate":"20180530",
+			"Value":1000,
+			"Threshold":0,
+			"MarketIDs":[4001,4005]
+		}
+	]
+}

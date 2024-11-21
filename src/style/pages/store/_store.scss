@@ -1,0 +1,136 @@
+#page-store {
+	.content-block {
+		display: flex;
+		.side-block {
+			border-top: 4px solid #000;
+			width: 215px;
+			margin-right: 15px;
+			.side-title {
+				font-size: 30px;
+				margin: 22px 0 40px;
+			}
+			.side-type {
+				font-size: 16px;
+			}
+		}
+		.store-block {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: 15px;
+			.store-info {
+				&:nth-child(odd) {
+					padding-right: 15px;
+				}
+				&:nth-child(odd) {
+					padding-left: 15px;
+				}
+				&:nth-child(1),
+				&:nth-child(2) {
+					border-top: 1px solid #afafaf;
+				}
+				width: 50%;
+				padding: 25px 0 0;
+				border-bottom: 1px solid #afafaf;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.store-name {
+					margin: 25px 0 20px;
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					span {
+						font-size: 24px;
+					}
+					a {
+						width: 20px;
+						height: 20px;
+						background-size: contain;
+						background: url($storage-path + "circle-arrow.svg") no-repeat center;
+						@include transition(transform 0.2s ease-out);
+						display: none;
+						&.collapsed {
+							transform: rotate(90deg);
+						}
+						&:not(.collapsed) {
+							transform: rotate(-90deg);
+						}
+					}
+				}
+				.text-block {
+					margin-bottom: 15px;
+					text-align: center;
+					width: 100%;
+					.paragraph {
+						margin-bottom: 30px;
+						font-size: 16px;
+						p {
+							margin-bottom: 0px;
+						}
+					}
+				}
+				.btn-group {
+					display: flex;
+					width: 100%;
+					margin-bottom: 25px;
+					.btn-link {
+						&#btn-link-phone {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		@include max_md {
+			.side-block {
+				display: none;
+			}
+			.store-block {
+				margin-left: 0;
+				.store-info {
+					width: 100%;
+					padding-top: 0;
+					border: none;
+					&:nth-child(odd) {
+						padding-right: 0;
+					}
+					&:nth-child(odd) {
+						padding-left: 0;
+					}
+					&:nth-child(1),
+					&:nth-child(2) {
+						border-top: none;
+					}
+					.store-name {
+						padding: 0 15px;
+						justify-content: space-between;
+						a {
+							display: inline-block;
+						}
+					}
+					.text-block {
+						width: 100%;
+						text-align: left;
+						padding: 0 15px;
+					}
+					.btn-group {
+						display: flex;
+						width: 100%;
+						.btn-link {
+							&#btn-link-phone {
+								display: inline-block;
+								margin-right: 4px;
+							}
+							&#btn-link-map {
+								display: inline-block;
+								margin-left: 4px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

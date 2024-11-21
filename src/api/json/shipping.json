@@ -1,0 +1,31 @@
+{
+  "Code": 200,
+  "Message": null,
+  "Description": null,
+  "Response": [
+    {
+      "Date": "2023-02-27 21:48",
+      "ShippingFlowDescription": "準備中"
+    },
+    {
+      "Date": "2023-02-27 21:48",
+      "ShippingFlowDescription": "準備中"
+    },
+    {
+      "Date": "2023-03-27 21:48",
+      "ShippingFlowDescription": "準備中"
+    },
+    {
+      "Date": "2023-03-27 21:48",
+      "ShippingFlowDescription": "準備中"
+    },
+    {
+      "Date": "2023-03-27 21:48",
+      "ShippingFlowDescription": "準備中"
+    },
+    {
+      "Date": "2023-03-27 21:48",
+      "ShippingFlowDescription": "準備中"
+    }
+  ]
+}

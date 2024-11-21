@@ -1,0 +1,16 @@
+#lb-atm-info.modal.fade(tabindex='-1')
+  .modal-dialog.modal-sm.h5(role='document')
+    .modal-content
+      .modal-header
+        h4.modal-title ATM轉帳資訊
+        a.modal-close(href='#' data-dismiss='modal')
+          i.icon-close
+      .modal-body.h5(v-if='dataisload')
+        ul.lh-15
+          li 銀行代碼： {{data.BankID}} {{data.BankName}}
+          li 轉帳帳號： {{data.VirtualNumber}}
+          li 轉帳金額： NT.{{data.Price.toLocaleString()}}
+          li 繳款期限： {{data.Deadline}} 之前
+      .modal-footer
+        .pb-2.w-50.mx-auto
+          button.btn.w-100.btn-sm(type='button' data-dismiss='modal') 確認

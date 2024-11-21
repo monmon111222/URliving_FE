@@ -1,0 +1,275 @@
+#page-fa-member {
+	.point-block {
+		.info-block-content.member {
+			min-height: unset;
+			.header {
+				&.unBind {
+					justify-content: space-between;
+				}
+				.btn-bind-fap {
+					margin-right: 0;
+					margin-left: auto;
+					padding: 8px;
+					min-width: 160px;
+				}
+			}
+			.bind-info {
+				@include column_start_start;
+				font-size: 12px;
+				margin-top: 10px;
+				p {
+					margin-bottom: 0;
+					&:not(.active) {
+						color: #afafaf;
+					}
+					&.active {
+						color: $blue;
+					}
+				}
+			}
+		}
+		.content {
+			@include row_between_end;
+			.btn-group {
+				@include column_start_start;
+				#btn-cancel-fap {
+					margin-top: 5px;
+				}
+			}
+		}
+	}
+	.term-block {
+		margin-top: 55px;
+	}
+
+	@include max_md {
+		.info-block {
+			.content {
+				.btn-group {
+					@include row_between_center;
+					width: 100%;
+					.btn-action {
+						margin-top: 15px;
+						width: calc(50% - 8px);
+						min-width: unset;
+					}
+
+					#btn-cancel-fap {
+						margin-top: 15px;
+					}
+				}
+			}
+		}
+		.term-block {
+			margin: 40px 20px;
+		}
+	}
+	#lb-fa-cancel,
+	#lb-fa-check {
+		.modal-dialog {
+			width: 430px;
+			margin: 0;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			.modal-header {
+				padding: 25px 25px 0 25px;
+				.logo-u {
+					width: 60px;
+					height: 40px;
+					background: url($storage-path + "logo-u.png") no-repeat center;
+					background-size: contain;
+				}
+				.modal-close {
+					top: 24px;
+					right: 24px;
+				}
+			}
+			.modal-body {
+				text-align: center;
+				padding: 25px;
+				font-size: 16px;
+				.show-mb {
+					display: none;
+				}
+			}
+			.modal-footer {
+				padding: 0px 25px 25px 25px;
+				.btn {
+					width: calc(100% - 4px);
+					&:first-child {
+						margin-right: 4px;
+					}
+					&:last-child {
+						margin-left: 4px;
+					}
+				}
+			}
+			@include max_md {
+				width: 340px;
+
+				.modal-body {
+					.show-mb {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
+#page-fa-bind {
+	.page-title {
+		font-size: 24px;
+		margin-bottom: 40px;
+	}
+	.fa-mobile {
+		.memo {
+			color: $error;
+			margin-bottom: 0px;
+		}
+		.input-block {
+			@include row_between_center;
+			flex-wrap: wrap;
+			#country-code,
+			.btn-get-verify {
+				width: calc(25% - 8px);
+			}
+			#fa-mobile {
+				width: calc(50% - 8px);
+				margin-bottom: 0;
+			}
+		}
+	}
+	.fa-verify {
+		display: flex;
+		justify-content: flex-end;
+		#input-code {
+			display: none;
+			align-items: flex-start;
+			position: relative;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+
+			input {
+				position: absolute;
+				top: -100%;
+				left: -666666px;
+				opacity: 0;
+			}
+			.line {
+				position: relative;
+				width: calc(20% - 10px);
+				border: 1px solid #bfbfbf;
+				text-align: center;
+				width: 25px;
+				height: 25px;
+				line-height: 25px;
+				margin-right: 5px;
+				&::after {
+					display: block;
+					position: absolute;
+					content: "";
+					left: 0;
+					width: 100%;
+					bottom: 0;
+					height: 1px;
+					transform: scaleY(0.5);
+					transform-origin: 0 100%;
+				}
+				&.animated::before {
+					display: block;
+					position: absolute;
+					left: 50%;
+					top: 20%;
+					width: 1px;
+					height: 60%;
+					content: "";
+					background-color: #333333;
+					animation-name: coruscate;
+					animation-duration: 1s;
+					animation-iteration-count: infinite;
+					animation-fill-mode: both;
+				}
+			}
+			@keyframes coruscate {
+				0% {
+					opacity: 0;
+				}
+				25% {
+					opacity: 0;
+				}
+				50% {
+					opacity: 1;
+				}
+				75% {
+					opacity: 1;
+				}
+				to {
+					opacity: 0;
+				}
+			}
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
+			/* Firefox */
+			input[type="number"] {
+				-moz-appearance: textfield;
+			}
+		}
+		.fa-verify-block {
+			.fa-verify-btn {
+				text-align: center;
+				border: 1px solid #b9b9b9;
+				width: 120px;
+				height: 25px;
+				font-size: 12px;
+				padding: 0;
+				margin-bottom: 5px;
+			}
+			.fa-verify-count {
+				text-align: center;
+				font-size: 12px;
+			}
+		}
+	}
+	.fa-intro {
+		margin-top: 60px;
+		.choose {
+			text-align: center;
+			.choose-input {
+				margin: 40px auto;
+				width: fit-content;
+			}
+		}
+	}
+	@include max_md {
+		.page-title {
+			font-size: 20px;
+			margin-top: 40px;
+			margin-bottom: 25px;
+		}
+		.fa-mobile {
+			.input-block {
+				@include row_between_center;
+				flex-wrap: wrap;
+				#country-code {
+					width: calc(45% - 4px);
+				}
+				#fa-mobile {
+					width: calc(55% - 4px);
+				}
+				.btn-get-verify {
+					width: 100%;
+					margin-top: 10px;
+				}
+			}
+		}
+		.fa-intro {
+			margin-top: 40px;
+		}
+	}
+}

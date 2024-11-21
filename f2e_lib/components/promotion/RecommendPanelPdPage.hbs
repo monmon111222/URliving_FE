@@ -1,0 +1,14 @@
+<div class="product-photos__todayview product-photos__sliderbox">
+	<h3>TODAY VIEW</h3>
+	<div class="product-photos__slider">
+		{{#each this}}
+			<div>
+				{{#if linkurl}}
+					<a href="{{linkurl}}"><img src="{{imgurl}}" /></a>
+				{{else}}
+					<span><img src="{{imgurl}}" /></span>
+				{{/if}}
+			</div>
+		{{/each}}
+	</div>
+</div>

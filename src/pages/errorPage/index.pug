@@ -1,0 +1,13 @@
+extends ../../template/layout
+
+
+block vars
+  - var pageID = 'page-error';
+
+block content
+  .main#article
+    .content-block
+      .error
+        .error-title ERROR 404
+        .error-content 您搜尋的頁面不存在
+        a.btn.btn-block.btn-primary(href='/index.html') 回到首頁

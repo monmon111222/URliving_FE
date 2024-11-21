@@ -1,0 +1,14 @@
+{
+  'sub': [
+    {'ImgSrc': '/2018banner/testbanner/test_banner_1.jpg',
+      'Link': 'http://www.pazzo.com.tw/Detail/P400049860104'},
+    {'ImgSrc': '/2018banner/testbanner/test_banner_1.jpg',
+      'Link': 'http://www.pazzo.com.tw/Detail/P400049860104'}
+  ],
+  'item': [
+    {'ImgSrc': '/2018banner/testbanner/test_banner_2.jpg',
+      'Link': 'http://www.pazzo.com.tw/Detail/P400049860104'},
+    {'ImgSrc': '/2018banner/testbanner/test_banner_3.jpg',
+      'Link': 'http://www.pazzo.com.tw/Detail/P400049860104'}
+  ]
+}

@@ -1,0 +1,344 @@
+@font-face
+  font-family: Bodoni
+  src: url('/img/BodoniFLF-Bold_1.ttf')
+
+
+$background: #FF9090
+$card-background: #625d59
+$card_opend-background: #ecc0c2
+$card_match-background: #ecc0c2
+$card_notmatch-background: #ecc0c2
+
+
+#cardsGameBox
+	display: none
+	height: 100vh
+	width: 100%
+	z-index: 1000
+	position: fixed
+	top: 0
+	.cardsContend
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-top: -310px
+		margin-left:  -305px
+		z-index: 9
+		background: #edc0c3
+
+.deck 
+	margin: 20px auto
+	border: 1px solid #5a524f
+	width: 452px
+	padding: 5px
+
+	
+	.card 
+		height: 100px
+		width: 100px
+		background: $card-background
+		display: inline-block
+		margin: 5px
+		line-height: 140px
+		color: #ffffff
+		text-align: center
+		vertical-align: top
+		cursor: pointer
+		transform: rotateY(180deg)
+		transform-style: preserve-3d
+		transition: transform .3s ease
+		font-family: FontAwesome
+		line-height: 75px
+		box-sizing: border-box
+		*::before
+			opacity: 0
+			content: ""
+			background-size: cover
+			background-repeat: no-repeat
+			display: block
+			width: 100px
+			height: 100px
+
+
+		&.open 
+			transform: rotateY(0)
+			background: $card_opend-background
+			border: 1px solid #5a524f
+			cursor: default
+		
+		&.show 
+			*::before
+				opacity: 1
+		
+
+		&.match 
+			transform: rotateY(0)
+			cursor: default
+			background: $card_opend-background
+			border: 1px solid #5a524f
+			*::before
+				opacity: 1
+		
+
+		&.notmatch 
+			background: $card_opend-background
+		
+	
+
+#score-panel 
+
+
+	text-align: left
+	width: 620px
+	height: 610px
+	margin-bottom: 10px
+	text-align: center
+	color: #635d58
+	box-sizing: border-box
+	padding-top: 40px
+	p
+		display: inline-block
+		font-size: 13px
+		line-height: 2em
+		letter-spacing: 0.05em
+		margin: 0 10px
+		span
+			font-size: 20px
+	.moves
+		font-family: 'Bodoni'
+		font-size: 90px
+
+		&::before
+			content: ''
+			background: url('/img/gold.png')
+			background-size: cover
+			display: inline-block
+			margin-right: 8px
+			width: 79px
+			height: 56px
+	a.close
+		position: absolute
+		left: 0
+		bottom: 0
+		padding: 20px
+		color: #fff
+		&:hover
+			text-decoration: none
+		&::before
+			content: ""
+			display: inline-block
+			width: 11px
+			height: 11px
+			background: url(/img/icons.png) -159.5px -59px no-repeat
+			margin-right: 10px
+			filter: invert(100%) brightness(300%)
+	.couponMoney
+		color: #fff 
+		display: block
+		font-family: 'Bodoni'
+		font-size: 96px
+		letter-spacing: 0em
+		margin: 15px 0 5px 0
+		span
+			vertical-align: bottom
+			font-size: 190px
+	.restart 
+		float: right
+		cursor: pointer
+	.congratulations
+		display: block
+		font-size: 15px
+		margin-top: -25px
+	.congratulations + p
+		display: block
+		font-weight: bold
+	.copy
+		display: inline-block
+		padding: 8px 10px
+		font-size: 13px
+		border: 1px solid #656565
+		margin: 5px
+	.start
+		margin-top: 20px 
+		display: inline-block
+		background: #635d58
+		font-weight: bold
+		padding: 10px 15px
+		color: #fff
+		transition: all .3s ease
+		font-size: 14px
+		&:hover
+			color: #635d58
+			background: #fff
+			text-decoration: none
+
+a.instructions
+	position: absolute
+	right: 0
+	bottom: 0
+	padding: 20px
+	font-size: 10px
+	text-align: center
+	width: 88px
+	line-height: 1.4em
+	&:hover
+		text-decoration: none
+	&::before
+		content: ""
+		display: inline-block
+		width: 30px
+		height: 30px
+		margin: 0 10px
+		background: url(/img/icons.png) -350px -50px no-repeat
+.stars 
+	margin: 0
+	padding: 0
+	display: inline-block
+	margin: 0 5px 0 0
+	
+	li 
+		list-style: none
+		display: inline-block
+.instructionsContend
+	color: #635d58
+	display: none
+	text-align: center
+	background: rgba(255, 255, 255, 0.85)
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	padding-top: 40px
+	box-sizing: border-box
+	letter-spacing: 0.05em
+	ul
+		li
+			font-size: 13px
+			width: 320px
+			text-align: left
+			position: relative
+			padding: 20px 0px 20px 75px
+			margin: 0 auto
+			letter-spacing: 0.1em
+			line-height: 1.6em
+			span
+				font-size: 18px
+				font-weight: bold
+				display: block
+			&::before
+				width: 60px
+				height: 60px
+				display: block
+				content: ""
+				background-size: contain
+				background-position: center
+				background-repeat: no-repeat
+				position: absolute
+				left: 0
+				top: 50%
+				margin-top: -30px
+			&:nth-child(1)
+				&::before
+					background-image: url('/img/card.svg')
+			&:nth-child(2)
+				&::before
+					width: 50px
+					height: 50px
+					background-image: url('/img/clock.svg')
+			&:nth-child(3)
+				&::before
+					width: 50px
+					height: 50px
+					background-image: url('/img/gift.svg')
+	a.start
+		display: inline-block
+		background: #635d58
+		font-weight: bold
+		padding: 10px
+		color: #fff
+		transition: all .3s ease
+		&:hover
+			color: #635d58
+			background: #fff
+			text-decoration: none
+	p
+		margin-top: 20px
+		font-size: 12px
+		line-height: 1.6em
+
+*::selection 
+	background: transparent
+
+
+.swal2-overlay 
+	background-color: rgba(255,255,255,1)
+
+.fa-X:before
+  background-image: url('/img/x.png')
+.fa-A:before
+  background-image: url('/img/a.png')
+.fa-B:before
+  background-image: url('/img/b.png')
+.fa-C:before
+  background-image: url('/img/c.png')
+.fa-D:before
+  background-image: url('/img/d.png')
+
+@media(max-width:670px)
+	.qabg
+
+	#cardsGameBox .cardsContend
+		width: 100%
+		height: calc( 100% - 44px )
+		top: 0
+		left: 0
+		margin: 0
+		min-height: 800px
+		overflow: auto
+	#score-panel
+		width: auto
+		height: auto
+	.deck
+		width: 342px 
+	#score-panel .moves
+		font-size: 55px
+	#score-panel .couponMoney span
+		font-size: 110px
+		vertical-align: middle
+	#score-panel .moves::before
+		transform: translateY(8px)
+
+@media(max-width:400px)
+	#cardsGameBox
+		position: static
+		height: auto
+		.qabg
+			position: static
+			height: auto
+		.cardsContend, 
+			position: static
+			position: absolute
+			z-index: 1001
+			min-height: 600px
+			height: auto
+		.closeBg
+			display: none
+	.deck .card
+		height: 80px
+		width: 80px
+		i:before
+			height: 80px
+			width: 80px
+	.deck
+		width: 282px 
+	#score-panel .moves
+		font-size: 40px
+		&:before
+			transform: translateY(13px) scale(0.8)
+			margin: 0
+	.instructionsContend
+		padding: 10px 20px
+		overflow: auto
+	.instructionsContend ul li
+		width: 100%

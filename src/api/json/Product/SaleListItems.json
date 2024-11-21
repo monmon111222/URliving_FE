@@ -1,0 +1,547 @@
+{
+    "Total": 580,
+    "Items": [
+    {
+        "ProductName": "MR開襟外套-女",
+        "Barcode": "G400000932305",
+        "ColorName": "米白",
+        "CoverImage": "https://image.genquo.tw/product/G4000006303/G40000063-81.jpg",
+        "SellingPrice": 490,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        },
+        {
+            "Size": "XL",
+            "Barcode": "05",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "大V領長版上衣-女",
+        "Barcode": "G400000730306",
+        "ColorName": "黑",
+        "CoverImage": "https://image.genquo.tw/product/G4000006101/G40000061-71M.jpg",
+        "SellingPrice": 390,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        },
+        {
+            "Size": "XL",
+            "Barcode": "05",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "MR下擺前開岔連身洋裝-女",
+        "Barcode": "G402000032305",
+        "ColorName": "卡其",
+        "CoverImage": "https://image.genquo.tw/product/G4000006103/G40000061-81M.jpg",
+        "SellingPrice": 490,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 60
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "MR口袋寬鬆短T-女",
+        "Barcode": "G400000911205",
+        "ColorName": "紅",
+        "CoverImage": "https://image.genquo.tw/product/G-ITEM/2018SS/WOMEN/G40000200/G40000200-51.jpg",
+        "SellingPrice": 390,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "MR口袋寬鬆短T-女",
+        "Barcode": "G400000911206",
+        "ColorName": "紅",
+        "CoverImage": "https://image.genquo.tw/product/G-ITEM/2018SS/WOMEN/G40000200/G40000200-51.jpg",
+        "SellingPrice": 390,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "MR細肩帶小背心-女",
+        "Barcode": "G400000920504",
+        "ColorName": "杏灰",
+        "CoverImage": "https://image.genquo.tw/product/G-ITEM/2018SS/WOMEN/G40000200/G40000200-61.jpg",
+        "SellingPrice": 890,
+        "DiscountPrice": 150,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "環保紗圓領T恤-女",
+        "Barcode": "G400000752306",
+        "ColorName": "墨綠",
+        "CoverImage": "https://image.genquo.tw/product/G4000010310/G40000103-63.jpg",
+        "SellingPrice": 390,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "MR細肩帶小背心-女",
+        "Barcode": "G400000922204",
+        "ColorName": "淺藍",
+        "CoverImage": "https://image.genquo.tw/product/G-ITEM/2017AW/WOMEN/G40000097/G40000097-13.jpg",
+        "SellingPrice": 199,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "MR開襟外套-女",
+        "Barcode": "G500000932305",
+        "ColorName": "米白",
+        "CoverImage": "https://image.genquo.tw/product/G4000006303/G40000063-81.jpg",
+        "SellingPrice": 490,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        },
+        {
+            "Size": "XL",
+            "Barcode": "05",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "大V領長版上衣-女",
+        "Barcode": "G500000730306",
+        "ColorName": "黑",
+        "CoverImage": "https://image.genquo.tw/product/G4000006101/G40000061-71M.jpg",
+        "SellingPrice": 390,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        },
+        {
+            "Size": "XL",
+            "Barcode": "05",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "MR下擺前開岔連身洋裝-女",
+        "Barcode": "G502000032305",
+        "ColorName": "卡其",
+        "CoverImage": "/G-ITEM/2017SS/WOMEN/G40200003/AC31M.jpg",
+        "SellingPrice": 490,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 60
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "MR口袋寬鬆短T-女",
+        "Barcode": "G500000911205",
+        "ColorName": "紅",
+        "CoverImage": "https://image.genquo.tw/product/G-ITEM/2018SS/WOMEN/G40000200/G40000200-51.jpg",
+        "SellingPrice": 390,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "MR細肩帶小背心-女",
+        "Barcode": "G500000920504",
+        "ColorName": "杏灰",
+        "CoverImage": "https://image.genquo.tw/product/G-ITEM/2018SS/WOMEN/G40000200/G40000200-61.jpg",
+        "SellingPrice": 890,
+        "DiscountPrice": 150,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "環保紗圓領T恤-女",
+        "Barcode": "G500000752306",
+        "ColorName": "墨綠",
+        "CoverImage": "https://image.genquo.tw/product/G4000010310/G40000103-63.jpg",
+        "SellingPrice": 390,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "MR細肩帶小背心-女",
+        "Barcode": "G500000922204",
+        "ColorName": "淺藍",
+        "CoverImage": "https://image.genquo.tw/product/G-ITEM/2017AW/WOMEN/G40000097/G40000097-13.jpg",
+        "SellingPrice": 199,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "MR開襟外套-女",
+        "Barcode": "G600000932305",
+        "ColorName": "米白",
+        "CoverImage": "https://image.genquo.tw/product/G4000006303/G40000063-81.jpg",
+        "SellingPrice": 490,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        },
+        {
+            "Size": "XL",
+            "Barcode": "05",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "大V領長版上衣-女",
+        "Barcode": "G600000730306",
+        "ColorName": "黑",
+        "CoverImage": "https://image.genquo.tw/product/G4000006101/G40000061-71M.jpg",
+        "SellingPrice": 390,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        },
+        {
+            "Size": "XL",
+            "Barcode": "05",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "MR下擺前開岔連身洋裝-女",
+        "Barcode": "G602000032305",
+        "ColorName": "卡其",
+        "CoverImage": "/G-ITEM/2017SS/WOMEN/G40200003/AC31M.jpg",
+        "SellingPrice": 490,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 60
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "MR口袋寬鬆短T-女",
+        "Barcode": "G600000911205",
+        "ColorName": "紅",
+        "CoverImage": "https://image.genquo.tw/product/G-ITEM/2018SS/WOMEN/G40000200/G40000200-51.jpg",
+        "SellingPrice": 390,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "MR細肩帶小背心-女",
+        "Barcode": "G600000920504",
+        "ColorName": "杏灰",
+        "CoverImage": "https://image.genquo.tw/product/G-ITEM/2018SS/WOMEN/G40000200/G40000200-61.jpg",
+        "SellingPrice": 890,
+        "DiscountPrice": 150,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "環保紗圓領T恤-女",
+        "Barcode": "G600000752306",
+        "ColorName": "墨綠",
+        "CoverImage": "https://image.genquo.tw/product/G4000010310/G40000103-63.jpg",
+        "SellingPrice": 390,
+        "DiscountPrice": 390,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        }]
+    },
+    {
+        "ProductName": "MR細肩帶小背心-女",
+        "Barcode": "G600000922204",
+        "ColorName": "淺藍",
+        "CoverImage": "https://image.genquo.tw/product/G-ITEM/2017AW/WOMEN/G40000097/G40000097-13.jpg",
+        "SellingPrice": 390,
+        "DiscountPrice": 199,
+        "Sizes": [
+        {
+            "Size": "S",
+            "Barcode": "02",
+            "Inventory": 5
+        },
+        {
+            "Size": "M",
+            "Barcode": "03",
+            "Inventory": 40
+        },
+        {
+            "Size": "L",
+            "Barcode": "04",
+            "Inventory": 40
+        }]
+    }]
+}

@@ -1,0 +1,237 @@
+{
+    "sub": [
+    {
+        "code": "NEWARRIVAL",
+        "name": "NEW ARRIVAL",
+        "item": [
+            {
+                "code": "NEWEST",
+                "name": "本週新品ಇ"
+            }
+            // ,{
+            //   "code": "HOTTEST",
+            //   "name": "熱賣商品補貨到"
+            // }
+        ]
+    },
+    {
+        "code": "ONSALE",
+        "name": "優惠組合",
+        "item": [
+        {
+            "code": "",
+            "osid": "",
+            "name": "special (特別的分類)",
+            "url": "/Home/SearchResult/?keyword=special"
+        },
+        {
+            "code": "1Q499D",
+            "osid": "123",
+            "name": "限48H激瘦牛仔褲．單件499",
+            "url": ""
+        },
+        {
+            "code": "2Q298D",
+            "osid": "456",
+            "name": "春夏新品．2件298",
+            "url": ""
+        },
+        {
+            "code": "2Q2Q398D",
+            "osid": "789",
+            "name": "春夏春夏新品．2件398",
+            "url": ""
+        },
+        {
+            "code": "2Q498D",
+            "osid": "123",
+            "name": "春夏新品．2件498",
+            "url": ""
+        },
+        {
+            "code": "2Q598D",
+            "osid": "456",
+            "name": "春夏新品．2件598",
+            "url": ""
+        },
+        {
+            "code": "2Q698D",
+            "osid": "789",
+            "name": "春夏新品．2件698",
+            "url": ""
+        },
+        {
+            "code": "2Q798D",
+            "osid": "123",
+            "name": "春夏新品．2件798",
+            "url": ""
+        },
+        {
+            "code": "2Q990D",
+            "osid": "456",
+            "name": "法式內衣．2套990",
+            "url": ""
+        }]
+    },
+    {
+        "code": "EARLYSPRING",
+        "name": "EARLY SPRING !",
+        "item": [
+        {
+            "code": "WEDDING",
+            "name": "LOVE．婚禮企劃"
+        },
+        {
+            "code": "COLORFUL",
+            "name": "多色下身系列"
+        },
+        {
+            "code": "SMILE",
+            "name": "PS美圖顯瘦系列"
+        },
+        {
+            "code": "URBAN",
+            "name": "URBAN 系列"
+        },
+        {
+            "code": "ALLMIT",
+            "name": "MIT全系列商品"
+        }]
+    },
+    {
+        "code": "COBRANDING",
+        "name": "品牌聯名",
+        "item": [
+        {
+            "code": "PRINCESS",
+            "name": "DISNEY PRINCESS系列"
+        },
+        {
+            "code": "DISNEYVILLAINS",
+            "name": "DISNEY VILLAINS系列"
+        },
+        {
+            "code": "DISNEY",
+            "name": "DISNEY MICKEY系列"
+        },
+        {
+            "code": "ALICE",
+            "name": "DISNEY ALICE系列"
+        },
+        {
+            "code": "BARBAPAPA",
+            "name": "BARBAPAPA泡泡先生系列"
+        }]
+    },
+    {
+        "code": "TOPS",
+        "name": "衣料品",
+        "item": [
+        {
+            "code": "VESTS",
+            "name": "細肩帶 / 背心"
+        },
+        {
+            "code": "SLEEVELESS",
+            "name": "無袖上衣"
+        },
+        {
+            "code": "SHORTSLEEVE",
+            "name": "短袖上衣"
+        },
+        {
+            "code": "LONGSLEEVE",
+            "name": "七分 / 長袖上衣"
+        },
+        {
+            "code": "HEATTECHSHIRT",
+            "name": "發熱衣"
+        },
+        {
+            "code": "BLOUSES",
+            "name": "襯衫"
+        },
+        {
+            "code": "DRESSES",
+            "name": "洋裝"
+        },
+        {
+            "code": "KNITWEAR",
+            "name": "針織衫"
+        },
+        {
+            "code": "COAT",
+            "name": "外套"
+        },
+        {
+            "code": "BRATOPS",
+            "name": "BRA / 內衣"
+        },
+        {
+            "code": "NIGHTWEAR",
+            "name": "家居服"
+        },
+        {
+            "code": "SUIT",
+            "name": "套裝"
+        },
+        {
+            "code": "BIKINI",
+            "name": "泳衣 / 比基尼"
+        }]
+    },
+    {
+        "code": "BOTTOMS",
+        "name": "下半身",
+        "item": [
+        {
+            "code": "SKIRTS",
+            "name": "裙類"
+        },
+        {
+            "code": "SHORTS",
+            "name": "短褲"
+        },
+        {
+            "code": "LONGPANTS",
+            "name": "長褲"
+        },
+        {
+            "code": "LEGGINGS",
+            "name": "內搭褲"
+        },
+        {
+            "code": "JEANS",
+            "name": "牛仔褲"
+        },
+        {
+            "code": "JUMPSUITS",
+            "name": "吊帶 / 連身褲"
+        }]
+    },
+    {
+        "code": "FITTING",
+        "name": "配件",
+        "item": [
+        {
+            "code": "ACCESSORIES",
+            "name": "飾品"
+        },
+        {
+            "code": "ATHINGS",
+            "name": "A' things 夾式耳環"
+        },
+        {
+            "code": "BAGS",
+            "name": "包包"
+        },
+        {
+            "code": "SOCKS",
+            "name": "襪類"
+        },
+        {
+            "code": "SHOES",
+            "name": "鞋"
+        }]
+    }]
+}

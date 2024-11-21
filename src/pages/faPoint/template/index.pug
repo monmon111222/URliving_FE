@@ -1,0 +1,24 @@
+.point-block(v-if="dataIsLoad") 
+  .info-block-content.member
+    .header(:class="{unBind: !isBind}")
+      .explanation
+        .type 
+          span fa points
+          a.btn-more-info(href="")
+            i.icon-question
+        .bind-info(v-if="isBind") 
+          p.active 已綁定
+          p 綁定時間：2023/03/20 10:11:12
+        .bind-info(v-else)
+          p 未綁定 
+      a.btn.btn-primary.btn-bind-fap.d-none.d-md-block(v-if="!isBind" href='/point/fasney') 點此完成綁定
+      .result(v-if="isBind") {{ faPoint.toLocaleString() }}P
+    .content
+      .result(v-if="isBind") {{ faPoint.toLocaleString() }}P
+      .btn-group(v-if="isBind")
+        a.btn.btn-outline-primary.btn-action(@click.prevent="checkFaPoint" href='') 查看明細
+        a.btn.btn-outline-primary.btn-action#btn-cancel-fap(href="#" data-toggle='modal' data-target='#lb-fa-cancel') 取消綁定
+      a.btn.btn-primary.btn-action.btn-bind-fap.d-block.d-md-none(v-else href='/point/fasney') 點此完成綁定
+
+  include faCheck.pug
+  include faCancel.pug

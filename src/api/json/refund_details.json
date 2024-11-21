@@ -1,0 +1,13 @@
+{
+	"Code":200,
+	"Message":null,
+	"Description":null,
+	"Response":[
+		{
+			"Amount":670,
+			"Date":"2018/04/25 15:00:00",
+			"RefundWayDescription":"現金退款",
+			"IsDone":true
+		}
+	]
+}

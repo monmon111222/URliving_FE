@@ -1,0 +1,35 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-wallet';
+
+block content
+  .container
+    .member-container
+      .menu-block
+        include ../../template/member/memberMenu.pug
+      .info-block
+        .info-block-content.member
+          .header
+            .explanation
+              .type 購物金
+                a.btn-more-info(href="")
+                  i.icon-question
+            .result $1,280
+          .content
+            .result $1,280
+            a.btn.btn-primary.btn-action#btn-get-vc-back(href='#' data-toggle="modal" data-target="#lb-virtual-currency" ) 提領現金
+        ul.detail-list
+          li.detail-item
+            .header
+              span 存入
+              .result $500
+            .content
+              span 訂單編號：0000000000
+              span 2023/01/03 更新
+        include ../../template/member/vcModal.pug
+
+
+block JSVAR
+  script(type="text/javascript").
+    window.PageCount = 10; 

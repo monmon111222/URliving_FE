@@ -1,0 +1,85 @@
+extends ../../template/layout
+
+
+block vars
+  - var pageID = 'page-search';
+
+block content
+  .main 
+    include ../../template/product/productMenuPC
+    .search-wrap
+      #hot-search
+        form(action="").search-form
+          .search-input
+            input#search-input(placeholder="Search" type="text" autocomplete="off")
+            a.btn.btn-search-m
+              i.icon-search
+        .hot-input-block
+          .hot-title 熱門關鍵字
+          .hot-search-list(v-if="hotLoad")
+            a(v-for="(item, index) in hotSearch" @click.prevent="goSearch(item)") {{ item }}
+        .brand-content
+          .brand-block 
+            .img-wrap
+              .d-lg-none
+                img(src="https://via.placeholder.com/100x100/0000FF/808080"
+                class="img-fluid")
+              .d-none.d-lg-block
+                img(src="https://via.placeholder.com/596x160/0000FF/808080"
+                class="img-fluid")
+            .text-wrap
+              .heart
+                brand-btn(:brandactive="'false'", :brandcode="'123'")
+                span PAZZO
+              .shop
+                span 品牌旗艦店
+                a
+                  i.icon-circle-next
+      #app-search
+        cart-dialog(ref="c_dialog", :isnotice="isNotice")
+        .item-list.item-list-box                         
+          .sort-list
+            .product-num 260個搜尋結果
+            .product-num-m 12345個搜尋結果
+            sort-app(:data="sortConditionDatas", :isload="sortConditionIsLoad")
+          .item-box
+            wish-btn(:wishactive="'False'", :custommarketid="'123'")
+            share-btn(:marketid="'123'")
+            a.item-pic(href="shopContent.html")
+              .soldout-mask
+                img.img-fluid(src="https://via.placeholder.com/752x956/0000FF/808080" alt="")
+              .item-info
+                .brand-name miyuki select miyuki select
+                .item-name
+                  h3 日常感圓領排釦針織外套日常感圓領排釦針織外套日常感圓領排釦針織外套日常感圓領排釦針織外套日常感圓領排釦針織外套日常感圓領排釦針織外套
+                .item-price
+                  span.origin-price NT.2500
+                  span.sell-price NT.2300
+            .tag-block 
+              .tag-label
+                span NEW
+                span SALE
+              a(class="open-dialog" data-custommarketid="'123'") 
+                i.icon-add-cart
+
+          - for (var i=0; i<5; i++)
+            .item-box
+              wish-btn(:wishactive="'True'", :custommarketid="'123'")
+              share-btn(:marketid="'123'")
+              a.item-pic(href="shopContent.html")
+                img.img-fluid(src="https://via.placeholder.com/752x956/0000FF/808080" alt="")
+                .item-info
+                  .brand-name PAZZO
+                  .item-name
+                    h3 日常感圓領排釦針織外套
+                  .item-price
+                    span.origin-price NT.2500
+                    span.sell-price NT.2300
+              .tag-block 
+                .tag-label
+                  span NEW
+                  span SALE
+                a(class="open-dialog" data-custommarketid="'123'") 
+                  i.icon-add-cart
+        #pagination
+    .clearfix

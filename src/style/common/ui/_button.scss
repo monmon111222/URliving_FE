@@ -1,0 +1,56 @@
+button::-moz-focus-inner {
+	padding: 0;
+	bottom: 0;
+}
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	vertical-align: middle;
+	height: auto;
+	padding: 18px 0px;
+	line-height: 1;
+	white-space: nowrap;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 16px;
+	&.disabled,
+	:disabled {
+		cursor: not-allowed;
+		pointer-events: none;
+		border-color: #afafaf;
+		background: #afafaf;
+		color: #fff;
+	}
+	@include max_md {
+		padding: 10px 0px;
+	}
+}
+
+.btn-block {
+	width: 100%;
+	display: block;
+}
+
+.btn-primary {
+	background: $primary;
+	color: #fff;
+	border-color: $primary;
+	&:hover {
+		background: #fff;
+		color: $primary;
+		border-color: #afafaf;
+	}
+}
+
+.btn-outline-primary {
+	background: #fff;
+	color: $primary;
+	border-color: $primary;
+	&:hover {
+		background: $primary;
+		color: #fff;
+	}
+}

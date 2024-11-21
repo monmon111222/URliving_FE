@@ -1,0 +1,146 @@
+{
+  "Code": 200,
+  "Message": "",
+  "Description": "",
+  "Response": {
+    "RefundPrice": 1970.0,
+    "TotalPrice": 0.0,
+    "AddOnPrice": 3700.0,
+    "PayPrice": 3300.0,
+    "VirtualCurrency": 0.0,
+    "ShippingCost": 0.0,
+    "ShippingCostThreshold": 1500.0,
+    "CouponDiscount": 0.0,
+    "OutOfStockPrice": 0.0,
+    "ErrorMessage": null,
+    "CanRefund": true,
+    "ReservedMarkets": [
+      {
+        "OrderMarketID": 377,
+        "MarketID": 62,
+        "Type": 2,
+        "Name": "棉麻長袖襯衫",
+        "ColorName": "杏",
+        "Size": "M",
+        "Count": 1,
+        "SellPrice": 0.0,
+        "OriginPrice": 790.0,
+        "IsVipDiscount": true,
+        "Event": null,
+        "Level": null,
+        "GiftEvent": {
+          "ID": 21,
+          "Name": "滿兩千多送一件",
+          "IsMatch": true,
+          "Message": null
+        },
+        "AddOnEvent": null
+      },
+      {
+        "OrderMarketID": 377,
+        "MarketID": 62,
+        "Type": 2,
+        "Name": "棉麻長袖襯衫",
+        "ColorName": "杏",
+        "Size": "L",
+        "Count": 1,
+        "SellPrice": 0.0,
+        "OriginPrice": 790.0,
+        "IsVipDiscount": true,
+        "Event": null,
+        "Level": null,
+        "GiftEvent": {
+          "ID": 21,
+          "Name": "滿兩千多送一件",
+          "IsMatch": false,
+          "Message": null
+        },
+        "AddOnEvent": null
+      },
+      {
+        "OrderMarketID": 378,
+        "MarketID": 92,
+        "Type": 3,
+        "Name": "腰間抽繩落地褲",
+        "ColorName": "卡其",
+        "Size": "M",
+        "Count": 1,
+        "SellPrice": 890.0,
+        "OriginPrice": 890.0,
+        "IsVipDiscount": true,
+        "Event": null,
+        "Level": null,
+        "GiftEvent": null,
+        "AddOnEvent": {
+          "ID": 13,
+          "Name": "限時滿額加價購",
+          "IsMatch": false,
+          "Message": "未符合加價購資格，加購品將以原價計算"
+        }
+      },
+      {
+        "OrderMarketID": 379,
+        "MarketID": 83,
+        "Type": 3,
+        "Name": "棉麻感木釦腰帶連身長褲",
+        "ColorName": "灰藍",
+        "Size": "S",
+        "Count": 1,
+        "SellPrice": 1180.0,
+        "OriginPrice": 1180.0,
+        "IsVipDiscount": true,
+        "Event": null,
+        "Level": null,
+        "GiftEvent": null,
+        "AddOnEvent": {
+          "ID": 5,
+          "Name": "購買指定商品加價購",
+          "IsMatch": false,
+          "Message": "未符合加價購資格，加購品將以原價計算"
+        }
+      },
+      {
+        "OrderMarketID": 380,
+        "MarketID": 83,
+        "Type": 3,
+        "Name": "棉麻感木釦腰帶連身長褲",
+        "ColorName": "深咖",
+        "Size": "S",
+        "Count": 1,
+        "SellPrice": 1180.0,
+        "OriginPrice": 1180.0,
+        "IsVipDiscount": true,
+        "Event": null,
+        "Level": null,
+        "GiftEvent": null,
+        "AddOnEvent": {
+          "ID": 5,
+          "Name": "購買指定商品加價購",
+          "IsMatch": false,
+          "Message": "未符合加價購資格，加購品將以原價計算"
+        }
+      },
+      {
+        "OrderMarketID": 381,
+        "MarketID": 78,
+        "Type": 3,
+        "Name": "微落肩垂墜感無袖上衣",
+        "ColorName": "淺咖",
+        "Size": "M",
+        "Count": 1,
+        "SellPrice": 450.0,
+        "OriginPrice": 450.0,
+        "IsVipDiscount": true,
+        "Event": null,
+        "Level": null,
+        "GiftEvent": null,
+        "AddOnEvent": {
+          "ID": 6,
+          "Name": "端午節加價購",
+          "IsMatch": false,
+          "Message": "未符合加價購資格，加購品將以原價計算"
+        }
+      }
+    ]
+  }
+}

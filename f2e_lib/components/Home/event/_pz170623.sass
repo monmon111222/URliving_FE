@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Asap')
+
+
+.event-mariecat
+  margin: 30px auto
+  width: 100%
+  li
+    position: relative
+    text-align: center
+    .pdimage
+      margin: auto
+    .pddesc
+      margin-top: -8px
+      letter-spacing: .1em
+      +transform(scale(.81) translateZ(0))
+  .slick-arrow
+    height: 20px
+    width: 20px
+    top: 50%
+    margin-top: -10px
+    background-color: transparent
+    border-top: 1px solid #3c3c3c
+    border-left: 1px solid #3c3c3c
+    transform: rotate(-45deg)
+  .slick-prev
+    left: 32px
+    &:before
+      border-left-width: 0
+      border-right-color: #3c3c3c
+      margin-left: -5px
+  .slick-next
+    right: 32px
+    transform: rotate(135deg)
+
+.hoverImg
+  position: relative
+  .tag-img
+    position: absolute
+    top: 50%
+    left: 50%
+    text-align: center
+    width: 356px
+    margin: -145px 0 0 -178px
+    z-index: 1
+    a:hover
+      img
+        filter: brightness(1000%)
+  .bg-img
+    li
+      transition: all 0.5s
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4)
+        position: absolute
+        opacity: 0
+        top: 0
+    
+
+
+
+@media (max-width: 1024px)
+  .event-mariecat
+    margin: 10.74vw auto 15.625vw
+
+@media (max-width: 767px)
+  .event-mariecat
+    +box-sizing(border-box)
+    .slick-arrow
+      height: 30px
+      width: 30px
+      margin-top: -15px
+      &:before
+        border-width: 6px
+        margin-top: -6px
+    .slick-prev
+      left: -42px
+      &:before
+        margin-left: -9px
+    .slick-next
+      right: -42px
+      &:before
+        margin-left: -2px
+
+@media (max-width: 480px)
+  .event-mariecat
+    li .pdimage
+      width: 100%
+    .slick-prev
+      left: -15px
+    .slick-next
+      right: -15px

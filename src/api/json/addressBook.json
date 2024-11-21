@@ -1,0 +1,43 @@
+{
+  "Code": 200,
+  "Message": null,
+  "Description": null,
+  "Response": {
+    "TotalCount": 25,
+    "Page": 3,
+    "PageCount": 3,
+    "PageSize": 10,
+    "Data": [
+      {
+        "ID": 21,
+        "Name": "Lisa",
+        "PhoneNumber": "987 654 321",
+        "PhoneCountryCode": "+886",
+        "Country": "台灣及離島",
+        "Province": null,
+        "City": "台北市",
+        "District": "南港區",
+        "Address": "南港路一段1號",
+        "Address2": null,
+        "Address3": null,
+        "Zip": "242",
+        "CustomsClearanceID": null
+      },
+      {
+        "ID": 22,
+        "Name": "Rose",
+        "PhoneNumber": "987 654 321",
+        "PhoneCountryCode": "+886",
+        "Country": "台灣及離島",
+        "Province": null,
+        "City": "台北市",
+        "District": "南港區",
+        "Address": "南港路一段8號",
+        "Address2": null,
+        "Address3": null,
+        "Zip": "242",
+        "CustomsClearanceID": null
+      }
+    ]
+  }
+}

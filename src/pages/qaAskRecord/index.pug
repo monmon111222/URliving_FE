@@ -1,0 +1,48 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-qaAskRecord';
+
+block content
+  .main
+    .content-block
+      .qa-block
+        .title-block
+          .title-text 客服
+          a.btn-more-info(href="")
+            i.icon-question
+        .tab-block
+          .tab-item
+            span 詢問
+          .tab-item.active
+            span 紀錄
+        .record-block 
+          table.record-table 
+            thead
+              th 問題
+              th 問題編號
+              th 主旨
+              th 狀態
+              th
+            tbody 
+              tr 
+                td 2023/01/01
+                td Q000000000001
+                td 帳戶相關
+                td 已結案
+                td.action 
+                  a.btn.btn-outline-primary.btn-get-record 紀錄
+              tr 
+                td 2023/01/01
+                td Q000000000001
+                td 帳戶相關
+                td 已結案
+                td.action 
+                  a.btn.btn-outline-primary.btn-get-record 紀錄
+              tr 
+                td 2023/01/01
+                td Q000000000001
+                td 帳戶相關
+                td 已結案
+                td.action 
+                  a.btn.btn-outline-primary.btn-get-record 紀錄

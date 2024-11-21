@@ -1,0 +1,59 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-coupon';
+
+block content
+  .container
+    .member-container
+      .menu-block
+        include ../../template/member/memberMenu.pug
+      .info-block
+        .info-block-content.member
+          .header
+            .explanation
+              .type 
+                span 折價券
+                a.btn-more-info(href="")
+                  i.icon-question
+              .memo 即將到期 12張
+            .result 10張
+          .content
+            .result 10張
+        ul.detail-list
+          li.detail-item
+            .header
+              span 消費滿1000打9折（新會員折價券）
+              .result 10% off
+            .content
+              span 未使用
+            .content
+              span 7S5c6RvvBWpe
+            .content
+              span 限定商品：ZZCZml7uFydw
+                a.btn-search(href='#' data-toggle="modal" data-target="#ZZCZml7uFydw" )
+                  i.icon-search
+              span 生效日期：2023/01/05
+            .content
+              span 使用門檻：$1,000
+              span 到期日期：2023/02/04
+          li.detail-item
+            .header
+              span 消費滿1000打9折（新會員折價券）
+              .result 10% off
+            .content
+              span 未使用
+            .content
+              span 7S5c6RvvBWpe
+            .content
+              span 限定商品：----
+              span 生效日期：2023/01/05
+            .content
+              span 使用門檻：$1,000
+              span 到期日期：2023/02/04
+    include ./template/popup.pug
+
+
+block JSVAR
+  script(type="text/javascript").
+    window.PageCount = 5; 

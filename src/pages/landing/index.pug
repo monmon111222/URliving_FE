@@ -1,0 +1,29 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-home';
+
+block content
+  .landing
+    .inner
+      div.social
+        a(href="https://www.instagram.com/mougganofficial/", target="_blank")
+          i.icon-landing-ig2
+        a(href="https://www.facebook.com/mouggan/", target="_blank")
+          i.icon-landing-fb2
+        a.d-md-inline-block.d-none(href='#', data-toggle='modal', data-target='#popup-qrcode')
+          i.icon-landing-line2
+        a.d-md-none.d-inline-block(href='http://nav.cx/iJlFndT')
+          i.icon-landing-line2
+      div
+        form#form-subscribe(action="")
+          div
+            input#subscribe-input(type="email", required, name="email", placeholder="請輸入EMAIL訂閱電子報").form-control
+          div.text-center 
+            input.btn.btn-primary.btn-subscribe.mx-3(type="submit", value="SUBSCRIBE") 
+      
+
+  include ../../template/modal/qrcode.pug
+
+
+   

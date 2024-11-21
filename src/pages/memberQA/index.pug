@@ -1,0 +1,47 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-memberQA';
+
+block content
+  .main#article
+    .content-block
+      .article-wrap
+        .article-change
+          .article-change-title FAQ
+          ul.article-change-items
+            li.active
+              a(href="") 會員相關
+            li
+              a(href="") 訂單相關
+            li
+              a(href="") 商品相關
+            li
+              a(href="") 合作相關
+        .article-info
+          .corp-content-bd
+            ul.accordion
+              li
+                a.accordion__title(href='#HB20140610000001')
+                  | 如何加入會員
+                .accordion__content(style='display: block;')
+                  div
+                    p 完成E-mail帳號註冊或使用第三方帳號直接進行登入，即可成為會員。
+              li
+                a.accordion__title(href='#HB20140610000004')
+                  | 會員使用功能
+                .accordion__content(style='')
+                  div
+              li
+                a.accordion__title(href='#HB20140610000002')
+                  | 會員優惠與折扣
+                .accordion__content(style='')
+                  div
+
+
+
+
+
+
+
+

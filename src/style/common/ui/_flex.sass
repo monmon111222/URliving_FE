@@ -1,0 +1,108 @@
+@mixin row_between_center
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+@mixin row_between_start
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: flex-start
+
+@mixin row_between_end
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: flex-end
+
+@mixin row_center_center
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+
+@mixin row_start_center
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: center
+
+@mixin row_start_start
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: flex-start
+
+@mixin row_end_center
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+  align-items: center
+
+@mixin column_center_center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+@mixin column_between_start
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-start
+
+@mixin column_start_start
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+
+@mixin column_start_center
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+
+@mixin column_start_end
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-end
+  
+
+.row_between_center
+  @include row_between_center
+
+.row_between_start
+  @include row_between_start
+
+.row_between_end
+  @include row_between_end
+
+.row_center_center
+  @include row_center_center
+
+.row_start_center
+  @include row_start_center
+
+.row_start_start
+  @include row_start_start
+
+.row_end_center
+  @include row_end_center
+
+.column_center_center
+  @include column_center_center
+
+.column_between_start
+  @include column_between_start
+
+.column_start_start
+  @include column_start_start
+
+.column_start_center
+  @include column_start_center
+
+.column_start_end
+  @include column_start_end

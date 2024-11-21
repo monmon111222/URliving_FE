@@ -1,0 +1,29 @@
+#lb-refund-detail.modal.fade(tabindex='-1')
+	.modal-dialog(role='document')
+		.modal-content
+			.modal-header
+				.title 退款紀錄
+				a.modal-close(href='#' data-dismiss='modal')
+					i.icon-close
+			.modal-body(v-if='dataisload')
+				.table-responsive
+					table.table
+						thead
+							tr
+								th.nowrap(scope='col') 購買金額
+								th.nowrap(scope='col') 購買日期
+								th.nowrap(scope='col') 退款方式
+								th.nowrap(scope='col') 退款狀態
+						tr(v-for='(refund, index) in data')
+							td.nowrap
+								p NT$ {{refund.Amount.toLocaleString()}}
+							td.nowrap
+								p.mb-0 {{refund.Date.substring(0,10)}}
+								p.mb-0 {{refund.Date.substring(11)}}
+							td.nowrap
+								p {{refund.RefundWayDescription}}
+							td.nowrap
+								p(v-if='refund.IsDone') 已通知銀行
+								p(v-else='') 處理中
+			.modal-footer
+				a.btn.btn-primary.btn-block(href='#' data-dismiss='modal') 確定

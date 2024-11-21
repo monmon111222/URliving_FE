@@ -1,0 +1,125 @@
+extends ../../template/layout
+
+
+block vars
+  - var pageID = 'page-cart';
+
+block content
+  .main
+    .content-block
+      #app-shopping2
+        form#form-booking-info(action='' method='POST')
+          .form-style
+            .shopping-wrap
+              shopping-list(:step="2")
+              .shopping-info
+                .buyer-block
+                  .subtitle 訂購人資料
+                  .choose.revert
+                    label.choose-input(for='update-info')
+                      input#update-info.checkbox(name='syncAccount' type='checkbox' checked="true")
+                      span.choose-checkMark
+                      span.choose-text 同步更新會員資料
+                  .form-buyer
+                    .form-wrap
+                        label(for='user_name').title-wrap 姓名
+                        .form-input
+                          input#user_name.form-control(placeholder="姓名" type='text' name='name' required='' value="美而快")
+                    .form-wrap 
+                      label.title-wrap 手機
+                      .form-row
+                        .col-4
+                          .cart-select
+                            select.countryCode(name='countryCode' required='')
+                              option(value='+886') +886
+                              option(value='+86') +86
+                        .col-8
+                          div.form-input
+                            input#user-mobile.form-control(placeholder="手機號碼" type='tel' name='mobile' required='')                
+                    .form-wrap
+                      label.title-wrap 地址
+                      area-tw(v-if="isOverSeaMode === 'False'" :county="userAddress.county" :zipcode="userAddress.zipcode" :address="userAddress.address" :namecounty="'city'" :nameaddress="'address'" :namedistrict="'district'" :namezipcode="'zipcode'")
+                    .form-wrap
+                      label.title-wrap E-MAIL
+                      div.form-input
+                        input#email.form-control(placeholder="電子信箱" type='email' name='mail' required)
+
+                .recipient-block
+                  .subtitle 收件人資訊 
+                  .form-recipient
+                    .form-row.form-wrap
+                      .col-6  
+                        label.title-wrap 姓名
+                        .form-input
+                          input#recipient_name.form-control(type='text' name='recipientName' required='')
+                      .col-6
+                          address-btn(@use-btn="useRecipientAddress")
+                    .form-wrap  
+                      label.title-wrap 手機
+                      .form-row
+                        .col-4
+                          .cart-select
+                            select(name='recipientCountryCode' required='')
+                              option(value='+886') +886
+                              option(value='+86') +86
+                              option(value='+853') +853
+                        .col-8
+                          .form-input
+                            input#recipient-mobile.form-control(placeholder="手機號碼" type='tel' name='recipientMobile' required='')
+                    .form-wrap
+                      label.title-wrap 地址
+                      p(v-if="window.isCVS === 'True'").text-inputBox 篤勝門市 : 基隆市七堵區大德路103號
+                      div(v-else)
+                        area-tw(ref="c_areatw" v-if="shippingAddress.region == '台灣及離島'" :county="window.isEmployee === 'True' ? '臺北市': shippingAddress.county" :zipcode="window.isEmployee === 'True' ? '南港區': shippingAddress.zipcode" :address="window.isEmployee === 'True' ? '南港路三段47巷8號':shippingAddress.address" :namecounty="'recipientCity'" :nameaddress="'recipientAddress'" :namedistrict="'recipientDistrict'" :namezipcode="'recipientZipcode'")
+                        area-cn(v-else-if="shippingAddress.region == '中國'" ref="c_areacn" :province="shippingAddress.province" :selectmode="false" :nameaddress="'recipientAddress'")
+                        area-other(v-else ref="c_areaother" :selected="shippingAddress.region" :address="shippingAddress.address"  :selectmode="false" :nameaddress="'recipientAddress'")
+                      
+                  .choose
+                    label.choose-input(for='add-recipient')
+                      input#add-recipient.checkbox(name='addRecipient' type='checkbox' checked="true")
+                      span.choose-checkMark
+                      span.choose-text 加入常用收件人
+        
+
+                  .transport-block(v-if="isEmployee === 'False'")
+                    label(for='arriveTime').title-wrap 配送時段
+                    .cart-select
+                      select#arriveTime(name='ArriveTime')
+                        option(value='0') 不指定
+                        option(value='1') 8~13時
+                        option(value='2') 14~18時
+                      #foreign-warning.text-danger(v-if="isOverSeaMode === 'True'") 提醒您：海外訂單無提供退貨服務，還請確認後再下單訂購唷！
+                  .invoice-block
+                    include ./template/invoice
+                  .privacy-block
+                    .choose.revert
+                      label.choose-input(for='agree-privacy')
+                        input#agree-privacy(name='agree-privacy' type='checkbox')
+                        span.choose-checkMark
+                        span.choose-text 我同意接受
+                          a.px-1(href="service.html") 服務條款
+                          span & 
+                          a.px-1(href="policy.html") 隱私權政策
+                          span 。
+                  .cart-buttons
+                    a.btn.btn-modify(href='cart.html') 上一步
+                    input#btn-go-checkout.btn-primary.btn(type='submit' value='下一步')
+
+block JSVAR
+  script(type="text/javascript").
+    window.shippingRegion = '台灣及離島';
+    window.shippingProvince = '';
+    window.userRegion = '';
+    window.userCounty = '';
+    window.userZipcode = '';
+    window.userProvince = '';
+    window.userAddress = '';
+    window.isOverSeaMode = 'False'
+    window.isEmployee = 'False'
+    window.openEInvioceRegister = 'True'
+    window.isOffshoreIsland = false
+    window.isCVS = ''
+    window.recipientCity = ''
+    window.recipientDistrict = ''
+    window.recipientAddress = ''
+    window.recipientZipcode = ''

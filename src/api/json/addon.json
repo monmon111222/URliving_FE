@@ -1,0 +1,62 @@
+{
+  "Code": 200,
+  "Message": null,
+  "Description": null,
+  "Response": [
+    {
+      "ID": 35,
+      "Name": "行銷活動加價購",
+      "CountLimit": 1,
+      "Markets": [
+        {
+          "CustomMarketID": "MT3M140CL41SZ0",
+          "Name": "透膚印花襯衫",
+          "ColorName": "咖",
+          "Size": "F",
+          "SellPrice": 1200.0,
+          "OriginPrice": 1990.0,
+          "Cover": "https://pic.tpx.tw/yyandu/ProductBasic/36c2013a-dc49-437f-8a15-23a36a6fbbc0.jpg",
+          "BarCode": "Y400000030900",
+          "HasStock": true,
+          "Stock": 41
+        },
+        {
+          "CustomMarketID": "MT3M140CL42SZ0",
+          "Name": "透膚印花襯衫",
+          "ColorName": "深藍",
+          "Size": "F",
+          "SellPrice": 1.0,
+          "OriginPrice": 990.0,
+          "Cover": "https://pic.tpx.tw/yyandu/ProductBasic/0c375ff9-7268-4c43-8d0d-6679132fc8cd.jpg",
+          "BarCode": "Y400000032000",
+          "HasStock": true,
+          "Stock": 37
+        },
+        {
+          "CustomMarketID": "MT3M95CL49SZ0",
+          "Name": "加我加我前短後長短T",
+          "ColorName": "牙白",
+          "Size": "F",
+          "SellPrice": 490.0,
+          "OriginPrice": 490.0,
+          "Cover": "https://pic.tpx.tw/yyandu/ProductBasic/2b599a55-4936-4357-85d1-f35dc2642e69.jpg",
+          "BarCode": "Y400000100100",
+          "HasStock": true,
+          "Stock": 12
+        },
+        {
+          "CustomMarketID": "MT3M95CL49SZ0",
+          "Name": "加我加我前短後長短T",
+          "ColorName": "藍",
+          "Size": "F",
+          "SellPrice": 490.0,
+          "OriginPrice": 490.0,
+          "Cover": "https://pic.tpx.tw/yyandu/ProductBasic/2b599a55-4936-4357-85d1-f35dc2642e69.jpg",
+          "BarCode": "Y400000100100",
+          "HasStock": true,
+          "Stock": 12
+        }
+      ]
+    }
+  ]
+}

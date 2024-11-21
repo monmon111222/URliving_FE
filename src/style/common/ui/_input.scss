@@ -1,0 +1,73 @@
+.form-input {
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	textarea {
+		width: 100%;
+		border: 1px solid #afafaf;
+		border-radius: 0;
+		padding: 15px 25px;
+		font-size: 16px;
+		&:focus-visible {
+			outline: none;
+		}
+	}
+	input {
+		width: 100%;
+		border: 1px solid #afafaf;
+		border-radius: 0;
+		padding: 17px 24px;
+		font-size: 16px;
+		line-height: 1;
+		color: $primary;
+		&:focus-visible {
+			outline: none;
+		}
+		&::placeholder {
+			color: #afafaf;
+		}
+		&::-webkit-input-placeholder {
+			/* Chrome, Safari */
+			color: #afafaf;
+		}
+
+		&:-ms-input-placeholder {
+			/* IE 10+ */
+			color: #afafaf;
+		}
+
+		&::-moz-placeholder {
+			/* Firefox 19+ */
+			color: #afafaf;
+			opacity: 1;
+		}
+		&:-webkit-autofill,
+		&:-webkit-autofill:hover,
+		&:-webkit-autofill:focus,
+		&:-webkit-autofill:active {
+			box-shadow: 0 0 0 50px white inset;
+			-webkit-text-fill-color: black;
+			background: white;
+			transition: background 5000s ease-in-out 0s;
+		}
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+		&:focus-visible {
+			outline: none;
+		}
+		@include max_md {
+			padding: 0 24px;
+			height: 42px;
+		}
+	}
+	div.error {
+		font-size: 17px;
+		color: $error;
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+}

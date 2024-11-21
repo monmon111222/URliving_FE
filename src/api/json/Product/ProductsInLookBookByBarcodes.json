@@ -1,0 +1,41 @@
+[
+    {
+      'Barcode': 'P403003330500',
+      'ProductName': '麂皮緞帶紳士帽',
+      'src': 'https://pazzo.cloudcdn.tw/pazzo/2015AW_item/w/P40300333/P40300333-31.jpg',
+      'link': '/Detail/P403003330500',
+      'SellingPrice': '790',
+      'DiscountPrice': '690',
+      'Sort': 1,
+      'Invertory': '486',
+      'IsReOrder': true,
+      'IsNew': true,
+      'IsSale': true
+    },
+    {
+      'Barcode': 'P400011430104',
+      'ProductName': '韓妞ONI 圈圈毛兩穿短版開釦上衣',
+      'src': 'https://pazzo.cloudcdn.tw/pazzo/2015AW_item/w/P40001143/P40001143-11.jpg',
+      'link': '/Detail/P400011430104',
+      'SellingPrice': '690',
+      'DiscountPrice': '690',
+      'Sort': 2,
+      'Invertory': '0',
+      'IsReOrder': false,
+      'IsNew': true,
+      'IsSale': false
+    },
+    {
+      'Barcode': 'P400019760504',
+      'ProductName': '暖冬小高領毛絨上衣',
+      'src': 'https://pazzo.cloudcdn.tw/pazzo/2015AW_item/w/P40001976/P40001976-21.jpg',
+      'link': '/Detail/P400019760504',
+      'SellingPrice': '890',
+      'DiscountPrice': '790',
+      'Sort': 3,
+      'Invertory': '499',
+      'IsReOrder': true,
+      'IsNew': false,
+      'IsSale': true
+    }
+  ]

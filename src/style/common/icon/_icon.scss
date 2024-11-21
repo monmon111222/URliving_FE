@@ -1,0 +1,151 @@
+//
+// Alternate icons
+//
+$icons-map: (
+	"ig": (
+		width: 29px,
+		height: 29px,
+		url: $storage-path + "logo-ig-black.svg",
+	),
+	"fb": (
+		width: 29px,
+		height: 29px,
+		url: $storage-path + "logo-fb-black.svg",
+	),
+	"line": (
+		width: 29px,
+		height: 29px,
+		url: $storage-path + "logo-line-black.svg",
+	),
+	"twitter": (
+		width: 29px,
+		height: 29px,
+		url: $storage-path + "logo-twitter.svg",
+	),
+	"wechat": (
+		width: 29px,
+		height: 29px,
+		url: $storage-path + "logo-wechat.svg",
+	),
+	"whatsapp": (
+		width: 29px,
+		height: 29px,
+		url: $storage-path + "logo-whatsapp.svg",
+	),
+	"arrow": (
+		width: 10px,
+		height: 5px,
+		url: $storage-path + "arrow.svg",
+	),
+	"close": (
+		width: 20px,
+		height: 20px,
+		url: $storage-path + "close.svg",
+	),
+	"close-noCircle": (
+		width: 26px,
+		height: 26px,
+		url: $storage-path + "close-noCircle.svg",
+	),
+	"search": (
+		width: 24px,
+		height: 24px,
+		url: $storage-path + "search.svg?v=006",
+	),
+	"member": (
+		width: 24px,
+		height: 24px,
+		url: $storage-path + "member.svg?v=006",
+	),
+	"heart": (
+		width: 24px,
+		height: 24px,
+		url: $storage-path + "heart.svg?v=006",
+	),
+	"heart-active": (
+		width: 24px,
+		height: 24px,
+		url: $storage-path + "heart-active.svg?v=006",
+	),
+	"bag": (
+		width: 24px,
+		height: 24px,
+		url: $storage-path + "bag.svg?v=006",
+	),
+	"brand": (
+		width: 24px,
+		height: 24px,
+		url: $storage-path + "logo-u.svg?v=006",
+	),
+	"more": (
+		width: 24px,
+		height: 24px,
+		url: $storage-path + "more.svg?v=006",
+	),
+	"filter": (
+		width: 25px,
+		height: 22px,
+		url: $storage-path + "filter.svg",
+	),
+	"add-cart": (
+		width: 20px,
+		height: 20px,
+		url: $storage-path + "add-cart.svg",
+	),
+	"share": (
+		width: 23px,
+		height: 20px,
+		url: $storage-path + "share.svg",
+	),
+	"bag-plus": (
+		width: 20px,
+		height: 20px,
+		url: $storage-path + "bag-plus.svg",
+	),
+	"delete": (
+		width: 24px,
+		height: 22px,
+		url: $storage-path + "delete.svg",
+	),
+	"edit": (
+		width: 24px,
+		height: 22px,
+		url: $storage-path + "edit.svg",
+	),
+	"circle-next": (
+		width: 20px,
+		height: 20px,
+		url: $storage-path + "circle-next.svg",
+	),
+	"question": (
+		width: 24px,
+		height: 24px,
+		url: $storage-path + "question.svg?v=006",
+	),
+	"alert-mark": (
+		width: 20px,
+		height: 20px,
+		url: $storage-path + "alert-mark.svg?v=006",
+	),
+);
+
+// to create icon theme's class automatically
+@each $icon, $map in $icons-map {
+	.icon-#{$icon} {
+		display: inline-block;
+		vertical-align: middle;
+		background-image: url(map-get($map, url));
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: map-get($map, width);
+		height: map-get($map, height);
+		a:hover {
+			opacity: 0.5;
+		}
+	}
+}
+
+.icon-global {
+	background-size: 20px;
+	background-position: center;
+}

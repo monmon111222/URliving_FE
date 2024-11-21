@@ -1,0 +1,68 @@
+$h6-font-size: 12px;
+$h5-font-size: 14px;
+$h4-font-size: 15px;
+$h3-font-size: 16px;
+$h2-font-size: 18px;
+$h1-font-size: 20px;
+
+h1,
+.h1 {
+	font-size: $h1-font-size;
+}
+
+h2,
+.h2 {
+	font-size: $h2-font-size;
+}
+
+h3,
+.h3 {
+	font-size: $h3-font-size;
+}
+
+h4,
+.h4 {
+	font-size: $h4-font-size;
+}
+
+h5,
+.h5 {
+	font-size: $h5-font-size;
+}
+
+h6,
+.h6 {
+	font-size: $h6-font-size;
+}
+
+.lh-15 {
+	line-height: 1.5;
+}
+
+.lh-2 {
+	line-height: 2;
+}
+
+.lh-1 {
+	line-height: 1;
+}
+
+.font-underline {
+	text-decoration: underline;
+}
+
+.text-gray {
+	color: $gray;
+}
+
+.text-error {
+	color: $error;
+}
+
+.text-blue {
+	color: $blue;
+}
+
+.font-regular {
+	font-weight: 600;
+}

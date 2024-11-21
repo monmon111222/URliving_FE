@@ -1,0 +1,208 @@
+.home-jumbo .slick-slide img
+  width: 100%
+  height: 100vh
+  background-size: cover
+  background-position: center
+
+.sideBySide
+  letter-spacing: -5px
+  li
+    display: inline-block
+    vertical-align: top
+
+.hoverImage
+  display: inline-block
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+@keyframes animation_ScaleX
+  0%
+    background-size: 100% 100%
+  50%
+    background-size: 0% 100%
+  100%
+    background-size: 100% 100%
+
+@keyframes animation_ScaleX_
+  0%
+    background-size: 100% 100%
+  50%
+    background-size: 0% 100%
+  100%
+    background-size: 100% 100%
+
+@keyframes animation_ScaleXImage
+  0%
+    transform: scaleX(1)
+  50%
+    transform: scaleX(0)
+  100%
+    transform: scaleX(0)
+
+@keyframes animation_ScaleXImage_
+  0%
+    transform: scaleX(0)
+  50%
+    transform: scaleX(0)
+  100%
+    transform: scaleX(1)
+
+.hoverScaleX_opacity
+  animation: animation_ScaleX_ 1s 1
+  background-position: center
+  background-repeat: no-repeat
+  > *
+    animation: animation_ScaleXImage_ 1s 1
+  &:hover
+    animation: animation_ScaleX 1s 1
+    > *
+      animation: animation_ScaleXImage 1s 1 forwards
+
+@keyframes fadinUp
+  to
+    opacity: 1
+    transform: translateY(0px)
+
+.fadin-up
+  position: absolute
+  right: 0
+  top: 0
+  z-index: 5
+  img
+    opacity: 0
+    transform: translateY(50px)
+    animation: fadinUp 2s ease-out 1 forwards
+
+@keyframes Bigger
+  to
+    transform: scale(1)
+
+.BiggerImg
+  img
+    width: 100%
+    transform: scale(0.5)
+    animation: Bigger 3s ease-out 1 paused forwards
+  &:hover img
+    animation-play-state: running
+
+@keyframes goMarquee
+  to
+    background-position-x: 0
+
+[edit_BG]
+  background-size: cover
+  background-position: center
+
+[decode='marquee']
+  background-size: auto 100%
+  background-position-x: 10000%
+  width: 100%
+  animation: goMarquee 1000s infinite linear
+
+[decode='absolute-box']
+  .sim-row-box
+    position: relative
+    overflow: initial
+  .absolute-content
+    position: absolute
+    width: auto
+
+[decode='absolute-text']
+  position: absolute
+  width: 100%
+  left: 0
+  z-index: 1
+  &.v-top
+    top: 0
+  &.v-middle
+    top: 50%
+    transform: translateY(-50%)
+  &.v-bottom
+    bottom: 0
+
+.inlineStyle
+  span
+    display: inline-block
+    text-align: center
+    a, > .v
+      display: block
+      padding: 30px 40px
+  .v:after
+    content: ''
+    display: block
+    width: 5px
+    height: 5px
+    border: solid #000
+    border-width: 1px 1px 0 0
+    margin: 15px auto
+    transform: rotate(135deg)
+
+[data-id='5-1']
+  line-height: 1.5em
+
+[type='topbanner']
+  text-align: center
+  p
+    position: absolute
+    line-height: 1.6em
+    letter-spacing: 0.05em
+    font-size: 13px
+    z-index: 2
+  .sideBySide
+    display: inline-flex
+    max-width: 100%
+
+[data-type='popup']
+  z-index: 1039
+  &[close-btn='true'] .close-btn
+    display: block
+  .close-btn
+    display: none
+    position: absolute
+    right: 0
+    top: 0
+    z-index: 2
+    background-repeat: no-repeat
+    &:empty
+      width: 39px
+      height: 39px
+      &:before, &:after
+        content: ''
+        display: block
+        height: 1px
+        width: 25px
+        position: absolute
+        top: 19px
+        left: 7px
+        background-color: #666
+      &:after
+        transform: rotate(-45deg)
+      &:before
+        transform: rotate(45deg)
+
+  .close-btn-img-hover
+    position: absolute
+    left: 0
+    top: 0
+    opacity: 0
+  &[close-btn-hover='true'] .close-btn:hover
+    .close-btn-img
+      opacity: 0
+    .close-btn-img-hover
+      opacity: 1
+
+@media only screen and (min-width: 1025px)
+  [data-type='popup'] .close-btn:empty:hover
+    opacity: 0.5
+
+@media only screen and (max-width: 1024px)
+  .sim-row
+    background-attachment: scroll !important
+
+  [decode='absolute-box'] .absolute-content
+    position: static
+
+  .BiggerImg img
+    animation: none
+    transform: scale(1)

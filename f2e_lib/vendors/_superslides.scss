@@ -1,0 +1,60 @@
+@import "compass";
+
+// Required
+.full-banner {
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  .slides-container {
+    display: none;
+  }
+  .scrollable {
+    @include pie-clearfix;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+  }
+}
+
+// Optional
+.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+  a {
+    position: absolute;
+    display: block;
+    &.prev {
+      left: 20px;
+    }
+    &.next {
+      right: 20px;
+    }
+  }
+}
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+  a {
+    background: $gray-900;
+    border-radius: 100%;
+    width: 6px;
+    height: 6px;
+    @include inline-block;
+    margin: 0 4px;
+    overflow: hidden;
+    text-indent: -100%;
+    opacity: 0.3;
+    &.current {
+      opacity: 1;
+    }
+  }
+}

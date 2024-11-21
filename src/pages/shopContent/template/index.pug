@@ -1,0 +1,60 @@
+.shop-content(v-if="dataIsLoad")
+  .loading-mask(:class="{'active':!dataIsLoad}")
+  notice
+  .photo-content.col-12.col-lg-7
+    photo(:photoCover='false')
+  .spec-content.col-12.col-lg-4
+    spec
+  .photo-content.col-12.col-lg-11
+    .list-wrap
+      a.text(href='#shop-content1') 商品特色
+      a.text(href='#shop-content2') 商品資訊
+      a.text(href='#shop-content3') 尺寸指南
+    #shop-content1
+      photo(:photoCover='true')
+    #shop-content2
+      .list-title 商品資訊
+      table
+        tr
+          td 商品介紹
+          td(v-html='itemDatas.Description')
+        tr
+          td 材質
+          td(v-html='itemDatas.MaterialDescription')
+        tr
+          td 素材產地
+          td {{ itemDatas.MaterialOriginDescription }}
+        tr
+          td 加工產地
+          td {{ itemDatas.OriginDescription }}
+        tr
+          td 洗滌方式
+          td(v-html='itemDatas.CareLabelDesc')
+    #shop-content3
+      .item-report(v-html='itemDatas.SizeReport')
+  .brand-content.col-12.col-lg-11 
+    .brand-block 
+      //- new-image(:size="'_w100_h100'")
+      .img-wrap
+        .d-lg-none
+          img(src="https://via.placeholder.com/100x100/0000FF/808080"
+          class="img-fluid")
+        .d-none.d-lg-block
+          img(src="https://via.placeholder.com/596x160/0000FF/808080"
+          class="img-fluid")
+      .text-wrap
+        .heart
+          .item-wish
+            a(v-if="!itemDatas.Brand.Followed")
+              i.icon-heart 
+            a(v-else)
+              i.icon-heart-active
+          span PAZZO
+        .shop
+          span 品牌旗艦店
+          a
+            i.icon-circle-next
+  .addon-content.col-12.col-lg-11
+    addon(:marketID="CustomMarketID.substring(0, CustomMarketID.indexOf('CL'))", :carAddMainItem='carAddMainItem')
+  .recommend-content.col-12.col-lg-11
+    recommend

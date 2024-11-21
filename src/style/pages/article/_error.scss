@@ -1,0 +1,24 @@
+#article {
+	.error {
+		text-align: center;
+		.error-title {
+			font-size: 30px;
+			margin-bottom: 24px;
+		}
+		.error-content {
+			margin-bottom: 57px;
+		}
+		.btn {
+			max-width: 440px;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	#article {
+		.error {
+			padding-top: 80px;
+		}
+	}
+}

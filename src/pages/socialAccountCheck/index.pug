@@ -1,0 +1,22 @@
+extends ../../template/layout
+
+
+block vars
+  - var pageID = 'page-social-check';
+
+block content
+  .main
+    .content-block
+      include ../../template/member/loginMenu.pug 
+      .form-block 
+        .title.text-center LINE帳號綁定
+        .or-text
+          | 您的Email帳號jacky1098@ymail.com已是註冊會員，請輸入您原註冊帳號之會員密碼，即可完成LINE登入連結綁定，下次登入就能更輕鬆快速囉！:)
+        form#form-social-check
+          .form-input
+            input#user-email.form-control(type='text' value='pazomii@gmail.com' placeholder='信箱' name="" readonly)
+          .form-input
+            input.form-control(type='password' name="password", required, placeholder="密碼")
+          .text-center
+            input.btn.btn-primary.btn-block.btn-submit-form(type="submit" value="立即綁定")
+          a#btn-forget.btn-forget-pws(href="#") 忘記密碼

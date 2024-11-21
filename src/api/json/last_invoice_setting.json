@@ -1,0 +1,19 @@
+{
+	"Code":200,
+	"Message":null,
+	"Description":"查詢成功",
+	"Response":
+	{
+		"Type": 1,
+		"MobileCode":"/s566666",
+		"Donate":"2",
+		"Zip":"123",
+		"City":"臺北市",
+		"District":"南港區",
+		"Address":"南港路三段1號",
+		"TaxID":"aaaa",
+		"Title":"財團"
+	}
+}
+
+

@@ -1,0 +1,143 @@
+footer {
+	width: 100%;
+	position: relative;
+	padding: 120px 0;
+	background: #000;
+	.footer-inner {
+		margin: auto;
+		margin: auto;
+		max-width: 1440px;
+		width: 100%;
+		position: relative;
+		.logo-u {
+			width: 120px;
+			height: 81px;
+			background: url($storage-path + "logo-u-white.png") no-repeat center;
+			background-size: contain;
+			margin-bottom: 55px;
+			cursor: pointer;
+		}
+		.text-info {
+			padding-top: 55px;
+			border-top: 1px solid #fff;
+			display: flex;
+			justify-content: space-between;
+			a,
+			p {
+				color: #fff;
+				margin-bottom: 15px;
+			}
+			.right {
+				display: flex;
+				.link-group {
+					margin-right: 105px;
+				}
+				.action-block {
+					display: flex;
+					flex-direction: column;
+					.btn-len-mode {
+						text-align: center;
+						border: 1px solid #fff;
+						padding: 15px 0;
+						margin-bottom: 25px;
+					}
+					.social-media-btn {
+						&:not(:last-child) {
+							margin-right: 15px;
+						}
+						> i {
+							width: 40px;
+							height: 40px;
+							display: inline-block;
+							vertical-align: middle;
+						}
+					}
+					#social-ig > i {
+						background: url($storage-path + "logo-ig-white.svg") no-repeat center;
+						background-size: contain;
+					}
+
+					#social-fb > i {
+						background: url($storage-path + "logo-fb-white.svg") no-repeat center;
+						background-size: contain;
+					}
+
+					#social-line > i {
+						background: url($storage-path + "logo-line-white.svg") no-repeat center;
+						background-size: contain;
+					}
+
+					#social-tiktok > i {
+						background: url($storage-path + "logo-tiktok-white.svg") no-repeat center;
+						background-size: contain;
+					}
+				}
+			}
+		}
+	}
+	@include max_md {
+		background: #e9e9e9;
+		padding: 40px 20px;
+		.footer-inner {
+			.logo-u {
+				display: none;
+			}
+			.text-info {
+				border: none;
+				flex-direction: column-reverse;
+				margin-top: 0;
+				padding-top: 0;
+				a,
+				p {
+					color: #000;
+				}
+				.right {
+					flex-direction: column;
+					.link-group {
+						display: flex;
+						flex-wrap: wrap;
+						margin-right: 0;
+						a:not(:last-child) {
+							margin-right: 15px;
+						}
+					}
+					.action-block {
+						flex-direction: column-reverse;
+						.btn-len-mode {
+							width: fit-content;
+							border-color: #000;
+							padding: 15px;
+							color: #000;
+							margin-top: 30px;
+						}
+						.social-media-btn {
+							> i {
+								width: 28px;
+								height: 28px;
+							}
+						}
+						#social-ig > i {
+							background: url($storage-path + "logo-ig-black.svg") no-repeat center;
+							background-size: contain;
+						}
+
+						#social-fb > i {
+							background: url($storage-path + "logo-fb-black.svg") no-repeat center;
+							background-size: contain;
+						}
+
+						#social-line > i {
+							background: url($storage-path + "logo-line-black.svg") no-repeat center;
+							background-size: contain;
+						}
+
+						#social-tiktok > i {
+							background: url($storage-path + "logo-tiktok-black.svg") no-repeat center;
+							background-size: contain;
+						}
+					}
+				}
+			}
+		}
+	}
+}

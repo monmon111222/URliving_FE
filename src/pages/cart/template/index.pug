@@ -1,0 +1,17 @@
+form#form-shopping-cart(method="POST", :action="actionStr")
+  div(v-html="VerificationTokenValue")
+  .form-style
+    .shopping-wrap
+      shopping-list(:step="1")
+      .shopping-info
+        cart-temp
+        h2 Shopping Bag
+          span(v-if="cartTotalWithoutAddon> 0") ({{ cartTotalWithoutAddon | autoSupplement  }})
+        #cart-table.shopping-table
+          .text-center.py-4(v-if="!dataIsLoad")
+            img(src="https://static.tpx.tw/sff/thebutters/static/img/img-loader.gif")
+          cart-item-list
+          addon-cart
+        cart-pay
+        cart-memo
+        input.btn.btn-block.btn-primary.btn-checkout#btn-go-checkout(type="submit" value="下一步")

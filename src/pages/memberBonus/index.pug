@@ -1,0 +1,120 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-member-bonus';
+
+mixin bonusListItem(bonusTitle1, bonusTitle2, bonusMoney, bonusStatus, bonusDate)
+  li.bonus-list-item
+    .bonus-list-info
+      .bonus-title
+        p #{bonusTitle1}
+        p #{bonusTitle2}
+      .bonus-money #{bonusMoney}
+    .bonus-list-status
+      .bonus-status #{bonusStatus}
+      .bonus-date #{bonusDate} 更新
+
+mixin bonus-list-item(title, count)
+  li.bonus-list-item
+    .list-title #{title}
+    .list-count #{count}
+
+block content
+  #member-app.container
+    .member-container
+      .menu-block
+        include ../../template/member/memberMenu.pug
+      .info-block
+        .bonus-info
+          .bonus-block 
+            .bonus-title 
+              .bonus-tip-block
+                .bonus-tip
+                  h3 回饋獎金
+                small * 回饋獎金超過$500方可提領
+                small * 訂單成立後7天回饋獎金才會生效
+              span.bonus-money $3,600
+            .bonus-btn-group
+              //- a.btn.btn-effect(href="#") 查看成效分析
+              a.btn.btn-withdraw(href="#") 提領現金
+            ul.bonus-list
+              +bonus-list-item('可提領', '$2,600')
+              +bonus-list-item('待生效', '$1,000')
+              +bonus-list-item('累積總計', '$128,000')
+
+        form.panel(action="" method="")
+          .panel-btn-group 
+            button#btn-detail.btn.panel-btn.active(type="button") 回饋明細
+          .panel-filter 
+            .start-date
+              input.date-picker-start.form-control(placeholder='開始日期' id="start-date" type='text' name='start' )
+              img.img-fluid(src="https://static.tpx.tw/sff/urliving/static/img/member-date.png?v=010" alt="data-icon")
+            .end-date
+              input.date-picker-end.form-control(placeholder='結束日期' id="end-date" type='text' name='end' )
+              img.img-fluid(src="https://static.tpx.tw/sff/urliving/static/img/member-date.png?v=010" alt="data-icon")
+            select.form-control.state-select(name="state")
+              option(value="") 狀態
+              option(value="") 待生效
+              option(value="") 已撥款
+            button.btn.search-btn(type="submit") 
+              img.img-fluid(src="https://static.tpx.tw/sff/urliving/static/img/bonus-search.png?v=010" alt="search")
+
+          .panel-content
+            p.no-record 尚無紀錄
+
+          #bonus-detail.panel-content
+            ul.bonus-list 
+              +bonusListItem('您的朋友消費$10,000 獲得$500', '訂單日期 2024/01/28 23:59', '$500', '待生效', '2023/01/03')
+              +bonusListItem('提領', '訂單日期 2024/01/28 23:59', '-$1,000', '已撥款', '2023/01/03')
+              +bonusListItem('您的朋友消費$10,000 獲得$500', '訂單日期 2024/01/28 23:59', '$500', '待生效', '2023/01/03')
+              +bonusListItem('提領', '訂單日期 2024/01/28 23:59', '-$1,000', '已撥款', '2023/01/03')
+
+        form.bonus-withdraw(action="" method="")
+          .withdraw-block 
+            .withdraw-tip
+              h3.withdraw-title 提領 回饋獎金
+              //- button.btn.btn-withdraw
+              //-   img.img-fluid(src="https://static.tpx.tw/sff/urliving/static/img/member-question.png?v=010" alt="tip")
+            .withdraw-group
+              .can-withdraw-block 
+                span.can-withdraw-text 可提領
+                span.can-withdraw-money $3,600
+              .withdraw-input-group
+                input.form-control.withdraw-input(type="number" name="" required placeholder="請輸入提領金額")
+                small.d-none.d-xl-block.withdraw-info ＊提領金額最少$500，衍生之轉帳手續費將從提領金額中扣除。
+              button.btn.btn-withdraw-send(type="submit") 提領金額
+              button.btn.btn-withdraw-cancel(type="button") 取消提領
+            small.d-xl-none.withdraw-info ＊提領金額最少$500，衍生之轉帳手續費將從提領金額中扣除。
+          .bank-block
+            p.bank-title 銀行匯款
+            .bank-info 
+
+              //- .bank-not-bind
+              //-   a.btn.withdrawal-bind-bank(href='#')
+              //-     img.img-fluid(src="https://static.tpx.tw/sff/urliving/static/img/bank-bind.png?v=010" alt="bind")
+              //-     p.pt-3 綁訂帳戶
+
+              .bank-bind
+                .bank-account
+                  p 台新銀行
+                  p 0000 0000 0000 0000
+                a.bank-edit(href="#") 
+                  img.img-fluid(src="https://static.tpx.tw/sff/urliving/static/img/member-edit.png?v=010" alt="edit")
+                p.bank-name 金珍妮
+
+        include ./template/vcModal.pug
+        .virtual-mask
+
+
+
+
+
+
+
+block JSVAR
+  script(type="text/javascript").
+    window.userRegion = '';
+    window.userCounty = '';
+    window.userZipcode = '';
+    window.userProvince = '';
+    window.userAddress = ''; 

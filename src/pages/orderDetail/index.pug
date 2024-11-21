@@ -1,0 +1,192 @@
+extends ../../template/layout
+
+block vars
+	- var pageID = 'page-order-detail';
+
+block content
+	#app-order.container
+		.member-container
+			.menu-block
+				include ../../template/member/memberMenu.pug
+			.info-block
+				.per-order-block
+					.order-status
+						span.shipping-status 出貨中
+						span.expired-date 鑑賞期：2023/03/01
+					.info-block-content
+						.text-group
+							.subtitle 
+								span 訂單編號：
+								div.order-no 
+									span 7S5c6RvvBWpe
+									span (官網訂單)
+									span (符合 fa points 回饋資格)
+							.paragraph
+								p 訂單日期：2022/10/06
+								p 訂單金額：$3,240
+								p 付款方式：貨到付款
+								p 配送方式：宅配
+								p 發票號碼：
+							.subtitle 配送資訊
+							.paragraph
+								p 收件人：金珍妮 / 886 926725020
+								p 配送地址：台北市南港區南港路三段47巷8號6樓
+								p 配送時段：不指定
+					.action-group
+						a.btn-get-shipping.btn.btn-action.btn-outline-primary(href='#' data-wmstransactionid='123' data-orderid='TP59B8FDDF0926') 查看物流
+						a.btn.btn-action.btn-outline-primary(href='#') 詢問/紀錄
+						a.btn-reorder.btn.btn-action.btn-outline-primary(role='button' href='#' aria-expanded='false') 再買一次
+						a.btn-return-product.btn.btn-action.btn-outline-primary(href='#' data-toggle='modal' data-target='#lb-refund' data-orderid='TP59B8FDDF0926') 我要退貨
+					.action-group
+						a.btn-get-shipping.btn.btn-action.btn-outline-primary(href='#' data-wmstransactionid='123' data-orderid='TP59B8FDDF0926') 退貨資訊
+						a.btn-get-refund-detail.btn.btn-action.btn-outline-primary(href='#' data-transactionid='123') 退款資訊
+						a.btn-cancel-order.btn.btn-action.btn-outline-primary(href='#' data-toggle='modal' data-target='#lb-cancel-order' data-orderid='TP59B8FDDF0926') 取消訂單
+					.detail-block
+						.subtitle 訂單商品
+						.product-block
+							.detail-item
+								.product-img
+									img.img-fluid(src='https://via.placeholder.com/120x153/0000FF/808080' alt="")
+								.product-info
+									p PAZZO
+									p.product-name V領薄針織開襟V領薄針織開襟V領薄針織開襟
+									p 顏色：白色
+									p 尺寸：S
+								.price-info
+									p 數量：01
+									p 折扣：VVIP會員 85折
+									p 售價：$190
+									p 購價：$162
+							.detail-item.sold-out
+								.product-img
+									img.img-fluid(src='https://via.placeholder.com/120x153/0000FF/808080' alt="")
+									.sold-out-mask Sold out
+								.product-info
+									p PAZZO
+									p.product-name V領薄針織開襟V領薄針織開襟V領薄針織開襟
+									p 顏色：白色
+									p 尺寸：S
+								.price-info
+									p 數量：01
+									p 折扣：VVIP會員 85折
+									p 售價：$190
+									p 購價：$162
+							.detail-item
+								.product-img
+									img.img-fluid(src='https://via.placeholder.com/120x153/0000FF/808080' alt="")
+								.product-info
+									p PAZZO
+									p.product-name V領薄針織開襟V領薄針織開襟V領薄針織開襟
+									p 顏色：白色
+									p 尺寸：S
+								.price-info
+									p 數量：01
+									p 折扣：VVIP會員 85折
+									p 售價：$190
+										span.text-blue.d-none.d-md-block ＊優惠已折抵
+									p 購價：$162
+									p.text-blue.d-block.d-md-none ＊優惠已折抵
+							.detail-item
+								.product-img
+									img.img-fluid(src='https://via.placeholder.com/120x153/0000FF/808080' alt="")
+								.product-info
+									p PAZZO
+									p.product-name V領薄針織開襟V領薄針織開襟V領薄針織開襟
+									p 顏色：白色
+									p 尺寸：S
+								.price-info
+									p 數量：01
+									p.text-blue 加價購：NT.99
+							.detail-item
+								.product-img
+									img.img-fluid(src='https://via.placeholder.com/120x153/0000FF/808080' alt="")
+								.product-info
+									p PAZZO
+									p.product-name V領薄針織開襟V領薄針織開襟V領薄針織開襟
+									p 顏色：白色
+									p 尺寸：S
+								.price-info
+									p 數量：01
+									p.text-blue 贈品：滿NT.1,000贈
+									p 售價：$190
+						.subtitle
+							a.btn-get-shipping.btn.btn-action.btn-outline-primary(href='#' data-wmstransactionid='123' data-orderid='TP59B8FDDF0926') 退貨資訊
+							.refund-no 7-11退貨便：A28188344869
+						.product-block
+							.detail-item
+								.product-img
+									img.img-fluid(src='https://via.placeholder.com/120x153/0000FF/808080' alt="")
+								.product-info
+									p PAZZO
+									p.product-name V領薄針織開襟V領薄針織開襟V領薄針織開襟
+									p 顏色：白色
+									p 尺寸：S
+								.price-info
+									p 數量：01
+									p 折扣：VVIP會員 85折
+									p 售價：$190
+									p 購價：$162
+							.detail-item
+								.product-img
+									img.img-fluid(src='https://via.placeholder.com/120x153/0000FF/808080' alt="")
+								.product-info
+									p PAZZO
+									p.product-name V領薄針織開襟V領薄針織開襟V領薄針織開襟
+									p 顏色：白色
+									p 尺寸：S
+								.price-info
+									p 數量：01
+									p 折扣：VVIP會員 85折
+									p 售價：$190
+									p 購價：$162
+						.subtitle
+							a.btn-get-shipping.btn.btn-action.btn-outline-primary(href='#' data-wmstransactionid='123' data-orderid='TP59B8FDDF0926') 退貨資訊
+							.refund-no 7-11退貨便：A28188344869
+						.product-block
+							.detail-item
+								.product-img
+									img.img-fluid(src='https://via.placeholder.com/120x153/0000FF/808080' alt="")
+								.product-info
+									p PAZZO
+									p.product-name V領薄針織開襟V領薄針織開襟V領薄針織開襟
+									p 顏色：白色
+									p 尺寸：S
+								.price-info
+									p 數量：01
+									p 折扣：VVIP會員 85折
+									p 售價：$190
+									p 購價：$162
+						.bill-block
+							.bill-item
+								span 總金額
+								span NT.980
+							.bill-item
+								span fa points
+								span 0p
+							.bill-item
+								span 運費
+									span.text-blue.ml-1 已達NT.1,000免運門檻
+								span NT.0
+							.bill-item
+								span 回饋金
+								span NT.80
+							.bill-item
+								span 購物金
+								span - NT.50
+							.bill-item
+								span 分享回饋折扣
+								span - 5%
+							.bill-item
+								span 折價券(UR0005050)
+								span - NT.50
+							.bill-item 
+								span 應付金額
+								.total 
+									span.price NT.930
+									span.memo 此筆訂單獲得XXX fa points
+
+				refund-list(ref="c_refund_list")
+				order-progress(ref="c_order_progress")
+				refund-detail(ref="c_refund_detail")
+				atm-info(ref="c_atm_info")
+				cancel-order(ref="c_cancel_order")

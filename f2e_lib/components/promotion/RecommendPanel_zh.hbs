@@ -1,0 +1,17 @@
+<div class="recommend">
+  <div class="recommend__section recommend__section--history">
+    <div class="recommend__title"><p>TODAY<br>VIEW</p></div>
+    <div class="recommend__slider">
+      {{#each this}}
+      <div>
+        {{#if linkurl}}<a href="{{linkurl}}">{{/if}}
+          <img src="{{imgurl}}" width="53" height="68">
+        {{#if linkurl}}</a>{{/if}}
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class="recommend__buttons">
+    <a class="recommend__gotop" href="javascript:;"><i class="icon-gotop">回到最上</i></a>
+  </div>
+</div>

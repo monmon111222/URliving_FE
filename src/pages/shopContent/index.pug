@@ -1,0 +1,15 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-shop-content';
+
+block content
+  .main
+    include ../../template/product/productMenuPC
+    #shop-content
+    .clearfix
+
+
+block JSVAR
+  script(type="text/javascript").
+    window.CategoryIDs = [7,8];window.CustomMarketID = 'MT1M12CL21SZ_';window.StaticImgDomain = 'pics.tpx.tw';window.PictureContainer = 'mouggan';

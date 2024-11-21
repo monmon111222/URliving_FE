@@ -1,0 +1,665 @@
+{
+    "Total": 20,
+    "Items": [{
+            "Barcode": "P400041781903",
+            "ProductName": "隨性假日女孩牛仔外套1",
+            "CoverImage": ["/2017SS_item/w/P40004178/P40004178-11.jpg", "/2017SS_item/w/P40004178/P40004178-11M.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": false,
+            "SellingPrice": 390,
+            "DiscountPrice": 199,
+            "IsMit": false,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "M",
+                    "Barcode": "03",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                },
+                {
+                    "Size": "L",
+                    "Barcode": "04",
+                    "IsSoldOut": true,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P400042450103",
+            "ProductName": "夏氛花朵剌繡泡泡袖襯衫-女2",
+            "CoverImage": ["/2017SS_item/w/P40004178/P40004178-11.jpg", "/2017SS_item/w/P40004178/P40004178-11M.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": true,
+            "SellingPrice": 490,
+            "DiscountPrice": 490,
+            "IsMit": false,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "M",
+                    "Barcode": "03",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                },
+                {
+                    "Size": "L",
+                    "Barcode": "04",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P400043030103",
+            "ProductName": "MIT 泡泡先生系列愛心印花襯衫3",
+            "CoverImage": ["/2017SS_item/w/P40004303/P40004303-11_test.jpg", "/2017SS_item/w/P40004303/P40004303-11_testM.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": true,
+            "SellingPrice": 390,
+            "DiscountPrice": 390,
+            "IsMit": true,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "M",
+                    "Barcode": "03",
+                    "IsSoldOut": true,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P400041540104",
+            "ProductName": "迪士尼瑪麗貓系列刺繡襯衫4",
+            "CoverImage": ["/2017SS_item/w/P40004154/P40004154-11.jpg", "/2017SS_item/w/P40004154/P40004154-11M.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": false,
+            "SellingPrice": 390,
+            "DiscountPrice": 199,
+            "IsMit": false,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "M",
+                    "Barcode": "03",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P401014621903",
+            "ProductName": "小鹿斑比系列刺繡反摺丹寧褲5",
+            "CoverImage": ["/2017SS_item/w/P40101462/P40101462-11_test.jpg", "/2017SS_item/w/P40101462/P40101462-11_testM.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": true,
+            "SellingPrice": 890,
+            "DiscountPrice": 150,
+            "IsMit": false,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "L",
+                    "Barcode": "04",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P400043030103",
+            "ProductName": "MIT 泡泡先生系列愛心印花襯衫6",
+            "CoverImage": ["/2017SS_item/w/P40004303/P40004303-11.jpg", "/2017SS_item/w/P40004303/P40004303-11M.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": false,
+            "SellingPrice": 390,
+            "DiscountPrice": 390,
+            "IsMit": true,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "M",
+                    "Barcode": "03",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P400041781903",
+            "ProductName": "隨性假日女孩牛仔外套7",
+            "CoverImage": ["/2017SS_item/w/P40004178/P40004178-11.jpg", "/2017SS_item/w/P40004178/P40004178-11M.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": false,
+            "SellingPrice": 390,
+            "DiscountPrice": 199,
+            "IsMit": false,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "M",
+                    "Barcode": "03",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                },
+                {
+                    "Size": "L",
+                    "Barcode": "04",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P400042450103",
+            "ProductName": "夏氛花朵剌繡泡泡袖襯衫-女8",
+            "CoverImage": ["/2017SS_item/w/P40004178/P40004178-11.jpg", "/2017SS_item/w/P40004178/P40004178-11M.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": true,
+            "SellingPrice": 490,
+            "DiscountPrice": 490,
+            "IsMit": false,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "M",
+                    "Barcode": "03",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                },
+                {
+                    "Size": "L",
+                    "Barcode": "04",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P400041540104",
+            "ProductName": "迪士尼瑪麗貓系列刺繡襯衫",
+            "CoverImage": ["/2017SS_item/w/P40004154/P40004154-11_test.jpg", "/2017SS_item/w/P40004154/P40004154-11_testM.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": true,
+            "SellingPrice": 390,
+            "DiscountPrice": 199,
+            "IsMit": false,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "M",
+                    "Barcode": "03",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P401014621903",
+            "ProductName": "小鹿斑比系列刺繡反摺丹寧褲",
+            "CoverImage": ["/2017SS_item/w/P40101462/P40101462-11.jpg", "/2017SS_item/w/P40101462/P40101462-11M.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": false,
+            "SellingPrice": 890,
+            "DiscountPrice": 150,
+            "IsMit": false,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "L",
+                    "Barcode": "04",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P400041540104",
+            "ProductName": "迪士尼瑪麗貓系列刺繡襯衫",
+            "CoverImage": ["/2017SS_item/w/P40004154/P40004154-11.jpg", "/2017SS_item/w/P40004154/P40004154-11M.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": false,
+            "SellingPrice": 390,
+            "DiscountPrice": 199,
+            "IsMit": false,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "M",
+                    "Barcode": "03",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P401014621903",
+            "ProductName": "小鹿斑比系列刺繡反摺丹寧褲",
+            "CoverImage": ["/2017SS_item/w/P40101462/P40101462-11.jpg", "/2017SS_item/w/P40101462/P40101462-11M.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": false,
+            "SellingPrice": 890,
+            "DiscountPrice": 150,
+            "IsMit": false,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "L",
+                    "Barcode": "04",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P400043030103",
+            "ProductName": "MIT 泡泡先生系列愛心印花襯衫",
+            "CoverImage": ["/2017SS_item/w/P40004303/P40004303-11.jpg", "/2017SS_item/w/P40004303/P40004303-11M.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": false,
+            "SellingPrice": 390,
+            "DiscountPrice": 390,
+            "IsMit": true,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "M",
+                    "Barcode": "03",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P400041781903",
+            "ProductName": "隨性假日女孩牛仔外套",
+            "CoverImage": ["/2017SS_item/w/P40004178/P40004178-11.jpg", "/2017SS_item/w/P40004178/P40004178-11M.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": false,
+            "SellingPrice": 390,
+            "DiscountPrice": 199,
+            "IsMit": false,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "M",
+                    "Barcode": "03",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                },
+                {
+                    "Size": "L",
+                    "Barcode": "04",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P400042450103",
+            "ProductName": "夏氛花朵剌繡泡泡袖襯衫-女",
+            "CoverImage": ["/2017SS_item/w/P40004245/P40004245-11.jpg", "/2017SS_item/w/P40004245/P40004245-11M.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": false,
+            "SellingPrice": 490,
+            "DiscountPrice": 490,
+            "IsMit": false,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "M",
+                    "Barcode": "03",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                },
+                {
+                    "Size": "L",
+                    "Barcode": "04",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P400041540104",
+            "ProductName": "迪士尼瑪麗貓系列刺繡襯衫",
+            "CoverImage": ["/2017SS_item/w/P40004154/P40004154-11.jpg", "/2017SS_item/w/P40004154/P40004154-11M.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": false,
+            "SellingPrice": 390,
+            "DiscountPrice": 199,
+            "IsMit": false,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "M",
+                    "Barcode": "03",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P401014621903",
+            "ProductName": "小鹿斑比系列刺繡反摺丹寧褲",
+            "CoverImage": ["/2017SS_item/w/P40101462/P40101462-11.jpg", "/2017SS_item/w/P40101462/P40101462-11M.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": false,
+            "SellingPrice": 890,
+            "DiscountPrice": 150,
+            "IsMit": false,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "L",
+                    "Barcode": "04",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P400043030103",
+            "ProductName": "MIT 泡泡先生系列愛心印花襯衫",
+            "CoverImage": ["/2017SS_item/w/P40004303/P40004303-11.jpg", "/2017SS_item/w/P40004303/P40004303-11M.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": false,
+            "SellingPrice": 390,
+            "DiscountPrice": 390,
+            "IsMit": true,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "M",
+                    "Barcode": "03",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P400041781903",
+            "ProductName": "隨性假日女孩牛仔外套",
+            "CoverImage": ["/2017SS_item/w/P40004178/P40004178-11.jpg", "/2017SS_item/w/P40004178/P40004178-11M.jpg"],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": false,
+            "SellingPrice": 390,
+            "DiscountPrice": 199,
+            "IsMit": false,
+            "Sizes": [{
+                    "Size": "S",
+                    "Barcode": "02",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": true,
+                    "IsPreOrderSoldOut": true,
+                    "IsNotice": false
+                },
+                {
+                    "Size": "M",
+                    "Barcode": "03",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                },
+                {
+                    "Size": "L",
+                    "Barcode": "04",
+                    "IsSoldOut": false,
+                    "IsPreOrderProduct": false,
+                    "IsPreOrderSoldOut": false,
+                    "IsNotice": true
+                }
+            ]
+        },
+        {
+            "Barcode": "P005001121100",
+            "ProductName": "A MINÉ MÉ 午茶甜甜圈腮紅 #ME101野莓甜甜圈",
+            "CoverImage": [
+                "/2017AW_item/w/P00500112/P00500112-01D.jpg",
+                "/2017AW_item/w/P00500112/P00500112-01DM.jpg"
+            ],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": true,
+            "SellingPrice": 400,
+            "DiscountPrice": 352,
+            "IsMit": true,
+            "IsNew": false,
+            "Sizes": [{
+                "Size": "F",
+                "Barcode": "00",
+                "IsSoldOut": false,
+                "IsPreOrderProduct": false,
+                "IsPreOrderSoldOut": true,
+                "IsNotice": true
+            }],
+            "EnabledDt": "2017,12,13,10,0,0"
+        },
+        {
+            "Barcode": "P005001131000",
+            "ProductName": "A MINÉ MÉ 午茶甜甜圈腮紅 #ME102草莓甜甜圈",
+            "CoverImage": [
+                "/2017AW_item/w/P00500113/P00500113-01D.jpg",
+                "/2017AW_item/w/P00500113/P00500113-01DM.jpg"
+            ],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": true,
+            "SellingPrice": 400,
+            "DiscountPrice": 352,
+            "IsMit": true,
+            "IsNew": false,
+            "Sizes": [{
+                "Size": "F",
+                "Barcode": "00",
+                "IsSoldOut": false,
+                "IsPreOrderProduct": false,
+                "IsPreOrderSoldOut": true,
+                "IsNotice": true
+            }],
+            "EnabledDt": "2017,12,13,10,0,0"
+        },
+        {
+            "Barcode": "P400047860200",
+            "ProductName": "Krispy Kreme刺繡泡泡袖寬鬆大學T",
+            "CoverImage": [
+                "/2017AW_item/w/P40004786/P40004786-01D.jpg",
+                "/2017AW_item/w/P40004786/P40004786-01DM.jpg"
+            ],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": true,
+            "SellingPrice": 790,
+            "DiscountPrice": 690,
+            "IsMit": true,
+            "IsNew": false,
+            "Sizes": [{
+                "Size": "F",
+                "Barcode": "00",
+                "IsSoldOut": true,
+                "IsPreOrderProduct": true,
+                "IsPreOrderSoldOut": false,
+                "IsNotice": true
+            }],
+            "EnabledDt": "2017,12,13,10,0,0"
+        },
+        {
+            "Barcode": "P005001221000",
+            "ProductName": "A MINÉ MÉ 午茶草莓甜甜圈抱枕",
+            "CoverImage": [
+                "/2017AW_item/w/P00500122/P00500122-01D.jpg",
+                "/2017AW_item/w/P00500122/P00500122-01DM.jpg"
+            ],
+            "HasTwoCover": true,
+            "IsLargeCoverImage": true,
+            "SellingPrice": 590,
+            "DiscountPrice": 590,
+            "IsMit": false,
+            "IsNew": false,
+            "Sizes": [{
+                "Size": "F",
+                "Barcode": "00",
+                "IsSoldOut": false,
+                "IsPreOrderProduct": false,
+                "IsPreOrderSoldOut": true,
+                "IsNotice": true
+            }],
+            "EnabledDt": "2017,12,13,10,0,0"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+#lb-order-transport.modal.fade(tabindex='-1')
+  .modal-dialog(role='document')
+    .modal-content(v-if='transactionID!==null && dataisload')
+      .modal-header
+        .title 物流追蹤
+        a.modal-close(href='#' data-dismiss='modal')
+          i.icon-close
+      .modal-body(v-if='dataisload')
+        ol.progress-approval
+          li.progress-step(v-for='(progress, index) in data')
+            .approver(:class="{ active: compareDate(progress.Date) }")
+              .time
+                p {{progress.Date.substring(0,11).replaceAll('-','/')}}
+                p {{progress.Date.substring(11)}}
+              .description {{progress.ShippingFlowDescription}}
+      .modal-footer
+        a.btn.btn-primary.btn-block(href='#' data-dismiss='modal') 確定

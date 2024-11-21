@@ -1,0 +1,21 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-register-success';
+
+block content
+  .main
+    .content-block
+      include ../../template/member/loginMenu.pug 
+      .success-block 
+        .title 會員註冊成功
+        .paragraph
+          p 您已獲得專屬折價券
+        .paragraph.regular
+          p 請於48小時內至E-mail信箱
+          p.success-email (jennie@gmail.com)
+          p 點選認證信件完成驗證
+        .paragraph.regular
+          span  折價券可至
+          a 「會員中心」
+          span 頁面查詢

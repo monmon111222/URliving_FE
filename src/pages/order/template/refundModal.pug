@@ -1,0 +1,119 @@
+#lb-refund.modal.fade(tabindex='-1')
+	.modal-dialog(role='document')
+		.modal-content.form-style
+			form#form-return-products(action='/User/Order/Refund' method='POST' ref="refundForm")
+				div(v-if='transactionID!==null && dataIsLoad')
+					.modal-header
+						.logo-u(v-if="step!==1&&step!==2")
+						a.modal-close(data-dismiss='modal' href='#')
+							i.icon-close
+						.title(v-if="step===1") 選擇退貨商品
+						.title(v-else-if="step===2") 選擇退貨原因
+					.modal-body
+						.step0-remind-text(v-show="step===0")
+							p 1.未滿免運門檻，需支付原訂單出貨運費
+							p (宅配120元/超商80元)
+							p 2.未達滿額贈門檻，需支付贈品原價金額
+							p 3.未達組合優惠門檻，將恢復原價計算
+							p(v-if="data.UseFaPoints > 0") 4.未達fa points折抵門檻，需支付原本折抵金額
+							p
+								span(v-if="data.UseFaPoints > 0") 5
+								span(v-else) 4
+								span .未達加價購門檻，加購商品將會以原價計算
+						.step1-block(v-show="step===1")
+							.row.product-row(v-for='(market, index) in data.Markets', :key='market.ID', :index='index', :ref="'refund'+index", :class='{last: data.Markets.length === 1}')
+								.check-block.choose
+									label.choose-input(:for="'check-' + market.ID")
+										input(@click='toggleChecked(market)', type="checkbox", :class='{disabled: isCheckGift}', :checked='market.checked', :id="'check-' + market.ID", 
+										:value='market.ID', name='RefundMarketCheck')
+										.choose-checkMark
+								.cover-block
+									img.img-fluid.product-pic(:src="market.Cover", :alt="market.Name")
+								.text-block
+									.name-and-size
+										a.name(:href='market.Url') {{market.Name}}
+										span  ({{market.ColorName}} / {{market.Size}})
+									.price-and-count
+										.price
+											span 售價:$ {{market.SellPrice}}
+											span 小計:$ {{market.SubTotal}}
+										.item-counter
+											.quantity.disabled(v-if='market.Events.length !== 0 && !market.Events[0].CanScatteredRefund')
+												button.quantity-btn-minus(type='button') -
+												input.quantity-text(:value='market.Count' type='text' readonly='')
+												button.quantity-btn-plus(type='button') +
+											.quantity(v-else)
+												button.quantity-btn-minus(:class='{disabled: market.refundCount === 1}' type='button' @click="onMinus(index)") -
+												input.quantity-text(:value='market.refundCount' type='text' readonly='')
+												button.quantity-btn-plus(:class='{disabled: market.refundCount === market.Count}' type='button' @click="onPlus(index)") +
+							input(name='TransactionID' type='hidden', :value='transactionID')
+							input(name='IsCreditCard' type='hidden', :value='data.IsCreditCard')
+						.step2-block(v-show="step===2")
+							.row.product-row
+								.cover-block
+									img.img-fluid.product-pic(:src="selectedItemDetail.Cover", :alt="selectedItemDetail.Name")
+								.text-block
+									.name-and-size
+										a.name(:href='selectedItemDetail.Url') {{selectedItemDetail.Name}}
+										span  ({{selectedItemDetail.ColorName}} / {{selectedItemDetail.Size}})
+									.price-and-count
+										.price
+											span 售價:$ {{selectedItemDetail.SellPrice}}
+											span 小計:$ {{selectedItemDetail.SubTotal}}
+							div(v-for='item in selectedItem')
+								.row.product-row(v-show="item.OrderMarketID === selectedItemDetail.ID")
+									p.text-error (1)~(4)為退貨必備資訊，請擇一填寫，(5)為選填。
+									input(name='reason' type='hidden', :value="getSelectedItemReason(item)")
+									.title-category-block.row.col-12(v-for='(category, categoryIndex) in reasonCheck', :key='category.code'+categoryIndex)
+										.col-12.category.choose(:class='{open: category.check}')
+											label.choose-input(:for="'check-reason-category-'+category.code")
+												input(@click='toggleReasonCategory(category.code)', type="checkbox",
+												:checked='category.check',:value="category.text", :id="'check-reason-category-'+category.code")
+												.choose-checkMark
+												.choose-text {{category.text}}
+										div(v-if="category.check&&category.code!=='b'")
+											p.text-error(v-if="category.check&&category.sub.filter(element=>element.check===true).length===0") *請勾選至少一個小項
+										div(v-else-if="category.check&&category.code==='b'")
+											p.text-error(v-if="category.sub.filter(element=>element.check===true).length===0") *請勾選至少一個小項
+											p.text-error(v-else) *限勾選兩個小項
+										.row.col-12.title-subcategory-block(v-if='category.check')
+											.col-sm-6.col-12(v-for='(subCategory, subCategoryIndex) in category.sub', :key='subCategory.code'+subCategoryIndex) 
+												.subcategory.choose
+													label.choose-input(:for="'check-reason-subcategory-'+category.code+subCategory.code")
+														input(@click='toggleReasonSubCategory(categoryIndex,subCategoryIndex)' type='checkbox', :disabled="category.code==='b'&&!subCategory.check && upToTwoSub" 
+														:checked='subCategory.check',:value="subCategory.text",:id="'check-reason-subcategory-'+category.code+subCategory.code")
+														.choose-checkMark
+														.choose-text {{subCategory.text}}
+										.reason-other-block(v-if="category.check&&category.code==='b'")
+											p.text-error(style="margin-bottom:0px;") 必填
+											.form-input
+												textarea.type2-textarea(v-model="selectedItemType2Reason[fillReasonIndex]" placeholder="請詳述商品退貨原因，如：口袋破洞、領口有污漬...等" onkeydown="if(event.keyCode == 13) return false;")
+												.error(v-if="type2ReasonOverMax") 字數上限為48 字元
+									p.type5-title 5.其他(選填)
+									.reason-other-block.form-input 
+										textarea.type5-textarea(v-model="selectedItemOtherReason[fillReasonIndex]" onkeydown="if(event.keyCode == 13) return false;")
+										.error(v-if="type5ReasonOverMax") 字數上限為48 字元
+						.check-gift-block(v-if='isCheckGift&&step>2')
+							p.text-error(v-if='giftData.length > 0') 提醒您：退貨商品須將活動贈品寄回
+							.choose(v-for='(gift, index) in giftData')
+								input(type='hidden' name='RefundMarket', :value="gift.OrderMarketID + '_' + gift.Count")
+								label.choose-input(for="'check-' + gift.OrderMarketID" style='cursor: not-allowed;')
+									input(:id="'check-' + gift.OrderMarketID" type='checkbox' name='RefundMarketCheck', :value='gift.OrderMarketID' style='cursor: not-allowed; pointer-events: none;' checked='true')
+									.choose-checkMark 
+									.choose-text
+										p {{gift.Name}}-{{gift.ColorName}}-{{gift.Size}}
+											span.text-gray ({{gift.GiftEvent.Name}})
+					.modal-footer
+						.btn-group(v-if="isCheckGift&&step>2")
+							a.btn.btn-outline-primary(@click.prevent='loopStep2(-1)' href='#') 上一步
+							input.btn.btn-primary(type='submit' value="確認退貨")
+						.btn-group(v-if="step===0")
+							a.btn.btn-outline-primary(data-dismiss='modal' ref='#') 取消
+							a.btn.btn-primary(@click.prevent='step++' href='#') 下一步
+						.btn-group(v-if="step===1")
+							a.btn.btn-outline-primary(@click.prevent='step--' href='#') 上一步
+							a.btn.btn-primary(@click.prevent='goStep2' href='#',:class='{disabled: selectedItem.length===0}') 下一步
+						.btn-group(v-if="step===2")
+							a.btn.btn-outline-primary(@click.prevent='loopStep2(-1)' href='#') 上一步
+							a.btn.btn-primary(v-if="showNextStep", :class='{disabled: !canMoveNextItem }', @click.prevent='loopStep2(1)' href='#') 下一步
+							a.btn.btn-primary(v-else @click.prevent='getReservedMarkets(transactionID)' href='#' ,:class='{disabled: !canMoveNextItem }') 確認退貨

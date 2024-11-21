@@ -1,0 +1,364 @@
+{
+  "Code": 200,
+  "Message": null,
+  "Description": null,
+  "Response": {
+    "TotalCount": 9,
+    "Page": 1,
+    "PageCount": 1,
+    "PageSize": 20,
+    "Data": [
+      {
+        "NineDigitsBarcode": "P40006794",
+        "MarketID": 16080,
+        "Type": 1,
+        "Name": "韓系小姐姐短袖西裝外套",
+        "SubTitle": "此款版型適中",
+        "SellPrice": 1090.0,
+        "OriginPrice": 1090.0,
+        "EventPrice": 0.0,
+        "EventName": null,
+        "IsPreShow": false,
+        "ProductID": 16080,
+        "Pattern": 2,
+        "Series": {
+          "FlavorName": "辣味",
+          "SpecName": "180g",
+          "CustomMarketID": "MT1M20CL35SZ0"
+        },
+        "Brand": null,
+        "Labels": [],
+        "Colors": [
+          {
+            "CustomMarketID": "MT1M16080CL35884SZ_",
+            "MarketID": 16080,
+            "MarketType": 1,
+            "Covers": [
+              "https://pic.pzcdn.tw/pazzo/ProductCover/eb8a21b9-1064-4517-a57d-17792107921d.jpg",
+              "https://pic.pzcdn.tw/pazzo/ProductBasic/64007526-5bde-4e52-9a26-329af1ec830e.jpg"
+            ],
+            "PintSizePictureUrl": "https://pic.pzcdn.tw/pazzo/ProductColor/63124a1e-e99b-4066-af1d-f281d790d8d6.jpg",
+            "MarketUrl": "/market/n/16080?c=35884",
+            "ColorID": 35884,
+            "ColorName": "霧藍",
+            "FavoriteCount": 43,
+            "SalesCountDescription": "售出: 94",
+            "IsFavorite": true
+          }
+        ]
+      },
+      {
+        "NineDigitsBarcode": "P40202707",
+        "MarketID": 16023,
+        "Type": 1,
+        "Name": "MIT 休閒日常連帽短褲套裝",
+        "SubTitle": "此款版型適中",
+        "SellPrice": 890.0,
+        "OriginPrice": 890.0,
+        "EventPrice": 0.0,
+        "EventName": null,
+        "IsPreShow": false,
+        "ProductID": 16023,
+        "Pattern": 2,
+        "Series": {
+          "FlavorName": "辣味",
+          "SpecName": "180g",
+          "CustomMarketID": "MT1M20CL35SZ0"
+        },
+        "Brand": null,
+        "Labels": [],
+        "Colors": [
+          {
+            "CustomMarketID": "MT1M16023CL35760SZ_",
+            "MarketID": 16023,
+            "MarketType": 1,
+            "Covers": [
+              "https://pic.pzcdn.tw/pazzo/ProductCover/15678725-2fc4-455e-ae3b-bbe00209aa40.jpg",
+              "https://pic.pzcdn.tw/pazzo/ProductBasic/1c51f6c7-8d0a-42e9-83a4-b2e8b963444e.jpg"
+            ],
+            "PintSizePictureUrl": "https://pic.pzcdn.tw/pazzo/ProductColor/baf6e59b-39aa-4806-bb5e-dd2f81dfe7dd.jpg",
+            "MarketUrl": "/market/n/16023?c=35760",
+            "ColorID": 35760,
+            "ColorName": "黑",
+            "FavoriteCount": 55,
+            "SalesCountDescription": "銷售破百",
+            "IsFavorite": true
+          }
+        ]
+      },
+      {
+        "NineDigitsBarcode": "P40102463",
+        "MarketID": 16037,
+        "Type": 1,
+        "Name": "MIT 抽繩打摺修身長褲",
+        "SubTitle": "此款版型適中",
+        "SellPrice": 690.0,
+        "OriginPrice": 690.0,
+        "EventPrice": 0.0,
+        "EventName": null,
+        "IsPreShow": false,
+        "ProductID": 16037,
+        "Pattern": 2,
+        "Series": {
+          "FlavorName": "辣味",
+          "SpecName": "180g",
+          "CustomMarketID": "MT1M20CL35SZ0"
+        },
+        "Brand": null,
+        "Labels": [],
+        "Colors": [
+          {
+            "CustomMarketID": "MT1M16037CL35784SZ_",
+            "MarketID": 16037,
+            "MarketType": 1,
+            "Covers": [
+              "https://pic.pzcdn.tw/pazzo/ProductCover/ced3025c-3822-4d03-9208-3232add21e10.jpg",
+              "https://pic.pzcdn.tw/pazzo/ProductBasic/529bf882-80ca-4411-b9d8-b390f7e53f1f.jpg"
+            ],
+            "PintSizePictureUrl": "https://pic.pzcdn.tw/pazzo/ProductColor/0f268deb-2cb6-44c3-803b-6f7da6012cc9.jpg",
+            "MarketUrl": "/market/n/16037?c=35784",
+            "ColorID": 35784,
+            "ColorName": "黑",
+            "FavoriteCount": 56,
+            "SalesCountDescription": "銷售破百",
+            "IsFavorite": true
+          }
+        ]
+      },
+      {
+        "NineDigitsBarcode": "P40006831",
+        "MarketID": 16041,
+        "Type": 1,
+        "Name": "MIT 外出日常U領BRA T",
+        "SubTitle": "此款版型合身*基於衛生考量無提供退貨服務",
+        "SellPrice": 490.0,
+        "OriginPrice": 490.0,
+        "EventPrice": 399.0,
+        "EventName": "精選組合．2件798",
+        "IsPreShow": false,
+        "ProductID": 16041,
+        "Pattern": 1,
+        "Series": {
+          "FlavorName": "null",
+          "SpecName": "null"
+        },
+        "Brand": null,
+        "Labels": [
+          {
+            "Description": "special price",
+            "Style": "item__Special",
+            "LabelEnum": 0
+          }
+        ],
+        "Colors": [
+          {
+            "CustomMarketID": "MT1M16041CL35792SZ_",
+            "MarketID": 16041,
+            "MarketType": 1,
+            "Covers": [
+              "https://pic.pzcdn.tw/pazzo/ProductCover/f49302f8-681a-47cc-869b-37ec87537e3d.jpg",
+              "https://pic.pzcdn.tw/pazzo/ProductBasic/4b3ca295-6c54-4ae4-91a7-e3f2316e2684.jpg"
+            ],
+            "PintSizePictureUrl": "https://pic.pzcdn.tw/pazzo/ProductColor/10ae055e-b23b-477a-8031-7ca822785b7d.jpg",
+            "MarketUrl": "/market/n/16041?c=35792",
+            "ColorID": 35792,
+            "ColorName": "黑",
+            "FavoriteCount": 49,
+            "SalesCountDescription": "銷售破百",
+            "IsFavorite": true
+          }
+        ]
+      },
+      {
+        "NineDigitsBarcode": "P40006743",
+        "MarketID": 15901,
+        "Type": 1,
+        "Name": "RICO莉可兔 小厭世手繪風短袖上衣",
+        "SubTitle": "此款版型適中",
+        "SellPrice": 590.0,
+        "OriginPrice": 590.0,
+        "EventPrice": 0.0,
+        "EventName": null,
+        "IsPreShow": false,
+        "ProductID": 15901,
+        "Pattern": 1,
+        "Series": {
+          "FlavorName": "null",
+          "SpecName": "null"
+        },
+        "Brand": null,
+        "Labels": [],
+        "Colors": [
+          {
+            "CustomMarketID": "MT1M15901CL35482SZ_",
+            "MarketID": 15901,
+            "MarketType": 1,
+            "Covers": [
+              "https://pic.pzcdn.tw/pazzo/ProductCover/2c291496-ac14-4c2e-804e-1702847b7a59.jpg",
+              "https://pic.pzcdn.tw/pazzo/ProductBasic/1753ab55-0092-4697-bfb2-7d4ec46ce513.jpg"
+            ],
+            "PintSizePictureUrl": "https://pic.pzcdn.tw/pazzo/ProductColor/77ecd5fd-f72d-4378-8efa-0138555c06b4.jpg",
+            "MarketUrl": "/market/n/15901?c=35482",
+            "ColorID": 35482,
+            "ColorName": "米杏",
+            "FavoriteCount": 25,
+            "SalesCountDescription": "售出: 88",
+            "IsFavorite": true
+          }
+        ]
+      },
+      {
+        "NineDigitsBarcode": "P40102028",
+        "MarketID": 4387,
+        "Type": 1,
+        "Name": "#PS系列 下襬抽鬚修身短褲",
+        "SubTitle": "此款版型適中",
+        "SellPrice": 890.0,
+        "OriginPrice": 890.0,
+        "EventPrice": 0.0,
+        "EventName": null,
+        "IsPreShow": false,
+        "ProductID": 4387,
+        "Pattern": 1,
+        "Series": {
+          "FlavorName": "null",
+          "SpecName": "null"
+        },
+        "Brand": null,
+        "Labels": [],
+        "Colors": [
+          {
+            "CustomMarketID": "MT1M4387CL10050SZ_",
+            "MarketID": 4387,
+            "MarketType": 1,
+            "Covers": [
+              "https://pic.pzcdn.tw/pazzo/ProductCover/dce79bae-c6eb-4624-adb9-80de24c5fbe0.jpg",
+              "https://pic.pzcdn.tw/pazzo/ProductBasic/4a0e318f-bc8b-43f0-a591-c7be183a0328.jpg"
+            ],
+            "PintSizePictureUrl": "https://pic.pzcdn.tw/pazzo/ProductColor/ec93e906-45bd-4b14-938a-4a3abe0f825e.jpg",
+            "MarketUrl": "/market/n/4387?c=10050",
+            "ColorID": 10050,
+            "ColorName": "藍",
+            "FavoriteCount": 62,
+            "SalesCountDescription": "銷售破百",
+            "IsFavorite": true
+          }
+        ]
+      },
+      {
+        "NineDigitsBarcode": "P40102155",
+        "MarketID": 13398,
+        "Type": 1,
+        "Name": "#PS201 顯瘦修身直筒牛仔褲",
+        "SubTitle": "此款版型適中",
+        "SellPrice": 1280.0,
+        "OriginPrice": 1280.0,
+        "EventPrice": 0.0,
+        "EventName": null,
+        "IsPreShow": false,
+        "ProductID": 13400,
+        "Pattern": 1,
+        "Series": {
+          "FlavorName": "null",
+          "SpecName": "null"
+        },
+        "Brand": null,
+        "Labels": [],
+        "Colors": [
+          {
+            "CustomMarketID": "MT1M13398CL30822SZ_",
+            "MarketID": 13398,
+            "MarketType": 1,
+            "Covers": [
+              "https://pic.pzcdn.tw/pazzo/ProductCover/41078842-4006-4d95-be75-2dc0cd1c26cc.jpg",
+              "https://pic.pzcdn.tw/pazzo/ProductBasic/4adf72cc-9c26-46ab-a320-09c7460b7dcd.jpg"
+            ],
+            "PintSizePictureUrl": "https://pic.pzcdn.tw/pazzo/ProductColor/a32ec073-44ea-44bb-a6c5-18f7ed74f94e.jpg",
+            "MarketUrl": "/market/n/13398?c=30822",
+            "ColorID": 30822,
+            "ColorName": "藍",
+            "FavoriteCount": 39,
+            "SalesCountDescription": "售出: 85",
+            "IsFavorite": true
+          }
+        ]
+      },
+      {
+        "NineDigitsBarcode": "P40006015",
+        "MarketID": 5576,
+        "Type": 1,
+        "Name": "& IN THING框線單口袋襯衫",
+        "SubTitle": "此款版型適中",
+        "SellPrice": 690.0,
+        "OriginPrice": 690.0,
+        "EventPrice": 0.0,
+        "EventName": null,
+        "IsPreShow": false,
+        "ProductID": 5576,
+        "Pattern": 1,
+        "Series": {
+          "FlavorName": "null",
+          "SpecName": "null"
+        },
+        "Brand": null,
+        "Labels": [],
+        "Colors": [
+          {
+            "CustomMarketID": "MT1M5576CL12677SZ_",
+            "MarketID": 5576,
+            "MarketType": 1,
+            "Covers": [
+              "https://pic.pzcdn.tw/pazzo/ProductBasic/72de337a-9859-4970-b0f3-1d715c1543ef.jpg",
+              "https://pic.pzcdn.tw/pazzo/ProductBasic/99a536ee-b426-415d-ab02-03275d75f5e8.jpg"
+            ],
+            "PintSizePictureUrl": "https://pic.pzcdn.tw/pazzo/ProductColor/33c42136-a4fb-4100-94db-1edb8630d1e1.jpg",
+            "MarketUrl": "/market/n/5576?c=12677",
+            "ColorID": 12677,
+            "ColorName": "深藍色",
+            "FavoriteCount": 125,
+            "SalesCountDescription": "銷售破百",
+            "IsFavorite": true
+          }
+        ]
+      },
+      {
+        "NineDigitsBarcode": "P40006046",
+        "MarketID": 5968,
+        "Type": 1,
+        "Name": "& IN THING 綁結V領針織上衣",
+        "SubTitle": "此款版型合身",
+        "SellPrice": 590.0,
+        "OriginPrice": 590.0,
+        "EventPrice": 0.0,
+        "EventName": null,
+        "IsPreShow": false,
+        "ProductID": 5967,
+        "Pattern": 1,
+        "Series": {
+          "FlavorName": "null",
+          "SpecName": "null"
+        },
+        "Brand": null,
+        "Labels": [],
+        "Colors": [
+          {
+            "CustomMarketID": "MT1M5968CL13639SZ_",
+            "MarketID": 5968,
+            "MarketType": 1,
+            "Covers": [
+              "https://pic.pzcdn.tw/pazzo/ProductBasic/8dade2c2-885f-4c1c-beb4-d903b125c402.jpg",
+              "https://pic.pzcdn.tw/pazzo/ProductBasic/11d7b89f-b510-4ee4-85d4-78e36a12277f.jpg"
+            ],
+            "PintSizePictureUrl": "https://pic.pzcdn.tw/pazzo/ProductColor/c008235e-6ab2-4c91-8114-52ca9f486172.jpg",
+            "MarketUrl": "/market/n/5968?c=13639",
+            "ColorID": 13639,
+            "ColorName": "暗紅",
+            "FavoriteCount": 25,
+            "SalesCountDescription": "售出: 30",
+            "IsFavorite": true
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+extends ../../template/layout
+
+block css
+  link(rel='stylesheet', href='/css/rwd-content.css')
+
+block vars
+  - var pageID = '';
+
+block content
+  #app-event
+  a.show-item-detail(href="#", data-custommarketid="123") 測試
+  

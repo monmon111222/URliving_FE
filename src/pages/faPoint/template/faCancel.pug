@@ -1,0 +1,24 @@
+#lb-fa-cancel.modal.fade(tabindex='-1')
+  .modal-dialog
+    .modal-content
+      .modal-header
+        .logo-u
+        a.modal-close(href='#' data-dismiss='modal')
+          i.icon-close
+      .modal-body
+        p 貼心提醒：
+        span 消費及發放點數當下，
+          br.show-mb
+        span 若非綁定中狀態，
+          br.show-mb
+        span 將無法獲得訂單之點數回饋，
+          br.show-mb
+        span 也無法於下一次消費時進行點數折抵囉！
+          br.show-mb
+        span 若欲再次使用fa points，
+          br.show-mb
+        span 請重新完成綁定。
+          br.show-mb
+        span 相關服務辦法依照fa points服務條款為準。
+      .modal-footer
+        button.btn.btn-primary.btn-block(@click.prevent="cancelFaPoint") 取消綁定

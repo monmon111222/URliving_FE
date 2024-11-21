@@ -1,0 +1,46 @@
+extends ../../template/layout
+
+block vars
+	- var pageID = "page-fa-bind";
+
+block content
+	.container
+		.member-container
+			.menu-block
+				include ../../template/member/memberMenu.pug
+			.info-block
+				.page-title fa points 點數綁定
+				form#form-fa-bind
+					.fa-mobile
+						p.memo 請輸入手機號碼完成綁定
+						.input-block
+							#country-code
+								select(name='countryCode' required='')
+									option(value='886') (台灣及離島)
+									option(value='+86' selected) (中國+86)
+							#fa-mobile.form-input
+								input(type="tel" name="mobile" placeholder="請輸入手機號碼" value="0912345678" required="")
+							button.btn.btn-primary.btn-block.btn-get-verify 獲得手機驗證碼
+						.fa-verify
+							#input-wrap
+							input(type="hidden" name="code" readonly)
+							input(type="hidden" name="stamp" readonly)
+						.fa-intro 
+							p.subtitle fa points介紹及綁定說明
+							p fa points係由美而快電商金融科技股份有限公司(以下 fasney) 所提供之點數服務 , 可於合作商家消費、活動中獲得fa points。
+							p 1.如欲進行fa points綁定及折抵消費，需先完成fasney會員註冊。
+							p 2.獲得的fa points，可於UR LIVING官網結帳當下折抵消費金額，限折抵消費(1 fa points=1元)，恕無法要求兌換成現金、轉換成購物金及無法移轉給他人使用。
+							p 3.fa points於鑑賞期7日後，發放至綁定的fasney帳戶，使用期限三個月，到期自動失效，不另行通知。
+							p 4.欲查詢fa points獲得及使用紀錄，請透過fasney App中「會員中心」&gt;「點數使用紀錄」。
+							p 5.若您取消交易（包括取消訂單、完成退貨），將返還已折抵fa points。 
+							p fasney會員權益以及相關服務辦法請依照fasney官網公告為準
+							.choose
+								label.choose-input(for="fa-privacy") 
+									input#fa-privacy(name="fa-privacy" type="checkbox")
+									.choose-checkMark
+									.choose-text 我了解 fa points 的服務了
+							button.btn.btn-primary.btn-block.btn-submit 確認
+
+
+block JSVAR
+	script(type="text/javascript").

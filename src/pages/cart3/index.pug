@@ -1,0 +1,73 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-cart';
+
+block content
+  .main
+    .content-block
+      #app-shopping3
+        .shopping-wrap
+          shopping-list(:step="3")
+          .shopping-info
+            //- 訂購成立
+            .subtitle 訂購完成！
+            .order-block
+              .card
+                .cart-info
+                  .cart-info-order
+                    .cart-info-order-title 訂單成立
+                    .cart-info-order-number 
+                      a(href="") 訂單編號：7S5c6RBWpe #[span (官網訂單)]
+                    ul
+                      li 訂單日期：2022/10/06
+                      li 訂單金額：$3,240
+                      //- 付款方式請後端要跟著改
+                      li 付款方式：貨到付款
+                      //- ATM付款方式開始
+                      li 銀行代碼：Bank code：013 國泰世華 
+                      li 轉帳帳號：Transfer Account：19700091721000997
+                      li 轉帳金額：Transfer Amount：NT$1790
+                      li 繳款期限：Transfer Payment Deadline：yyyy/mm/dd/00:00
+                      //- ATM付款方式結束
+                      li 配送方式：宅配 
+                      li 發票號碼：-
+                    //- ATM付款方式備註開始
+                    div.atm-text
+                      p 提醒您，如繳款期限到期仍未完成付款，此訂單將被自動取消。
+                      p 此ATM轉帳帳號為虛擬帳號，僅供本次交易一次使用。
+                      p If the payment weren't made before the payment period expires,
+                      p the order would be automatically cancelled.
+                      p This is an ATM virtual transfer account,
+                      p which can only be used for this transaction once.
+                    //- ATM付款方式備註結束
+
+                    //- 銀行授權審核中的
+                    div.atm-text
+                      p Paymenet Checking
+                      p 謝謝您的訂購<br />您的付款資料正在確認中
+
+                    //- 當fasney回復的訂單狀態
+                    div.atm-text
+                      p 您的訂單已交由「Fasney後支付」審核中，
+                      p 我們將在接獲「審核通過」的通知後安排出貨；
+                      p 相關進度請您留意fasney端的APP推播及簡訊通知，謝謝。
+
+            .order-recipient
+              .title-wrap 收件人資料
+              .card
+                .cart-info
+                  .card-info-name Lisa
+                  .card-info-content
+                    p.card-info-phone +886 987 654 321
+                    p.card-info-address 台灣 台北市 南港區 #[br] 南港路三段47巷8號6F
+                    p.card-info-mail jennie@gmail.com
+            .cart-buttons
+              a.btn.btn-modify(href='') 查詢訂單明細
+              button(type="button").btn.btn-primary.btn-block.btn-checkout 確認
+            //- 訂購失敗
+            .subtitle 付款失敗!
+            .cart-buttons
+              button(type="button").btn.btn-primary.btn-block.btn-checkout.mb-0 確認
+
+

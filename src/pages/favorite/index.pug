@@ -1,0 +1,18 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-wishlist';
+
+block content  
+  .container
+    .member-container
+      .menu-block
+        include ../../template/member/memberMenu.pug
+      .info-block#app-favorite
+        cart-dialog(ref="c_dialog", :isnotice="isNotice")
+        .cart-content
+          favorite-app(:maxcount="100" ,:pagesize="20")
+
+block JSVAR
+  script(type="text/javascript").
+    window.StaticImgDomain = 'pics.pzcdn.tw'; window.PictureContainer = 'pazzo';

@@ -1,0 +1,6 @@
+.addon(v-if="allAddonData.length")
+    h3.addon-title 加價購
+    p.addon-check-info(v-if='cartHasMarketItem') 購物車已有指定商品 歡迎加購以下物品
+    p.addon-check-info.pb-1(v-if="!cartHasMarketItem && addonWarnText") 還未符合加價購條件 請將主商品加入購物車
+    <addonItems @showPopupDetail="getPopupDetail" :addonData="mapAddon" :dataIsLoad="dataIsLoad" :maxShow="3" type="market" :hasMainItem="cartHasMarketItem" @showAddonWarnText="addonWarnText = true" />
+    <addonDetailPopup :popup-data="detailData" />

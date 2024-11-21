@@ -1,0 +1,95 @@
+extends ../../template/layout
+
+block vars
+  - var pageID = 'page-brand-info';
+
+block content
+  .main
+    .brand-logo
+      img.img-fluid(src="https://via.placeholder.com/150x49/0000FF/808080")
+    include ../../template/product/productMenuPC
+    #app-shop
+      #banner-slider
+        .banner-slide.d-md-block.d-none
+          img.img-fluid(src="https://via.placeholder.com/1190x620/0000FF/808080")
+          img.img-fluid(src="https://via.placeholder.com/1190x620/0000FF/808080")
+          img.img-fluid(src="https://via.placeholder.com/1190x620/0000FF/808080")
+          img.img-fluid(src="https://via.placeholder.com/1190x620/0000FF/808080")
+          img.img-fluid(src="https://via.placeholder.com/1190x620/0000FF/808080")
+          img.img-fluid(src="https://via.placeholder.com/1190x620/0000FF/808080")
+        .banner-slide.d-md-none
+          img.img-fluid(src="https://via.placeholder.com/752x956/0000FF/808080")
+          img.img-fluid(src="https://via.placeholder.com/752x956/0000FF/808080")
+          img.img-fluid(src="https://via.placeholder.com/752x956/0000FF/808080")
+          img.img-fluid(src="https://via.placeholder.com/752x956/0000FF/808080")
+          img.img-fluid(src="https://via.placeholder.com/752x956/0000FF/808080")
+          img.img-fluid(src="https://via.placeholder.com/752x956/0000FF/808080")
+      .ad-block-pc
+        img.img-fluid(src="https://via.placeholder.com/752x956/0000FF/808080")
+        img.img-fluid(src="https://via.placeholder.com/752x956/0000FF/808080")
+        img.img-fluid(src="https://via.placeholder.com/752x956/0000FF/808080")
+      .ad-block-m
+        img.img-fluid(src="https://via.placeholder.com/752x956/0000FF/808080")
+      .ad-block2 
+        img.img-fluid(src="https://via.placeholder.com/1192x1521/0000FF/808080")
+      .brand-block 
+        .img-wrap
+          img.img-fluid(src="https://via.placeholder.com/596x160/0000FF/808080")
+        .text-wrap
+          .text
+            .name PAZZO
+            .description 十多年來緊貼流行，發展出風格最新、速度最快、款式眾多的日常好感衣著。塑造生活品味的話題指標，領導流行服飾電商市場。
+          brand-btn(:brandactive="'false'", :brandcode="'123'")
+      article-block
+      include ../../template/product/productMenuMB
+      cart-dialog(ref="c_dialog", :isnotice="isNotice")
+      .item-list.item-list-box                         
+        .sort-list
+          .product-num 12345個商品
+          sort-app(:data="sortConditionDatas", :isload="sortConditionIsLoad")
+        .item-box
+          wish-btn(:wishactive="'false'", :custommarketid="'123'")
+          share-btn(:marketid="'123'")
+          a.item-pic(href="shopContent.html")
+            .soldout-mask
+              img.img-fluid(src="https://via.placeholder.com/752x956/0000FF/808080" alt="") 
+            .item-info
+              .brand-name miyuki select miyuki select
+              .item-name
+                h3 日常感圓領排釦針織外套日常感圓領排釦針織外套日常感圓領排釦針織外套日常感圓領排釦針織外套日常感圓領排釦針織外套日常感圓領排釦針織外套
+              .item-price
+                span.origin-price NT.2500
+                span.sell-price NT.2300
+          .tag-block 
+            .tag-label
+              span NEW
+              span SALE
+            a(class="open-dialog" data-custommarketid="'123'") 
+              i.icon-add-cart
+
+        - for (var i=0; i<5; i++)
+          .item-box
+            wish-btn(:wishactive="'false'", :custommarketid="'123'")
+            share-btn(:marketid="'123'")
+            a.item-pic(href="shopContent.html")
+              img.img-fluid(src="https://via.placeholder.com/752x956/0000FF/808080" alt="")
+              .item-info
+                .brand-name PAZZO
+                .item-name
+                  h3 日常感圓領排釦針織外套
+                .item-price
+                  span.origin-price NT.2500
+                  span.sell-price NT.2300
+            .tag-block 
+              .tag-label
+                span NEW
+                span SALE
+              a(class="open-dialog" data-custommarketid="'123'") 
+                i.icon-add-cart
+      #pagination
+    .clearfix
+
+block JSVAR
+  script(type="text/javascript").
+    window.PageCount = 9; window.OrderMode = 1;window.StaticImgDomain = 'pics.pzcdn.tw';window.PictureContainer = 'pazzo';
+

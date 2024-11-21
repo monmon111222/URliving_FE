@@ -1,0 +1,32 @@
+{
+  "Code": 200,
+  "Message": null,
+  "Description": null,
+  "Response": {
+    "PriceHigh": 3980,
+    "PriceLow": 120,
+    "Sizes": [
+      { "Key": "F", "Value": "F" },
+      { "Key": "XS", "Value": "XS" },
+      { "Key": "S", "Value": "S" },
+      { "Key": "M", "Value": "M" },
+      { "Key": "L", "Value": "L" },
+      { "Key": "80", "Value": "80" },
+      { "Key": "90", "Value": "90" },
+      { "Key": "100", "Value": "100" },
+      { "Key": "35", "Value": "CM35" },
+      { "Key": "36", "Value": "CM36" },
+      { "Key": "37", "Value": "CM37" },
+      { "Key": "38", "Value": "CM38" },
+      { "Key": "39", "Value": "CM39" },
+      { "Key": "40", "Value": "CM40" },
+      { "Key": "41", "Value": "CM41" }
+    ],
+    "OrderMode": [
+      { "Key": 3, "Value": "$價格高到低↓" },
+      { "Key": 4, "Value": "$價格低到高↑" },
+      { "Key": 1, "Value": "最新上架" },
+      { "Key": 5, "Value": "最高人氣" }
+    ]
+  }
+}
